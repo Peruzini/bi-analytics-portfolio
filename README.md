@@ -1,4 +1,4 @@
-# Portfólio de Dados — Power BI, SQL e Qualidade de Dados | Rafael Peruzini
+# BI & Analytics Portfolio — Power BI, SQL e Qualidade de Dados | Rafael Peruzini
 
 Estudos demonstrativos sobre indicadores, qualidade de dados, modelagem e análise de negócio. Os exemplos usam dados sintéticos e não representam operações ou resultados de empresas reais.
 
@@ -73,8 +73,8 @@ Os projetos editáveis possuem estrutura PBIP/PBIR, modelos semânticos, consult
 Requisito: Python 3.10 ou superior.
 
 ```bash
-git clone https://github.com/Peruzini/NOVOREPOSIT.git
-cd NOVOREPOSIT
+git clone https://github.com/Peruzini/bi-analytics-portfolio.git
+cd bi-analytics-portfolio
 python pipeline.py
 python -m unittest discover -s tests -v
 ```
