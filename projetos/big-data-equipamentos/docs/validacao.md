@@ -8,7 +8,7 @@ Não foram executados benchmarks de 1 milhão ou 10 milhões de eventos, implant
 
 ## Execução confirmada
 
-Em 14/09/2026, o [GitHub Actions — execução 34867957046](https://github.com/Peruzini/NOVOREPOSIT/actions/runs/34867957046) concluiu com sucesso os 7 testes e a demonstração de 100.000 eventos sintéticos. O código validado está no commit 7c6576f3c6260ab6c37392cfc13526fcc1440b44.
+Em 14/09/2026, o [GitHub Actions — execução 34867957046](https://github.com/Peruzini/bi-analytics-portfolio/actions/runs/34867957046) concluiu com sucesso os 7 testes e a demonstração de 100.000 eventos sintéticos. O código validado está no commit 7c6576f3c6260ab6c37392cfc13526fcc1440b44.
 
 | Medida da execução | Resultado observado |
 | --- | ---: |

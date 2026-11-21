@@ -58,8 +58,8 @@ As saídas são arquivos Parquet, não uma plataforma transacional de lakehouse.
 Ambiente de referência: **Python 3.11 + Java 17 + PySpark 3.5.7**. Linux, macOS ou WSL2 no Windows. O projeto não depende de uma conta de nuvem. Reserve tempo e espaço para instalar o Spark; comece pelo exemplo pequeno.
 
 ~~~bash
-git clone https://github.com/Peruzini/NOVOREPOSIT.git
-cd NOVOREPOSIT/projetos/big-data-equipamentos
+git clone https://github.com/Peruzini/bi-analytics-portfolio.git
+cd bi-analytics-portfolio/projetos/big-data-equipamentos
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
