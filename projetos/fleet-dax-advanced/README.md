@@ -6,6 +6,8 @@ Estudo demonstrativo de Business Intelligence aplicado à gestão de uma frota d
 
 ## Entrega Power BI
 
+**Fleet DataViz V2 (candidata em PR, não homologada):** revisão visual de quatro páginas, com três indicadores por página, gráficos como foco da leitura e filtros padronizados. A página de manutenção compara horas e custos; o Pareto acumulado anterior está suspenso até revisão da regra DAX. [Plano, mudanças e checklist de aceite](docs/dataviz-v2.md). A versão da `main` permanece canônica até aprovação explícita.
+
 O projeto possui uma versão editável em **Power BI Project (PBIP)**:
 
 [`../../powerbi/fleet/FleetAnalytics.pbip`](../../powerbi/fleet/FleetAnalytics.pbip)
@@ -31,7 +33,7 @@ O modelo é autossuficiente: a massa demonstrativa de 2025–2026 é gerada no p
 
 1. **Visão Executiva** — produção, aderência à meta e custo por tonelada;
 2. **Performance da Frota** — utilização, produtividade e ranking de equipamentos;
-3. **Manutenção & Pareto** — falhas, horas de manutenção, custo e participação nas perdas;
+3. **Manutenção e Custos** (candidata V2) — falhas, horas de manutenção e comparação de custos; Pareto acumulado separado para revisão semântica;
 4. **Criticidade** — índice composto, ranking e classe de criticidade.
 
 A versão PBIP contém um núcleo de **34 medidas DAX incorporadas ao modelo semântico**. O catálogo técnico em [`dax/medidas-avancadas.dax`](dax/medidas-avancadas.dax) ultrapassa 50 medidas e inclui variações e exemplos adicionais para estudo e evolução do relatório.
@@ -171,6 +173,9 @@ powerbi/fleet/
 ```
 
 ## Estado de validação
+
+**DataViz V2:** os arquivos PBIR da candidata exigem verificação estática local com `node scripts/validate-fleet-dataviz.mjs` na raiz do repositório e inspeção no Power BI Desktop. Um check estrutural de JSON não garante renderização, legibilidade ou atualização das medidas. Não publicar capturas antes do aceite visual.
+
 
 A estrutura PBIP/PBIR e os arquivos JSON foram montados no mesmo padrão técnico dos outros projetos do portfólio. Ainda é necessária a **validação final no Power BI Desktop** para confirmar atualização das consultas M, cálculo das medidas, aparência e interações dos visuais após a abertura local.
 
