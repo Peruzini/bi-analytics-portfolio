@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 // Fleet Analytics DataViz V2: static PBIR quality gate. No network/dependencies.
-const fs = require('node:fs');
-const path = require('node:path');
-const root = path.resolve(__dirname, '..');
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const report = path.join(root, 'powerbi/fleet/FleetAnalytics.Report/definition');
 const model = JSON.parse(fs.readFileSync(path.join(root, 'powerbi/fleet/FleetAnalytics.SemanticModel/model.bim'), 'utf8'));
 const measureNames = new Set(model.model.tables.flatMap(t => (t.measures || []).map(m => t.name + '.' + m.name)));
