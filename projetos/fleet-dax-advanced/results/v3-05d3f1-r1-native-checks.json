@@ -1,0 +1,53 @@
+{
+  "candidate": "e0800699129ae71f01c422822d0fc7b4818d1256",
+  "base": "0d672f66ab20c9f046c626ad3cb1823a350f74f3",
+  "native": {
+    "pagesLoadedAndInspected": 4,
+    "visuals": 59,
+    "regressionComparedValues": 225,
+    "repeatRegressionComparedValues": 225,
+    "failures": 0,
+    "rows": 5840,
+    "newMeasures": 6,
+    "priorMeasuresPreserved": 45,
+    "visualEvidence": [
+      {
+        "page": "executive",
+        "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f1-r1-inspection-r2/1.png",
+        "sha256": "1f39ffb1e95aee39818dcf5dc68e4b006a973eade6c25dfb71a67cd1ddc2abed"
+      },
+      {
+        "page": "performance",
+        "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f1-r1-inspection-performance/1.png",
+        "sha256": "b41e400d6e5027bf1e50c33ba1ffbdf78df539755ae0db3c9126cc56afdf5e26"
+      },
+      {
+        "page": "maintenance",
+        "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f1-r1-inspection-r2/2.png",
+        "sha256": "d8a5d209478278d6e4de1cb87370e023c8504e872a903ae99091ff2484bc085e"
+      },
+      {
+        "page": "criticality",
+        "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f1-r1-inspection-r2/3.png",
+        "sha256": "75a556c7942889038aa8d9d7cdcc980d37b66d2bb683cea6ca7a9c1fd666ca70"
+      }
+    ],
+    "scatterReferenceLinesRendered": true,
+    "pareto80Rendered": true,
+    "targetGaugeRendered": true,
+    "maintenanceAllEightRowsVisible": true,
+    "utilizationAllEightBarsVisible": true,
+    "desktopProcessesAfter": 0,
+    "newAnalysisServicesProcessesAfter": 0
+  },
+  "tests": {
+    "unittest": 9,
+    "failed": 0
+  },
+  "scope": "visual refinement PASS; interaction, filtered regressions, mobile, accessibility and save/reopen are separate gates",
+  "issues": [
+    "Initial native load returned empty data before UI ready; resolved with refresh and row-count readiness.",
+    "One capture run selected wrong pages; invalid captures excluded; performance re-captured separately.",
+    "CloseMainWindow did not close promptly; only the disposable test PID was terminated after graceful close attempt. No edits inside Desktop except refresh; source PBIR remains intact."
+  ]
+}

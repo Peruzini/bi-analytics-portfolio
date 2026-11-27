@@ -1,0 +1,69 @@
+{
+  "totals": [
+    {
+      "[refMeta]": 1,
+      "[refScale]": 1.1,
+      "[refProd]": 9.375899834790518,
+      "[refCost]": 44.04613879016594,
+      "[refUnavailability]": 0.01451198630136985
+    }
+  ],
+  "assets": [
+    {
+      "DimEquipamento[Equipamento]": "Caminhão 01",
+      "[refPareto]": 0.8,
+      "[refProd]": 9.375899834790518,
+      "[refCost]": 44.04613879016594,
+      "[refUnavailability]": 0.01451198630136985
+    },
+    {
+      "DimEquipamento[Equipamento]": "Caminhão 02",
+      "[refPareto]": 0.8,
+      "[refProd]": 9.375899834790518,
+      "[refCost]": 44.04613879016594,
+      "[refUnavailability]": 0.01451198630136985
+    },
+    {
+      "DimEquipamento[Equipamento]": "Caminhão 03",
+      "[refPareto]": 0.8,
+      "[refProd]": 9.375899834790518,
+      "[refCost]": 44.04613879016594,
+      "[refUnavailability]": 0.01451198630136985
+    },
+    {
+      "DimEquipamento[Equipamento]": "Escavadeira 02",
+      "[refPareto]": 0.8,
+      "[refProd]": 9.375899834790518,
+      "[refCost]": 44.04613879016594,
+      "[refUnavailability]": 0.01451198630136985
+    },
+    {
+      "DimEquipamento[Equipamento]": "Carregadeira 01",
+      "[refPareto]": 0.8,
+      "[refProd]": 9.375899834790518,
+      "[refCost]": 44.04613879016594,
+      "[refUnavailability]": 0.01451198630136985
+    },
+    {
+      "DimEquipamento[Equipamento]": "Caminhão 04",
+      "[refPareto]": 0.8,
+      "[refProd]": 9.375899834790518,
+      "[refCost]": 44.04613879016594,
+      "[refUnavailability]": 0.01451198630136985
+    },
+    {
+      "DimEquipamento[Equipamento]": "Trator 01",
+      "[refPareto]": 0.8,
+      "[refProd]": 9.375899834790518,
+      "[refCost]": 44.04613879016594,
+      "[refUnavailability]": 0.01451198630136985
+    },
+    {
+      "DimEquipamento[Equipamento]": "Escavadeira 01",
+      "[refPareto]": 0.8,
+      "[refProd]": 9.375899834790518,
+      "[refCost]": 44.04613879016594,
+      "[refUnavailability]": 0.01451198630136985
+    }
+  ]
+}
