@@ -3,11 +3,11 @@
   "name": "f1e7a9d8c0b24a739002",
   "position": {
     "x": 216,
-    "y": 66,
+    "y": 65,
     "width": 1200,
-    "height": 36,
+    "height": 30,
     "z": 2000,
-    "tabOrder": 2000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Atingimos a meta de produção? Onde priorizar a ação?",
+                    "value": "Atingimos a meta? Identifique o desvio e os ativos que exigem ação.",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "16px",
@@ -80,7 +80,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Atingimos a meta de produção? Onde priorizar a ação?'"
+                  "Value": "'Atingimos a meta? Identifique o desvio e os ativos que exigem ação.'"
                 }
               }
             }

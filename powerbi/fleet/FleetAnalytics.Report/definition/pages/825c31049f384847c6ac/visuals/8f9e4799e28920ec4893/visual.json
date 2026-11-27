@@ -3,11 +3,11 @@
   "name": "8f9e4799e28920ec4893",
   "position": {
     "x": 216,
-    "y": 354,
-    "width": 695,
-    "height": 300,
+    "y": 410,
+    "width": 638,
+    "height": 310,
     "z": 17000,
-    "tabOrder": 17000
+    "tabOrder": 22000
   },
   "visual": {
     "visualType": "lineChart",
@@ -123,7 +123,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -175,7 +175,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "13D"
+                  "Value": "14D"
                 }
               }
             },
@@ -184,7 +184,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#126B78'"
+                      "Value": "'#172B3A'"
                     }
                   }
                 }
@@ -235,7 +235,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "11D"
                 }
               }
             }
@@ -248,7 +248,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "11D"
                 }
               }
             }

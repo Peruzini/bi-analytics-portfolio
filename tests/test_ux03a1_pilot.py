@@ -24,7 +24,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
     def test_pilot_layout_and_delta_binding(self):
         page = load(PILOT / "page.json")
         visuals = [load(f) for f in PILOT.glob("visuals/*/visual.json")]
-        self.assertEqual(len(visuals), 21)
+        self.assertEqual(len(visuals), 29)
         delta = next(v for v in visuals if v["name"] == "a103a100000000000001")
         fields = [x["queryRef"] for role in delta["visual"]["query"]["queryState"].values() for x in role["projections"]]
         self.assertIn("Medidas.Desvio Produção (t)", fields)
