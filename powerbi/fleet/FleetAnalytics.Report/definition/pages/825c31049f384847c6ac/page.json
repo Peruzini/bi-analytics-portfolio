@@ -3,7 +3,7 @@
   "name": "825c31049f384847c6ac",
   "displayName": "Visão Executiva",
   "displayOption": "FitToPage",
-  "height": 1076,
+  "height": 1000,
   "width": 1440,
   "objects": {
     "background": [
@@ -14,7 +14,7 @@
               "color": {
                 "expr": {
                   "Literal": {
-                    "Value": "'#F4F7FB'"
+                    "Value": "'#F4F7FA'"
                   }
                 }
               }
@@ -380,6 +380,41 @@
     {
       "source": "d97c9b4796fa198fc28c",
       "target": "cdd9e76529dc81b1b4ef",
+      "type": "DataFilter"
+    },
+    {
+      "source": "18ff10cbb80f8a8cb511",
+      "target": "a103a100000000000001",
+      "type": "DataFilter"
+    },
+    {
+      "source": "3ce9f418142478f499b7",
+      "target": "a103a100000000000001",
+      "type": "DataFilter"
+    },
+    {
+      "source": "8f9e4799e28920ec4893",
+      "target": "a103a100000000000001",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b2050100000000000001",
+      "target": "a103a100000000000001",
+      "type": "DataFilter"
+    },
+    {
+      "source": "b2050100000000000005",
+      "target": "a103a100000000000001",
+      "type": "DataFilter"
+    },
+    {
+      "source": "ca08750d692249f52488",
+      "target": "a103a100000000000001",
+      "type": "DataFilter"
+    },
+    {
+      "source": "d97c9b4796fa198fc28c",
+      "target": "a103a100000000000001",
       "type": "DataFilter"
     }
   ]
