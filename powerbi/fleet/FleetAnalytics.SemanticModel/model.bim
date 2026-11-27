@@ -545,8 +545,9 @@
           },
           {
             "name": "Ranking Equipamento",
-            "expression": "RANKX(ALLSELECTED(DimEquipamento[Equipamento]), [Produção Total], , DESC, DENSE)",
-            "formatString": "#,0"
+            "expression": "IF(ISINSCOPE(DimEquipamento[Equipamento]) && NOT ISBLANK([Produção Total]), RANKX(ALLSELECTED(DimEquipamento[Equipamento]), [Produção Total], , DESC, DENSE))",
+            "formatString": "#,0",
+            "description": "Ranking denso por produção em linha de equipamento; total e ausência de dados retornam BLANK."
           },
           {
             "name": "Participação Perdas %",
