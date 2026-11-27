@@ -3,11 +3,11 @@
   "name": "675fff242d97676ec0f6",
   "position": {
     "x": 24,
-    "y": 314,
-    "width": 740,
-    "height": 300,
-    "z": 12000,
-    "tabOrder": 12000
+    "y": 288,
+    "width": 892,
+    "height": 288,
+    "z": 11000,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "lineClusteredColumnComboChart",
@@ -172,7 +172,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pareto combinado — horas e acumulado'"
+                  "Value": "'Pareto — horas e % acumulado (referência 80%)'"
                 }
               }
             },
@@ -188,7 +188,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0B192B'"
+                      "Value": "'#103C49'"
                     }
                   }
                 }
@@ -223,7 +223,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pareto combinado — horas e acumulado. Valores no contexto dos filtros.'"
+                  "Value": "'Pareto — horas e % acumulado (referência 80%). Valores conforme os filtros.'"
                 }
               }
             }
@@ -243,17 +243,57 @@
                 }
               }
             },
-            "start": {
+            "secStart": {
               "expr": {
                 "Literal": {
                   "Value": "0D"
                 }
               }
             },
-            "end": {
+            "secEnd": {
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            },
+            "secFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "secLabelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
