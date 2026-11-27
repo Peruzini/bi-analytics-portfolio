@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 27/11/2026 | Estado: UX-02 especificado; aprovação de direção pendente; próximo UX-03A1 | Documento de continuidade operacional
+Atualização: 27/11/2026 | Estado: UX-03A1 piloto desktop concluído; aceite visual pendente antes de UX-03A2 | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -15,7 +15,7 @@ Decisão de 27/11: priorizar a experiência das telas antes das capturas profiss
 | Fleet | [bi-analytics-portfolio](https://github.com/Peruzini/bi-analytics-portfolio) | [PR #11](https://github.com/Peruzini/bi-analytics-portfolio/pull/11), `portfolio/v3-05d3f2a-fleet-functional`, `7a9c3d5` | `portfolio/v3-05d3f2c-fleet-mobile`, `f7bd9f8` |
 | E-commerce | [analytics-engineering-snowflake-dbt](https://github.com/Peruzini/analytics-engineering-snowflake-dbt) | [PR #7](https://github.com/Peruzini/analytics-engineering-snowflake-dbt/pull/7), `portfolio/v3-05d3f2b-ecommerce-functional`, `5c3a9c4` | `portfolio/v3-05d3f2c-ecommerce-mobile`, `d3e8cb2` |
 
-Os candidatos mobile estavam locais, com worktrees limpos, na conferência desta data. Não presumir que estejam no GitHub. Antes de UX-03, reconciliar remoto/local, confirmar SHA e preservar as alterações mobile. Os PRs existentes foram conferidos no GitHub: todos abertos em Draft, sem merge. Este handoff tem branch documental independente de main; não é a branch para editar relatórios.
+Na conferência inicial os candidatos mobile estavam locais. UX-03A1 preservou a branch Fleet mobile no remoto, sem merge; E-commerce segue local. Antes de UX-03B, reconciliar remoto/local do E-commerce, confirmar SHA e preservar as alterações mobile. Os PRs existentes foram conferidos no GitHub: todos abertos em Draft, sem merge. Este handoff tem branch documental independente de main; não é a branch para editar relatórios.
 
 Cadeias de PRs: Fleet [#9](https://github.com/Peruzini/bi-analytics-portfolio/pull/9) → [#10](https://github.com/Peruzini/bi-analytics-portfolio/pull/10) → [#11](https://github.com/Peruzini/bi-analytics-portfolio/pull/11); E-commerce [#5](https://github.com/Peruzini/analytics-engineering-snowflake-dbt/pull/5) → [#6](https://github.com/Peruzini/analytics-engineering-snowflake-dbt/pull/6) → [#7](https://github.com/Peruzini/analytics-engineering-snowflake-dbt/pull/7). Não misturar os números dos dois repositórios.
 
@@ -68,9 +68,9 @@ Investigar: navegação persistente e estado ativo, filtros compactos com seleç
 | Bloco | Entrega e gate | Estado |
 |---|---|---|
 | UX-01 | Pesquisa aprofundada de referências BI/UX/UI; benchmark comparativo, princípios aplicáveis ao Power BI, diagnóstico dos oito dashboards e recomendações priorizadas | PASS pesquisa documental |
-| UX-02 | Design System: tokens, paleta, contraste, grid, tipografia, cartões, filtros, navegação, tabelas, gráficos, estados e especificação mobile; aprovar direção antes de implementar | PASS especificação; aprovação pendente |
-| UX-03A1 | Piloto nativo Fleet Visão Executiva, após aprovação da direção UX-02; reconciliar candidatos mobile e aplicar tema/layout; validar e obter aceite do piloto | Próximo após aprovação |
-| UX-03A2 | Expandir piloto aprovado às três páginas Fleet restantes | Pendente |
+| UX-02 | Design System: tokens, paleta, contraste, grid, tipografia, cartões, filtros, navegação, tabelas, gráficos, estados e especificação mobile; aprovar direção antes de implementar | PASS especificação; direção autorizada para piloto |
+| UX-03A1 | Piloto nativo Fleet Visão Executiva, após aprovação da direção UX-02; reconciliar candidatos mobile e aplicar tema/layout; validar e obter aceite do piloto | PASS representativo desktop; aceite visual pendente |
+| UX-03A2 | Expandir piloto aprovado às três páginas Fleet restantes | Próximo após aceite |
 | UX-03B | Redesign E-commerce: mesma estratégia, adequada às tarefas comerciais | Pendente |
 | UX-04 | Navegação e interação avançadas, limpeza de filtros, tooltips e drill-through onde fizerem sentido; testar comportamento e persistência | Pendente |
 | UX-05 | Mobile-first dedicado: hierarquia compacta, rolagem funcional, controles legíveis; absorve pendências D3F2C-R1 | Pendente |
@@ -105,6 +105,6 @@ D3F2C-R1 fica incorporado aos gates UX-05/06; não declarar concluído. A reorde
 
 ## 8. Comando de continuidade
 
-**Próximo proposto: PORTFOLIO-V3-UX-03A1 — Piloto nativo da Visão Executiva Fleet Analytics (após aprovação da direção UX-02).**
+**Próximo proposto: PORTFOLIO-V3-UX-03A2 — Expansão do redesign às três páginas Fleet restantes (após aceite visual do piloto).**
 
-Ler [benchmark UX-01](PORTFOLIO-V3-UX-01-BENCHMARK.md) e [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md), incluindo [tokens e geometria](ux-v3/design-system.v1.json), [wireframes Fleet](ux-v3/fleet-wireframes.svg) e [wireframes E-commerce](ux-v3/ecommerce-wireframes.svg). UX-02 concluiu 16 layouts conceituais, 14 pares de contraste e 2.534 checagens geométricas; não é homologação nativa. Após aprovação da direção, reconciliar os candidatos mobile, preservar os modelos e implementar apenas a página piloto Fleet Executiva. Validar nativamente, capturar somente resultado final e fechar a instância. Expandir somente após aceite do piloto. Sem Worker, merge automático ou gastos.
+Ler [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md) e [PR #13 — piloto Fleet](https://github.com/Peruzini/bi-analytics-portfolio/pull/13). Piloto final 9bde2c9, branch portfolio/v3-ux-03a1-fleet-pilot; base mobile Fleet f7bd9f8 agora preservada no remoto portfolio/v3-05d3f2c-fleet-mobile. E-commerce mobile d3e8cb2 segue local e não foi alterado. Evidências: [documentação](https://github.com/Peruzini/bi-analytics-portfolio/blob/portfolio/v3-ux-03a1-fleet-pilot/projetos/fleet-dax-advanced/docs/V3-UX-03A1-FLEET-PILOT.md), [captura nativa recortada](https://github.com/Peruzini/bi-analytics-portfolio/blob/portfolio/v3-ux-03a1-fleet-pilot/projetos/fleet-dax-advanced/results/v3-ux-03a1-pilot.png), [validações](https://github.com/Peruzini/bi-analytics-portfolio/blob/portfolio/v3-ux-03a1-fleet-pilot/projetos/fleet-dax-advanced/results/v3-ux-03a1-native-checks.json). 13/13 testes; 602/602 comparações nativas; filtro, reset e navegação para Performance verificados. 51 medidas, consultas existentes e demais páginas preservadas. Aplicar mesmo sistema somente após aceite visual; tema global, mobile, resumo dinâmico, acessibilidade e persistência ampla pendentes. Uma instância Power BI por vez, zero processos residuais, sem Worker, sem merge ou gastos.
