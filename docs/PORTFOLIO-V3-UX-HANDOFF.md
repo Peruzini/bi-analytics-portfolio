@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 27/11/2026 | Estado: UX-01 concluído; próximo UX-02 | Documento de continuidade operacional
+Atualização: 27/11/2026 | Estado: UX-02 especificado; aprovação de direção pendente; próximo UX-03A1 | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -68,8 +68,9 @@ Investigar: navegação persistente e estado ativo, filtros compactos com seleç
 | Bloco | Entrega e gate | Estado |
 |---|---|---|
 | UX-01 | Pesquisa aprofundada de referências BI/UX/UI; benchmark comparativo, princípios aplicáveis ao Power BI, diagnóstico dos oito dashboards e recomendações priorizadas | PASS pesquisa documental |
-| UX-02 | Design System: tokens, paleta, contraste, grid, tipografia, cartões, filtros, navegação, tabelas, gráficos, estados e especificação mobile; aprovar direção antes de implementar | PRÓXIMO |
-| UX-03A | Redesign Fleet: prototipar uma página, validar direção, transpor para quatro páginas e preservar medidas e filtros | Pendente |
+| UX-02 | Design System: tokens, paleta, contraste, grid, tipografia, cartões, filtros, navegação, tabelas, gráficos, estados e especificação mobile; aprovar direção antes de implementar | PASS especificação; aprovação pendente |
+| UX-03A1 | Piloto nativo Fleet Visão Executiva, após aprovação da direção UX-02; reconciliar candidatos mobile e aplicar tema/layout; validar e obter aceite do piloto | Próximo após aprovação |
+| UX-03A2 | Expandir piloto aprovado às três páginas Fleet restantes | Pendente |
 | UX-03B | Redesign E-commerce: mesma estratégia, adequada às tarefas comerciais | Pendente |
 | UX-04 | Navegação e interação avançadas, limpeza de filtros, tooltips e drill-through onde fizerem sentido; testar comportamento e persistência | Pendente |
 | UX-05 | Mobile-first dedicado: hierarquia compacta, rolagem funcional, controles legíveis; absorve pendências D3F2C-R1 | Pendente |
@@ -104,6 +105,6 @@ D3F2C-R1 fica incorporado aos gates UX-05/06; não declarar concluído. A reorde
 
 ## 8. Comando de continuidade
 
-**Próximo: PORTFOLIO-V3-UX-02 — Design System e arquitetura de informação do portfólio.**
+**Próximo proposto: PORTFOLIO-V3-UX-03A1 — Piloto nativo da Visão Executiva Fleet Analytics (após aprovação da direção UX-02).**
 
-Ler este handoff antes de executar. Ler [benchmark UX-01](PORTFOLIO-V3-UX-01-BENCHMARK.md), já concluído. Produzir tokens, componentes, wireframes desktop/mobile, variantes Fleet/E-commerce e critérios de aceite. Aprovar direção antes de alterar dashboards. Manter o fluxo sem Worker, sem merge automático e sem gastos. Não abrir Power BI para a especificação inicial se as evidências existentes forem suficientes.
+Ler [benchmark UX-01](PORTFOLIO-V3-UX-01-BENCHMARK.md) e [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md), incluindo [tokens e geometria](ux-v3/design-system.v1.json), [wireframes Fleet](ux-v3/fleet-wireframes.svg) e [wireframes E-commerce](ux-v3/ecommerce-wireframes.svg). UX-02 concluiu 16 layouts conceituais, 14 pares de contraste e 2.534 checagens geométricas; não é homologação nativa. Após aprovação da direção, reconciliar os candidatos mobile, preservar os modelos e implementar apenas a página piloto Fleet Executiva. Validar nativamente, capturar somente resultado final e fechar a instância. Expandir somente após aceite do piloto. Sem Worker, merge automático ou gastos.
