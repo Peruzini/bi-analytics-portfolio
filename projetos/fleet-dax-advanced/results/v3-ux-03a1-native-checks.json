@@ -1,0 +1,50 @@
+{
+  "status": "PASS representative desktop pilot; user visual approval pending",
+  "candidate": "dff06c6",
+  "base": "f7bd9f8",
+  "nativeDaxComparisons": 602,
+  "initialHistorical": 225,
+  "initialFiltered": 152,
+  "finalHistorical": 225,
+  "tests": 13,
+  "visuals": 21,
+  "existingMeasuresPreserved": 51,
+  "originalQueriesPreserved": 14,
+  "interactionRules": 77,
+  "nativeActions": 5,
+  "uiRepresentative": {
+    "filtered": [
+      "Desvio (t), -5.678,2 cartão",
+      "Produção (t), 105.281,8 cartão",
+      "Disponibilidade, 99,11% cartão",
+      "Custo por tonelada, R$ 46,38 cartão"
+    ],
+    "reset-ctrl": [
+      "Desvio (t), -20.581,8 cartão",
+      "Produção (t), 1.010.178,2 cartão",
+      "Disponibilidade, 98,55% cartão",
+      "Custo por tonelada, R$ 44,05 cartão"
+    ],
+    "nav-ctrl": [
+      "Utilização, 78,00% cartão",
+      "Produtividade (t/h), 9,38 cartão",
+      "Consumo (L/t), 7,62 cartão",
+      "Horas de operação, 107.742,0 cartão"
+    ]
+  },
+  "finalCards": [
+    "Desvio (t), -20.581,8 cartão",
+    "Produção (t), 1.010.178,2 cartão",
+    "Disponibilidade, 98,55% cartão",
+    "Custo por tonelada, R$ 44,05 cartão"
+  ],
+  "finalCaptureSha256": "ca8d521e326d29032b1f99daf738ec8c2ef477df85bad5421eb7b2150e14af9d",
+  "desktopResidual": 0,
+  "engineResidual": 0,
+  "limitations": [
+    "Only pilot page changed; other three untouched. Shared report theme not imported to avoid affecting other pages; page-local overrides used.",
+    "Initial delta clipped; widened and verified final screenshot. Canvas 1440x1012 rather than 1440x944 for readability.",
+    "Native navigation to Performance and reset tested before width-only refinement; other destinations structurally checked. Mobile layout, accessibility, contextual filter summary and full round-trip pending UX-04/05/06.",
+    "Normal close timed out; own disposable processes terminated. No user sessions closed."
+  ]
+}

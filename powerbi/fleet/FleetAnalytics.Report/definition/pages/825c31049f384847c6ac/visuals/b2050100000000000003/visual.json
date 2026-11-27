@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "b2050100000000000003",
   "position": {
-    "x": 724,
-    "y": 178,
-    "width": 340,
+    "x": 216,
+    "y": 190,
+    "width": 240,
     "height": 148,
-    "z": 9000,
-    "tabOrder": 9000
+    "z": 12000,
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "gauge",
@@ -133,7 +133,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "28D"
                 }
               }
             },
@@ -171,7 +171,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#E7F2F3'"
                     }
                   }
                 }
@@ -202,7 +202,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#D8E3EB'"
+                      "Value": "'#CBD5E1'"
                     }
                   }
                 }
@@ -264,7 +264,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Aderencia a meta (%)'"
+                  "Value": "'Aderência à meta'"
                 }
               }
             },
@@ -280,7 +280,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#103C49'"
+                      "Value": "'#126B78'"
                     }
                   }
                 }

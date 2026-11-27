@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "f1e7a9d8c0b24a739001",
   "position": {
-    "x": 24,
-    "y": 12,
-    "width": 1392,
-    "height": 52,
+    "x": 216,
+    "y": 18,
+    "width": 1200,
+    "height": 48,
     "z": 1000,
     "tabOrder": 1000
   },
@@ -19,11 +19,11 @@
               {
                 "textRuns": [
                   {
-                    "value": "01 / 04    FLEET ANALYTICS  |  VISÃO EXECUTIVA",
+                    "value": "Visão Executiva",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "24px",
-                      "color": "#FFFFFF"
+                      "fontSize": "30px",
+                      "color": "#172B3A"
                     }
                   }
                 ],
@@ -41,25 +41,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0B192B'"
-                    }
-                  }
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "false"
                 }
               }
             }
@@ -72,32 +54,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#0B192B'"
-                    }
-                  }
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "8D"
-                }
-              }
-            },
-            "width": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
+                  "Value": "false"
                 }
               }
             }
@@ -123,7 +80,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'01 / 04    FLEET ANALYTICS  |  VISÃO EXECUTIVA'"
+                  "Value": "'Visão Executiva'"
                 }
               }
             }
