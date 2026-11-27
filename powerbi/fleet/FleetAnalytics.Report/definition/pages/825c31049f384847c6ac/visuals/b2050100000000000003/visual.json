@@ -5,15 +5,15 @@
     "x": 724,
     "y": 178,
     "width": 340,
-    "height": 92,
+    "height": 148,
     "z": 9000,
     "tabOrder": 9000
   },
   "visual": {
-    "visualType": "cardVisual",
+    "visualType": "gauge",
     "query": {
       "queryState": {
-        "Data": {
+        "Y": {
           "projections": [
             {
               "field": {
@@ -31,63 +31,62 @@
               "displayName": "Aderência à meta"
             }
           ]
+        },
+        "TargetValue": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Ref Meta 100%"
+                }
+              },
+              "queryRef": "Medidas.Ref Meta 100%",
+              "nativeQueryRef": "Ref Meta 100%",
+              "displayName": "Meta 100%"
+            }
+          ]
+        },
+        "MaxValue": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Ref Escala Meta"
+                }
+              },
+              "queryRef": "Medidas.Ref Escala Meta",
+              "nativeQueryRef": "Ref Escala Meta",
+              "displayName": "Escala"
+            }
+          ]
         }
       }
     },
     "objects": {
-      "value": [
+      "axis": [
         {
           "properties": {
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
-                }
-              }
-            },
-            "valueDecimalPlaces": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
-                }
-              }
-            }
-          }
-        },
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "26D"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#103C49'"
-                    }
-                  }
-                }
-              }
-            },
-            "displayUnits": {
+            "min": {
               "expr": {
                 "Literal": {
                   "Value": "0D"
                 }
               }
             }
-          },
-          "selector": {
-            "id": "default"
           }
         }
       ],
-      "label": [
+      "dataLabels": [
         {
           "properties": {
             "show": {
@@ -97,34 +96,61 @@
                 }
               }
             },
-            "text": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'Aderência à meta'"
+                  "Value": "10D"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "calloutValue": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "20D"
                 }
               }
             },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#475569'"
-                    }
-                  }
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
                 }
               }
             }
-          },
-          "selector": {
-            "id": "default"
           }
         }
       ]
@@ -219,6 +245,44 @@
               "expr": {
                 "Literal": {
                   "Value": "'Aderência à meta, valor calculado no contexto dos filtros.'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Aderencia a meta (%)'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#103C49'"
+                    }
+                  }
                 }
               }
             }

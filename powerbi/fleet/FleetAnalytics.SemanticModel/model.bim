@@ -676,6 +676,42 @@
             "formatString": "#,0",
             "displayFolder": "Data Viz",
             "lineageTag": "00183df6-d345-541c-9da6-deb4dfe3dcb6"
+          },
+          {
+            "name": "Ref Pareto 80%",
+            "expression": "IF(NOT ISBLANK([Perdas Acumuladas %]), 0.8)",
+            "formatString": "0%",
+            "displayFolder": "Data Visualization | Referencias"
+          },
+          {
+            "name": "Ref Meta 100%",
+            "expression": "IF(NOT ISBLANK([Aderência Meta %]), 1)",
+            "formatString": "0%",
+            "displayFolder": "Data Visualization | Referencias"
+          },
+          {
+            "name": "Ref Escala Meta",
+            "expression": "IF(NOT ISBLANK([Aderência Meta %]), MAX(1.10, [Aderência Meta %] * 1.05))",
+            "formatString": "0%",
+            "displayFolder": "Data Visualization | Referencias"
+          },
+          {
+            "name": "Ref Produtividade Frota",
+            "expression": "CALCULATE([Produtividade t/h], ALLSELECTED(DimEquipamento[Equipamento]))",
+            "formatString": "0.00",
+            "displayFolder": "Data Visualization | Referencias"
+          },
+          {
+            "name": "Ref Custo Frota",
+            "expression": "CALCULATE([Custo por Tonelada], ALLSELECTED(DimEquipamento[Equipamento]))",
+            "formatString": "0.00",
+            "displayFolder": "Data Visualization | Referencias"
+          },
+          {
+            "name": "Ref Indisponibilidade Frota",
+            "expression": "CALCULATE([Indisponibilidade %], ALLSELECTED(DimEquipamento[Equipamento]))",
+            "formatString": "0.00%",
+            "displayFolder": "Data Visualization | Referencias"
           }
         ]
       }
