@@ -38,12 +38,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Índice Criticidade"
+                  "Property": "Ranking Criticidade"
                 }
               },
-              "queryRef": "Medidas.Índice Criticidade",
-              "nativeQueryRef": "Índice Criticidade",
-              "displayName": "Índice Criticidade"
+              "queryRef": "Medidas.Ranking Criticidade",
+              "nativeQueryRef": "Ranking Criticidade",
+              "displayName": "Ranking"
             },
             {
               "field": {
@@ -53,12 +53,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Ranking Criticidade"
+                  "Property": "Índice Criticidade"
                 }
               },
-              "queryRef": "Medidas.Ranking Criticidade",
-              "nativeQueryRef": "Ranking Criticidade",
-              "displayName": "Ranking Criticidade"
+              "queryRef": "Medidas.Índice Criticidade",
+              "nativeQueryRef": "Índice Criticidade",
+              "displayName": "Score"
             },
             {
               "field": {
@@ -73,37 +73,7 @@
               },
               "queryRef": "Medidas.Classe Criticidade",
               "nativeQueryRef": "Classe Criticidade",
-              "displayName": "Classe Criticidade"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Disponibilidade Física %"
-                }
-              },
-              "queryRef": "Medidas.Disponibilidade Física %",
-              "nativeQueryRef": "Disponibilidade Física %",
-              "displayName": "Disponibilidade Física %"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Custo por Tonelada"
-                }
-              },
-              "queryRef": "Medidas.Custo por Tonelada",
-              "nativeQueryRef": "Custo por Tonelada",
-              "displayName": "Custo por Tonelada"
+              "displayName": "Classe"
             },
             {
               "field": {
@@ -119,6 +89,36 @@
               "queryRef": "Medidas.Falhas",
               "nativeQueryRef": "Falhas",
               "displayName": "Falhas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Horas Manutenção"
+                }
+              },
+              "queryRef": "Medidas.Horas Manutenção",
+              "nativeQueryRef": "Horas Manutenção",
+              "displayName": "Horas Manutenção"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Custo por Tonelada"
+                }
+              },
+              "queryRef": "Medidas.Custo por Tonelada",
+              "nativeQueryRef": "Custo por Tonelada",
+              "displayName": "Custo por Tonelada"
             }
           ]
         }

@@ -10,7 +10,7 @@
     "tabOrder": 12000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "scatterChart",
     "query": {
       "queryState": {
         "Category": {
@@ -32,6 +32,25 @@
             }
           ]
         },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Indisponibilidade %"
+                }
+              },
+              "queryRef": "Medidas.Indisponibilidade %",
+              "nativeQueryRef": "Indisponibilidade %",
+              "displayName": "Indisponibilidade %"
+            }
+          ]
+        },
         "Y": {
           "projections": [
             {
@@ -47,27 +66,44 @@
               },
               "queryRef": "Medidas.Custo por Tonelada",
               "nativeQueryRef": "Custo por Tonelada",
-              "displayName": "R$/t"
+              "displayName": "Custo por Tonelada"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Índice Criticidade"
+                }
+              },
+              "queryRef": "Medidas.Índice Criticidade",
+              "nativeQueryRef": "Índice Criticidade",
+              "displayName": "Índice Criticidade"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Falhas"
+                }
+              },
+              "queryRef": "Medidas.Falhas",
+              "nativeQueryRef": "Falhas",
+              "displayName": "Falhas"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Medidas"
-                  }
-                },
-                "Property": "Custo por Tonelada"
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
     },
     "visualContainerObjects": {
@@ -153,7 +189,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Custo por tonelada por equipamento'"
+                  "Value": "'Indisponibilidade × custo por tonelada'"
                 }
               }
             },
@@ -204,7 +240,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Custo por tonelada por equipamento. Compare as categorias de acordo com os filtros.'"
+                  "Value": "'Indisponibilidade × custo por tonelada. Valores no contexto dos filtros.'"
                 }
               }
             }

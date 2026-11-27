@@ -606,6 +606,76 @@
             "expression": "IF([Horas Calendário] > 0, COALESCE(CALCULATE(SUM(FatoManutencao[HorasManutencao]), KEEPFILTERS(FatoManutencao[TipoParada] = \"Corretiva\")), 0))",
             "formatString": "#,0.0",
             "description": "Duração apenas de paradas corretivas."
+          },
+          {
+            "name": "Desvio Produção (t)",
+            "expression": "IF(NOT ISBLANK([Produção Total]) && NOT ISBLANK([Meta Produção]), [Produção Total] - [Meta Produção])",
+            "formatString": "#,0.0",
+            "displayFolder": "Data Viz",
+            "lineageTag": "928a71dc-a43a-58d0-ad95-4820c9c33c54"
+          },
+          {
+            "name": "Déficit Produção (t)",
+            "expression": "VAR D = [Desvio Produção (t)] RETURN IF(D < 0, D)",
+            "formatString": "#,0.0",
+            "displayFolder": "Data Viz",
+            "lineageTag": "da928291-7da2-5d9a-83f4-72613e942044"
+          },
+          {
+            "name": "Superação Produção (t)",
+            "expression": "VAR D = [Desvio Produção (t)] RETURN IF(NOT ISBLANK(D) && D >= 0, D)",
+            "formatString": "#,0.0",
+            "displayFolder": "Data Viz",
+            "lineageTag": "9f426bad-4c3f-5c81-a7d7-55c82f141d40"
+          },
+          {
+            "name": "Indisponibilidade %",
+            "expression": "VAR D = [Disponibilidade Física %] RETURN IF(NOT ISBLANK(D), 1 - D)",
+            "formatString": "0.00%",
+            "displayFolder": "Data Viz",
+            "lineageTag": "453257ef-ce13-591c-a133-a17722009da2"
+          },
+          {
+            "name": "Componente Indisponibilidade",
+            "expression": "IF(HASONEVALUE(DimEquipamento[Equipamento]) && NOT ISBLANK([Índice Criticidade]), 0.35 * [Score Disponibilidade])",
+            "formatString": "0.000",
+            "displayFolder": "Data Viz",
+            "lineageTag": "01d3ba7a-818c-59f9-9c9c-05ddb5c4baa4"
+          },
+          {
+            "name": "Componente Custo",
+            "expression": "IF(HASONEVALUE(DimEquipamento[Equipamento]) && NOT ISBLANK([Índice Criticidade]), 0.25 * [Score Custo])",
+            "formatString": "0.000",
+            "displayFolder": "Data Viz",
+            "lineageTag": "2e74ccc3-6e11-5009-af5e-79d2adc937c4"
+          },
+          {
+            "name": "Componente Falhas",
+            "expression": "IF(HASONEVALUE(DimEquipamento[Equipamento]) && NOT ISBLANK([Índice Criticidade]), 0.20 * [Score Falhas])",
+            "formatString": "0.000",
+            "displayFolder": "Data Viz",
+            "lineageTag": "480d1f45-7a9a-5ea1-918a-1919f6e301b2"
+          },
+          {
+            "name": "Componente Perdas",
+            "expression": "IF(HASONEVALUE(DimEquipamento[Equipamento]) && NOT ISBLANK([Índice Criticidade]), 0.20 * [Score Perda])",
+            "formatString": "0.000",
+            "displayFolder": "Data Viz",
+            "lineageTag": "fbe74ead-1c45-5b1e-8b36-d2e5f0503cf2"
+          },
+          {
+            "name": "Ativos Alta ou Crítica",
+            "expression": "VAR Atuais = VALUES(DimEquipamento[Equipamento])\nVAR Pares = CALCULATETABLE(\n    ADDCOLUMNS(VALUES(DimEquipamento[Equipamento]),\n        \"@Disp\", CALCULATE([Disponibilidade Física %]),\n        \"@Custo\", CALCULATE([Custo por Tonelada]),\n        \"@Falhas\", CALCULATE([Falhas]),\n        \"@Perda\", CALCULATE([Horas Manutenção])),\n    ALLSELECTED(DimEquipamento[Equipamento]))\nVAR Validos = FILTER(Pares, NOT ISBLANK([@Disp]) && NOT ISBLANK([@Custo]) && NOT ISBLANK([@Falhas]) && NOT ISBLANK([@Perda]))\nVAR MaxCusto = MAXX(Validos, [@Custo])\nVAR MaxFalhas = MAXX(Validos, [@Falhas])\nVAR MaxPerda = MAXX(Validos, [@Perda])\nVAR Scores = ADDCOLUMNS(Validos, \"@Score\",\n    ROUND(0.35 * (1 - [@Disp]) + 0.25 * DIVIDE([@Custo], MaxCusto, 0) + 0.20 * DIVIDE([@Falhas], MaxFalhas, 0) + 0.20 * DIVIDE([@Perda], MaxPerda, 0), 9))\nRETURN IF(COUNTROWS(Validos) > 0, COALESCE(COUNTROWS(FILTER(Scores, [@Score] >= 0.50)), 0))",
+            "formatString": "#,0",
+            "displayFolder": "Data Viz",
+            "lineageTag": "05899cdb-6722-562f-a27d-d9590d350539"
+          },
+          {
+            "name": "Intervenções",
+            "expression": "IF([Horas Calendário] > 0, COALESCE(COUNTROWS(FatoManutencao), 0))",
+            "formatString": "#,0",
+            "displayFolder": "Data Viz",
+            "lineageTag": "00183df6-d345-541c-9da6-deb4dfe3dcb6"
           }
         ]
       }

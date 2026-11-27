@@ -1,0 +1,63 @@
+{
+  "base": "e56708ee3bb797403cc55c4697508042e546adb4",
+  "originalMeasures": 35,
+  "addedMeasures": [
+    "Desvio Produção (t)",
+    "Déficit Produção (t)",
+    "Superação Produção (t)",
+    "Indisponibilidade %",
+    "Componente Indisponibilidade",
+    "Componente Custo",
+    "Componente Falhas",
+    "Componente Perdas",
+    "Ativos Alta ou Crítica",
+    "Intervenções"
+  ],
+  "inventory": [
+    {
+      "page": "Visão Executiva",
+      "visuals": 14,
+      "charts": [
+        "barChart",
+        "lineChart"
+      ],
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "page": "Performance da Frota",
+      "visuals": 15,
+      "charts": [
+        "scatterChart",
+        "lineChart",
+        "clusteredBarChart"
+      ],
+      "width": 1280,
+      "height": 1120
+    },
+    {
+      "page": "Manutenção & Pareto",
+      "visuals": 16,
+      "charts": [
+        "lineChart",
+        "lineClusteredColumnComboChart",
+        "clusteredBarChart",
+        "lineChart"
+      ],
+      "width": 1280,
+      "height": 1220
+    },
+    {
+      "page": "Criticidade",
+      "visuals": 14,
+      "charts": [
+        "scatterChart",
+        "barChart"
+      ],
+      "width": 1280,
+      "height": 960
+    }
+  ],
+  "static": "PASS: bounds, overlap, tab order, model fields and sort fields; original measures unchanged",
+  "native": "pending"
+}

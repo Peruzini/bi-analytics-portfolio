@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "675fff242d97676ec0f6",
   "position": {
-    "x": 650,
+    "x": 24,
     "y": 314,
-    "width": 606,
-    "height": 282,
+    "width": 740,
+    "height": 300,
     "z": 12000,
     "tabOrder": 12000
   },
   "visual": {
-    "visualType": "lineChart",
+    "visualType": "lineClusteredColumnComboChart",
     "query": {
       "queryState": {
         "Category": {
@@ -42,6 +42,25 @@
                       "Entity": "Medidas"
                     }
                   },
+                  "Property": "Horas Manutenção"
+                }
+              },
+              "queryRef": "Medidas.Horas Manutenção",
+              "nativeQueryRef": "Horas Manutenção",
+              "displayName": "Horas"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
                   "Property": "Perdas Acumuladas %"
                 }
               },
@@ -62,10 +81,10 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "Perdas Acumuladas %"
+                "Property": "Horas Manutenção"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ]
       }
@@ -153,7 +172,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pareto — horas de manutenção acumuladas'"
+                  "Value": "'Pareto combinado — horas e acumulado'"
                 }
               }
             },
@@ -204,7 +223,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pareto — horas de manutenção acumuladas. Compare as categorias de acordo com os filtros.'"
+                  "Value": "'Pareto combinado — horas e acumulado. Valores no contexto dos filtros.'"
                 }
               }
             }
@@ -212,6 +231,35 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "y2Axis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "start": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "end": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

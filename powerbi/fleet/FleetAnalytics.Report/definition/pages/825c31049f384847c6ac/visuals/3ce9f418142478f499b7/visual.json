@@ -43,7 +43,7 @@
               },
               "queryRef": "Medidas.Produção Total",
               "nativeQueryRef": "Produção Total",
-              "displayName": "Produção Total"
+              "displayName": "Realizado (t)"
             },
             {
               "field": {
@@ -53,12 +53,27 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Disponibilidade Física %"
+                  "Property": "Meta Produção"
                 }
               },
-              "queryRef": "Medidas.Disponibilidade Física %",
-              "nativeQueryRef": "Disponibilidade Física %",
-              "displayName": "Disponibilidade Física %"
+              "queryRef": "Medidas.Meta Produção",
+              "nativeQueryRef": "Meta Produção",
+              "displayName": "Meta (t)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Desvio Produção (t)"
+                }
+              },
+              "queryRef": "Medidas.Desvio Produção (t)",
+              "nativeQueryRef": "Desvio Produção (t)",
+              "displayName": "Desvio (t)"
             },
             {
               "field": {
@@ -73,7 +88,22 @@
               },
               "queryRef": "Medidas.Aderência Meta %",
               "nativeQueryRef": "Aderência Meta %",
-              "displayName": "Aderência Meta %"
+              "displayName": "Aderência"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Disponibilidade Física %"
+                }
+              },
+              "queryRef": "Medidas.Disponibilidade Física %",
+              "nativeQueryRef": "Disponibilidade Física %",
+              "displayName": "Disponibilidade"
             },
             {
               "field": {
@@ -88,25 +118,27 @@
               },
               "queryRef": "Medidas.Custo por Tonelada",
               "nativeQueryRef": "Custo por Tonelada",
-              "displayName": "Custo por Tonelada"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Índice Criticidade"
-                }
-              },
-              "queryRef": "Medidas.Índice Criticidade",
-              "nativeQueryRef": "Índice Criticidade",
-              "displayName": "Índice Criticidade"
+              "displayName": "Custo/t"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medidas"
+                  }
+                },
+                "Property": "Desvio Produção (t)"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "objects": {

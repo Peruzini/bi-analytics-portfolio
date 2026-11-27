@@ -3,9 +3,9 @@
   "name": "135b820eb782888d48d0",
   "position": {
     "x": 24,
-    "y": 612,
+    "y": 750,
     "width": 1232,
-    "height": 298,
+    "height": 320,
     "z": 13000,
     "tabOrder": 13000
   },
@@ -53,12 +53,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Utilização %"
+                  "Property": "Produtividade t/h"
                 }
               },
-              "queryRef": "Medidas.Utilização %",
-              "nativeQueryRef": "Utilização %",
-              "displayName": "Utilização %"
+              "queryRef": "Medidas.Produtividade t/h",
+              "nativeQueryRef": "Produtividade t/h",
+              "displayName": "Produtividade t/h"
             },
             {
               "field": {
@@ -68,12 +68,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Produtividade t/h"
+                  "Property": "Utilização %"
                 }
               },
-              "queryRef": "Medidas.Produtividade t/h",
-              "nativeQueryRef": "Produtividade t/h",
-              "displayName": "Produtividade t/h"
+              "queryRef": "Medidas.Utilização %",
+              "nativeQueryRef": "Utilização %",
+              "displayName": "Utilização %"
             },
             {
               "field": {
@@ -98,12 +98,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Disponibilidade Física %"
+                  "Property": "Custo por Tonelada"
                 }
               },
-              "queryRef": "Medidas.Disponibilidade Física %",
-              "nativeQueryRef": "Disponibilidade Física %",
-              "displayName": "Disponibilidade Física %"
+              "queryRef": "Medidas.Custo por Tonelada",
+              "nativeQueryRef": "Custo por Tonelada",
+              "displayName": "Custo por Tonelada"
             },
             {
               "field": {
@@ -118,7 +118,7 @@
               },
               "queryRef": "Medidas.Ranking Equipamento",
               "nativeQueryRef": "Ranking Equipamento",
-              "displayName": "Ranking Equipamento"
+              "displayName": "Ranking"
             }
           ]
         }

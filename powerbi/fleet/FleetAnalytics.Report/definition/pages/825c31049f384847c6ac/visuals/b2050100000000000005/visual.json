@@ -10,7 +10,7 @@
     "tabOrder": 12000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "barChart",
     "query": {
       "queryState": {
         "Category": {
@@ -42,12 +42,76 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Índice Criticidade"
+                  "Property": "Déficit Produção (t)"
                 }
               },
-              "queryRef": "Medidas.Índice Criticidade",
-              "nativeQueryRef": "Índice Criticidade",
-              "displayName": "Criticidade"
+              "queryRef": "Medidas.Déficit Produção (t)",
+              "nativeQueryRef": "Déficit Produção (t)",
+              "displayName": "Déficit"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Superação Produção (t)"
+                }
+              },
+              "queryRef": "Medidas.Superação Produção (t)",
+              "nativeQueryRef": "Superação Produção (t)",
+              "displayName": "Superação"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Desvio Produção (t)"
+                }
+              },
+              "queryRef": "Medidas.Desvio Produção (t)",
+              "nativeQueryRef": "Desvio Produção (t)",
+              "displayName": "Desvio Produção (t)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Meta Produção"
+                }
+              },
+              "queryRef": "Medidas.Meta Produção",
+              "nativeQueryRef": "Meta Produção",
+              "displayName": "Meta Produção"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Produção Total"
+                }
+              },
+              "queryRef": "Medidas.Produção Total",
+              "nativeQueryRef": "Produção Total",
+              "displayName": "Produção Total"
             }
           ]
         }
@@ -62,10 +126,10 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "Índice Criticidade"
+                "Property": "Desvio Produção (t)"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -153,7 +217,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Criticidade por equipamento'"
+                  "Value": "'Desvio de produção frente à meta (t)'"
                 }
               }
             },
@@ -204,7 +268,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Criticidade por equipamento. Compare as categorias de acordo com os filtros.'"
+                  "Value": "'Desvio de produção frente à meta (t). Valores no contexto dos filtros.'"
                 }
               }
             }
@@ -212,6 +276,46 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#A53D32'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Déficit Produção (t)"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#137B88'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Superação Produção (t)"
+          }
+        }
+      ]
+    }
   }
 }

@@ -5,7 +5,7 @@
     "x": 650,
     "y": 314,
     "width": 606,
-    "height": 282,
+    "height": 205,
     "z": 12000,
     "tabOrder": 12000
   },
@@ -42,12 +42,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Produtividade t/h"
+                  "Property": "Utilização %"
                 }
               },
-              "queryRef": "Medidas.Produtividade t/h",
-              "nativeQueryRef": "Produtividade t/h",
-              "displayName": "t/h"
+              "queryRef": "Medidas.Utilização %",
+              "nativeQueryRef": "Utilização %",
+              "displayName": "Utilização %"
             }
           ]
         }
@@ -62,7 +62,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "Produtividade t/h"
+                "Property": "Utilização %"
               }
             },
             "direction": "Descending"
@@ -153,7 +153,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Produtividade por equipamento'"
+                  "Value": "'Utilização por equipamento'"
                 }
               }
             },
@@ -204,7 +204,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Produtividade por equipamento. Compare as categorias de acordo com os filtros.'"
+                  "Value": "'Utilização por equipamento. Valores no contexto dos filtros.'"
                 }
               }
             }

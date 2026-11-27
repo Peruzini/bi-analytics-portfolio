@@ -5,12 +5,12 @@
     "x": 24,
     "y": 314,
     "width": 610,
-    "height": 282,
+    "height": 420,
     "z": 11000,
     "tabOrder": 11000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "scatterChart",
     "query": {
       "queryState": {
         "Category": {
@@ -32,8 +32,61 @@
             }
           ]
         },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Produtividade t/h"
+                }
+              },
+              "queryRef": "Medidas.Produtividade t/h",
+              "nativeQueryRef": "Produtividade t/h",
+              "displayName": "Produtividade t/h"
+            }
+          ]
+        },
         "Y": {
           "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Custo por Tonelada"
+                }
+              },
+              "queryRef": "Medidas.Custo por Tonelada",
+              "nativeQueryRef": "Custo por Tonelada",
+              "displayName": "Custo por Tonelada"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Utilização %"
+                }
+              },
+              "queryRef": "Medidas.Utilização %",
+              "nativeQueryRef": "Utilização %",
+              "displayName": "Utilização %"
+            },
             {
               "field": {
                 "Measure": {
@@ -47,27 +100,10 @@
               },
               "queryRef": "Medidas.Produção Total",
               "nativeQueryRef": "Produção Total",
-              "displayName": "Produção (t)"
+              "displayName": "Produção Total"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Medidas"
-                  }
-                },
-                "Property": "Produção Total"
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
     },
     "visualContainerObjects": {
@@ -153,7 +189,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Produção por equipamento'"
+                  "Value": "'Produtividade × custo por tonelada'"
                 }
               }
             },
@@ -204,7 +240,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Produção por equipamento. Compare as categorias de acordo com os filtros.'"
+                  "Value": "'Produtividade × custo por tonelada. Valores no contexto dos filtros.'"
                 }
               }
             }
