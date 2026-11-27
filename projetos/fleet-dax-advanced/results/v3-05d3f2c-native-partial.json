@@ -1,0 +1,15 @@
+{
+  "status": "PARTIAL: native layout recognized on all four tabs, executive top preview corrected; remaining pages and scroll not homologated",
+  "regression": 225,
+  "failures": 0,
+  "nativeRecognizedTabs": 4,
+  "validCorrectedMobilePreviewTop": 1,
+  "desktopAndNewAnalysisServicesProcessesAfter": 0,
+  "evidence": {
+    "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2c-inspection-r1/mobile-825c31049f384847c6ac.png",
+    "sha256": "73b075c7166ed8df3eba0cf273ecfb5ca605b40cea304e49fbc8ebad641b49dc"
+  },
+  "limitations": [
+    "Initial mobile preview clipped header and slicers; sizes increased. Executive top preview verified after correction. Remaining captures switched to desktop; wheel scroll unverified. No physical phone, keyboard traversal or screen reader test. No full accessibility compliance claim."
+  ]
+}
