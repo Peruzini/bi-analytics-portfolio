@@ -15,7 +15,7 @@ Estudos demonstrativos sobre indicadores, qualidade de dados, modelagem e análi
 
 | Estudo | Perguntas de negócio | Entrega |
 | --- | --- | --- |
-| [Fleet Analytics — Power BI + DAX Avançado](projetos/fleet-dax-advanced/README.md) | Quais equipamentos concentram perdas? Como produção, disponibilidade, falhas e custo determinam a criticidade da frota? | [FleetAnalytics.pbip](powerbi/fleet/FleetAnalytics.pbip): 4 páginas, modelo estrela, Power Query autossuficiente, 34 medidas DAX incorporadas e catálogo técnico com 50+ medidas. |
+| [Fleet Analytics — Power BI + DAX Avançado](projetos/fleet-dax-advanced/README.md) | Quais equipamentos concentram perdas? Como produção, disponibilidade, falhas e custo determinam a criticidade da frota? | [FleetAnalytics.pbip](powerbi/fleet/FleetAnalytics.pbip): 4 páginas, modelo estrela, Power Query autossuficiente, 35 medidas DAX incorporadas e catálogo técnico com 50+ medidas. |
 | [Análise comercial](projetos/analise-comercial/README.md) | Como evoluem receita e margem? Quais lojas e categorias concentram os resultados? | [Comercial.pbip](powerbi/comercial/Comercial.pbip): 3 páginas, 5 tabelas e 11 medidas DAX. |
 | [Indicadores de projetos](projetos/indicadores-projetos/README.md) | Qual é o backlog? Quantas demandas estão atrasadas? Como variam os prazos entre equipes? | [Projetos.pbip](powerbi/projetos/Projetos.pbip): 3 páginas, 3 tabelas e 15 medidas DAX. |
 | [Marketing Analytics](projetos/marketing-analytics/README.md) | Quais canais combinam aquisição e eficiência de mídia? | Pipeline Python, SQL, dados sintéticos, medidas DAX e resultados esperados; PBIP ainda não versionado. |

@@ -1,0 +1,65 @@
+{
+  "scope": "Reprodução independente em JavaScript das regras M; não executa Power Query ou DAX.",
+  "periodo": [
+    "2025-01-01",
+    "2026-12-31"
+  ],
+  "dias": 730,
+  "equipamentos": 8,
+  "linhas_operacao": 5840,
+  "paradas": 406,
+  "falhas_corretivas": 202,
+  "horas_calendario": 140160,
+  "horas_operacao": 107742,
+  "horas_manutencao": 2034,
+  "horas_corretivas": 1030,
+  "ajustes_horas_operacao": 104,
+  "violacoes_24h_sem_limite": 104,
+  "violacoes_24h_com_limite": 0,
+  "disponibilidade": 0.9854880136986301,
+  "utilizacao": 0.7800269319317146,
+  "mtbf": 533.3762376237623,
+  "mttr": 5.099009900990099,
+  "pareto": [
+    {
+      "id": "EQ-05",
+      "perda": 364,
+      "acumulado": 0.17895771878072764
+    },
+    {
+      "id": "EQ-04",
+      "perda": 280,
+      "acumulado": 0.45427728613569324
+    },
+    {
+      "id": "EQ-08",
+      "perda": 280,
+      "acumulado": 0.45427728613569324
+    },
+    {
+      "id": "EQ-02",
+      "perda": 262,
+      "acumulado": 0.5830875122910522
+    },
+    {
+      "id": "EQ-06",
+      "perda": 254,
+      "acumulado": 0.7079646017699115
+    },
+    {
+      "id": "EQ-03",
+      "perda": 222,
+      "acumulado": 0.8171091445427728
+    },
+    {
+      "id": "EQ-07",
+      "perda": 216,
+      "acumulado": 0.9233038348082596
+    },
+    {
+      "id": "EQ-01",
+      "perda": 156,
+      "acumulado": 1
+    }
+  ]
+}

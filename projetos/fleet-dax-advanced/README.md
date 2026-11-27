@@ -34,7 +34,7 @@ O modelo é autossuficiente: a massa demonstrativa de 2025–2026 é gerada no p
 3. **Manutenção & Pareto** — falhas, horas de manutenção, custo e participação nas perdas;
 4. **Criticidade** — índice composto, ranking e classe de criticidade.
 
-A versão PBIP contém um núcleo de **34 medidas DAX incorporadas ao modelo semântico**. O catálogo técnico em [`dax/medidas-avancadas.dax`](dax/medidas-avancadas.dax) ultrapassa 50 medidas e inclui variações e exemplos adicionais para estudo e evolução do relatório.
+A versão PBIP contém um núcleo de **35 medidas DAX incorporadas ao modelo semântico**. O catálogo técnico em [`dax/medidas-avancadas.dax`](dax/medidas-avancadas.dax) ultrapassa 50 medidas e inclui variações e exemplos adicionais para estudo e evolução do relatório.
 
 ## Escopo das duas implementações
 
@@ -42,8 +42,8 @@ O PBIP e o catálogo DAX representam versões diferentes do estudo. O catálogo 
 
 | Regra | Modelo PBIP atual | Catálogo DAX |
 | --- | --- | --- |
-| Falhas | Contagem de linhas de manutenção | Contagem filtrada por `FalhaFlag = 1` |
-| MTTR | Horas de manutenção / contagem de eventos | Horas corretivas / falhas sinalizadas |
+| Falhas | Eventos corretivos (proxy de falha) | Contagem filtrada por `FalhaFlag = 1` |
+| MTTR | Horas corretivas / eventos corretivos | Horas corretivas / falhas sinalizadas |
 | Componente de custo da criticidade | Custo por tonelada, normalizado pelo máximo selecionado | Custo de manutenção, normalizado por min-max |
 | Componente de perda da criticidade | Horas de manutenção | Gap positivo de produção |
 | Pesos | Fixos no índice | Medidas baseadas em tabelas de parâmetros |
@@ -131,7 +131,7 @@ A versão executável do PBIP utiliza a seguinte ponderação-base:
 | Falhas | 20% |
 | Horas de perda/manutenção | 20% |
 
-Cada componente é normalizado no contexto selecionado antes de compor o índice. Isso permite comparar ativos com métricas de escalas diferentes e gerar um ranking relativo da frota.
+Indisponibilidade é uma proporção absoluta; custo, falhas e perda são normalizados pelo máximo do conjunto válido selecionado. O cartão agregado exibe o pior ativo, não um índice calculado sobre totais. Isso permite comparar ativos com métricas de escalas diferentes e gerar um ranking relativo da frota.
 
 O arquivo [`dax/tabelas-parametros.dax`](dax/tabelas-parametros.dax) documenta a evolução para pesos controlados por tabelas desconectadas/What-if Parameters.
 
@@ -177,3 +177,8 @@ A estrutura PBIP/PBIR e os arquivos JSON foram montados no mesmo padrão técnic
 ## Competências demonstradas
 
 `Power BI` · `DAX` · `Power Query/M` · `Modelagem Dimensional` · `SQL` · `Python` · `KPIs` · `Time Intelligence` · `RANKX` · `TOPN` · `ALLSELECTED` · `MTBF/MTTR` · `Analytics`
+
+
+## V3-05B1 — Contrato de métricas
+
+[Regras canônicas do PBIP, casos de teste e limitações](docs/V3-05B1-REGRAS-PBIP.md). O catálogo e o gerador Python legado continuam sendo implementações distintas; não são evidência de paridade com o PBIP.
