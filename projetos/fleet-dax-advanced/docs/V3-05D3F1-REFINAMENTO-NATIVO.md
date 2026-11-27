@@ -1,0 +1,11 @@
+# V3-05D3F1 — Refinamento visual nativo
+
+27/11/2026. Power BI Desktop 2.160.1151.0, worktrees isoladas. Candidato visual R1 `ac60d94415c5c73c70b5a4d83979cb793d3dceb5`: quatro páginas com dados efetivamente renderizadas e capturadas. Candidato R2 `e0afdda7732c51c9b367f3fd1ff382f61fbb1b49`: motor DAX nativo carregado, 225/225 valores comparados à evidência D3E sem divergência (tolerância absoluta 1e-7 para números); modelo semântico idêntico em blob ao D3E, fontes intactas. 59 visuais/45 medidas preservados. Validação estrutural R1: limites, sobreposição, referências e tabOrder únicos; R2 altera apenas formatação, sem alterar posições. Não há novo cálculo DAX.
+
+## Melhorias verificadas no R1
+Canvas 1440px, filtros e cartões compactados, percentuais dos cartões com duas casas, identificação dos pontos nas dispersões, oito barras de utilização visíveis sem scroll, tabelas ocupando a largura, Pareto e componentes de criticidade renderizados. Tabela de manutenção ainda requer scroll para último ativo. Desvios positivos pequenos receberam rótulo 0 Mil: corrigida configuração labelDisplayUnits no R2.
+
+## Ressalva final
+R2 abriu no Desktop, ADOMD confirmou resultados completos. A interface exibiu aviso de tabelas incompletas e visuais vazios durante tentativas de captura, mesmo após a consulta de dados. Tentativas de refresh/save não demonstraram recuperação da interface. Capturas R2 vazias descartadas; não declarar renderização final R2. Causa exata não comprovada. R1: quatro capturas válidas por laboratório com hashes registrados. R2: correções versionadas; reabrir uma instância de cada vez no D3F2 e confirmar labels, eixo secundário, MoM. Linha 80% do Pareto, referências ponderadas nas dispersões e indicador gráfico de meta permanecem pendentes; cartão de aderência preservado. Filtros sincronizados, interações, save/reopen com cache e capturas profissionais ainda pendentes. Sem merge/deploy/serviço pago; main e clones originais preservados.
+
+Referências técnicas de autoria: https://github.com/microsoft/skills-for-fabric/blob/main/skills/powerbi-report-cli/references/authoring/cartesian-part-03.md e https://github.com/microsoft/skills-for-fabric/blob/main/skills/powerbi-report-cli/references/authoring/table.md.
