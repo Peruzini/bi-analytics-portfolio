@@ -1,0 +1,65 @@
+{
+  "scope": "Static generated PBIR geometry and field binding checks; not native Power BI validation.",
+  "baseCommit": "eee69cb53e078c5ec33bbfd0d80b664f079bfcb8",
+  "canvas": [
+    1280,
+    960
+  ],
+  "pages": [
+    {
+      "page": "Visão Executiva",
+      "visuals": 14,
+      "types": {
+        "textbox": 3,
+        "slicer": 4,
+        "cardVisual": 4,
+        "lineChart": 1,
+        "clusteredBarChart": 1,
+        "tableEx": 1
+      },
+      "explicitAltText": 11
+    },
+    {
+      "page": "Performance da Frota",
+      "visuals": 14,
+      "types": {
+        "textbox": 3,
+        "slicer": 4,
+        "cardVisual": 4,
+        "clusteredBarChart": 2,
+        "tableEx": 1
+      },
+      "explicitAltText": 11
+    },
+    {
+      "page": "Manutenção & Pareto",
+      "visuals": 14,
+      "types": {
+        "textbox": 3,
+        "slicer": 4,
+        "cardVisual": 4,
+        "clusteredBarChart": 1,
+        "lineChart": 1,
+        "tableEx": 1
+      },
+      "explicitAltText": 11
+    },
+    {
+      "page": "Criticidade",
+      "visuals": 14,
+      "types": {
+        "textbox": 3,
+        "slicer": 4,
+        "cardVisual": 4,
+        "clusteredBarChart": 2,
+        "tableEx": 1
+      },
+      "explicitAltText": 11
+    }
+  ],
+  "totalVisuals": 56,
+  "bindingsIncludingSort": 85,
+  "geometryErrors": 0,
+  "missingBindings": 0,
+  "semanticModelChanged": false
+}
