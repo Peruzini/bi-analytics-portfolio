@@ -1,0 +1,14 @@
+# V3-05D3E1 — Transposição Fleet PBIR
+
+Candidato `8df38d7d2b09d8b3fa1d2696480712ab61561ba9`, 27/11/2026, Power BI Desktop 2.160.1151.0. Branch sobre laboratório HTML aprovado. 4 páginas, 59 visuais, 11 gráficos, 16 slicers, 16 cards, 4 tabelas, 12 textboxes; 45 medidas (35 existentes sem alteração, 10 auxiliares). Sete tabelas e relacionamentos preservados. Canvas executivo/criticidade 1280×960, performance 1280×1120, manutenção 1280×1220. Validação estrutural real: campos, sort, limites, sobreposição e tabOrder aprovados. Primeira geração bloqueada por codificação e depois tabOrder repetido; corrigidos antes de gravar candidato. Sem alterações às fontes.
+
+## Desktop
+Worktree isolada fleet-d3e1-native em commit exato. Desktop abriu quatro páginas, atualização manual do modelo sem cache; consulta ADOMD real confirmou 5840 registros e medidas. 19/19 verificações sobre resultado DAX recuperado (totais, 8 scores, soma dos componentes, delta, 3 tipos, 24 meses, Pareto). JSON original e verificações versionados. Capturas reais da interface em %USERPROFILE%/portfolio-v3-05d/fleet-d3e1-native-inspection/1.png–4.png (não imagens comerciais). SHA256: 5ECAA16CE6757C48F6CE1A3DA8C673B5BAA201C843716763DC5B3CBFB3C8AD72; 466574D13A207DB4FC775815FBEBA55718B326211FB18BCCBD88C1A75506B719; AD495563D87FEC732D89250FDE4361AE16DF55BBECA8B8453BEC2E456195BDE9; C21BBEADE1E369B2209942BD28C91B36C277C457023F2E08C5094215450533F9.
+
+## Avaliação
+Executiva: linha produção/meta e barras divergentes com cores verificadas; tabela contém realizado, meta, desvio e custo. Mantido cartão de aderência, sem barra de progresso nativa nesta revisão.
+Performance: dispersão com oito pontos, utilização e tendência; gráfico de utilização tem scroll (cinco ativos visíveis na captura), pontos sem rótulo permanente, faltam linhas de referência ponderadas.
+Manutenção: Pareto combinado com eixo secundário 0–100%, empates, 3 intervenções e duas séries de confiabilidade renderizados; falta linha explícita 80%; canvas alto resulta em zoom 47% e fontes pequenas.
+Criticidade: composição quatro pesos, escala 0–1, dispersão e ranking corretos, KPI 3. Falta rótulo permanente e linhas de referência na dispersão; tabelas poderiam ocupar melhor a largura. Filtros por mês/tipo/área/equipamento preservados; sincronização entre páginas, intervalo diário, seleção gráfica, acessibilidade, save/reopen e regressões filtradas ainda não homologados neste candidato. Percentuais no Desktop aparecem com uma casa decimal, preservado formato existente.
+
+PASS transposição inicial e renderização nativa com ressalvas. Não equivale a homologação D3F; próximos refinamentos e testes de filtros/interações nativas. Sem merge/deploy, sem serviços pagos, sem alteração nos clones originais. A edição PBIR permanece versionada em BIM/PBIR, sem commit do round-trip Desktop.

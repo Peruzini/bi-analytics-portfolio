@@ -1,0 +1,87 @@
+{
+  "candidate": "8df38d7d2b09d8b3fa1d2696480712ab61561ba9",
+  "checks": [
+    {
+      "name": "5840 rows",
+      "pass": true
+    },
+    {
+      "name": "production",
+      "pass": true
+    },
+    {
+      "name": "target",
+      "pass": true
+    },
+    {
+      "name": "delta",
+      "pass": true
+    },
+    {
+      "name": "availability",
+      "pass": true
+    },
+    {
+      "name": "cost",
+      "pass": true
+    },
+    {
+      "name": "MTBF",
+      "pass": true
+    },
+    {
+      "name": "MTTR",
+      "pass": true
+    },
+    {
+      "name": "interventions",
+      "pass": true
+    },
+    {
+      "name": "high risk",
+      "pass": true
+    },
+    {
+      "name": "max risk",
+      "pass": true
+    },
+    {
+      "name": "8 equipment",
+      "pass": true
+    },
+    {
+      "name": "sum deviations",
+      "pass": true
+    },
+    {
+      "name": "signed split",
+      "pass": true
+    },
+    {
+      "name": "weighted components",
+      "pass": true
+    },
+    {
+      "name": "8 reference scores",
+      "pass": true
+    },
+    {
+      "name": "Pareto end and ties",
+      "pass": true
+    },
+    {
+      "name": "intervention types",
+      "pass": true
+    },
+    {
+      "name": "monthly 24",
+      "pass": true
+    }
+  ],
+  "captureHashes": [
+    "5ECAA16CE6757C48F6CE1A3DA8C673B5BAA201C843716763DC5B3CBFB3C8AD72",
+    "466574D13A207DB4FC775815FBEBA55718B326211FB18BCCBD88C1A75506B719",
+    "AD495563D87FEC732D89250FDE4361AE16DF55BBECA8B8453BEC2E456195BDE9",
+    "C21BBEADE1E369B2209942BD28C91B36C277C457023F2E08C5094215450533F9"
+  ]
+}
