@@ -3,7 +3,7 @@
     {
       "page": "Performance da Frota",
       "visuals": 15,
-      "height": 2296,
+      "height": 2796,
       "widthLimit": 323,
       "altText": 15,
       "mobileFiles": 15
@@ -11,7 +11,7 @@
     {
       "page": "Manutenção & Pareto",
       "visuals": 16,
-      "height": 2584,
+      "height": 3084,
       "widthLimit": 323,
       "altText": 16,
       "mobileFiles": 16
@@ -19,7 +19,7 @@
     {
       "page": "Visão Executiva",
       "visuals": 14,
-      "height": 2034,
+      "height": 2502,
       "widthLimit": 323,
       "altText": 14,
       "mobileFiles": 14
@@ -27,7 +27,7 @@
     {
       "page": "Criticidade",
       "visuals": 14,
-      "height": 1996,
+      "height": 2488,
       "widthLimit": 323,
       "altText": 14,
       "mobileFiles": 14
@@ -37,5 +37,5 @@
   "static": "PASS",
   "native": "PENDING",
   "physicalPhone": "NOT TESTED",
-  "note": "Full-width sequential layout; wide tables and matrix may require horizontal scrolling. No native rendering or screen-reader claim before verification."
+  "note": "Full-width vertical layout. Expanded header, filters and KPIs after Fleet native preview clipping. Wide table/matrix may scroll. Final native visual gate remains pending."
 }
