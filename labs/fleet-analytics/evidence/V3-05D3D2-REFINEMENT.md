@@ -1,0 +1,7 @@
+# V3-05D3D2 — Refinamento funcional e visual
+
+Candidato executado: `d8c22154c9b81072e5e4c960abbe90abb79ac9e9` em 27/11/2026 no Windows, Chrome 158.0.8127.37, Playwright 1.61.0, Node 26.13.1. 63/63 testes Node e 167/167 verificações browser aprovadas, exit 0. 16 screenshots reais e hashes no JSON de saída original. 11/11 PNG e 4/4 CSV exportados pelo navegador. Quatro viewports, IDs únicos, gráficos cabem horizontalmente nos painéis e rótulos das dispersões não se sobrepõem na seleção integral. Console sem erros. Mouse/teclado e persistência de filtros verificados no desktop.
+
+Fleet: layout em pares nas páginas executiva e criticidade, cabeçalho compacto, barra de aderência à meta com valor real e preenchimento limitado a 100%, rótulos com prevenção de colisão, gráficos responsivos. Tendência de produção mantém escala zero e repetição sintética declarada.
+
+Inspeção editorial de capturas selecionadas das revisões D2 efetuada; as capturas finais integrais estão em `%USERPROFILE%/portfolio-v3-05d/fleet-browser-d3d2-final`. Tabelas podem continuar exigindo rolagem horizontal interna em mobile para preservar colunas. Não é certificação WCAG integral nem teste físico de smartphone/tablet. Revisão editorial final das 8 páginas/32 capturas e casos adicionais de interação mobile ficam no D3D3. Não foram alterados motores analíticos, PBIP, CSVs, pipeline dbt ou main. Sem merge, deploy ou serviços pagos.
