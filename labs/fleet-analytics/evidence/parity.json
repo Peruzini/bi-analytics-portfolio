@@ -1,0 +1,155 @@
+{
+  "candidateBase": "6e91d4543e992b85a75f53274c3cea7a1881c5da",
+  "modelBlob": "73dedb2758e07e44c5f9ae8345a205419217a266",
+  "referenceBlob": "b695e3ccc33923d28e95f56c9d4f58e74ba2ebc5",
+  "scope": "Funções do motor e testes executados nesta sessão JavaScript; não Node wrapper nem navegador.",
+  "checks": [
+    {
+      "name": "Grão único diário",
+      "pass": true
+    },
+    {
+      "name": "730 datas",
+      "pass": true
+    },
+    {
+      "name": "Oito ativos e dimensão M",
+      "pass": true
+    },
+    {
+      "name": "Horas <= 24",
+      "pass": true
+    },
+    {
+      "name": "Todas as métricas totais B3",
+      "pass": true
+    },
+    {
+      "name": "24 meses B3",
+      "pass": true
+    },
+    {
+      "name": "Oito ativos B3",
+      "pass": true
+    },
+    {
+      "name": "Criticidade B3",
+      "pass": true
+    },
+    {
+      "name": "Componentes somam score",
+      "pass": true
+    },
+    {
+      "name": "Pareto B3",
+      "pass": true
+    },
+    {
+      "name": "Pareto final 100%",
+      "pass": true
+    },
+    {
+      "name": "Empates do Pareto",
+      "pass": true
+    },
+    {
+      "name": "Ranking de produção denso",
+      "pass": true
+    },
+    {
+      "name": "Agregado sem ranking",
+      "pass": true
+    },
+    {
+      "name": "Desvio em décimos conciliado",
+      "pass": true
+    },
+    {
+      "name": "Janeiro",
+      "pass": true
+    },
+    {
+      "name": "Janeiro EQ01 + tipo",
+      "pass": true
+    },
+    {
+      "name": "Sem parada",
+      "pass": true
+    },
+    {
+      "name": "Não corretiva",
+      "pass": true
+    },
+    {
+      "name": "Sem falha e sem perda nulos",
+      "pass": true
+    },
+    {
+      "name": "Contexto vazio",
+      "pass": true
+    },
+    {
+      "name": "Área Norte três ativos",
+      "pass": true
+    },
+    {
+      "name": "Filtro área+tipo",
+      "pass": true
+    },
+    {
+      "name": "Normalização relativa",
+      "pass": true
+    },
+    {
+      "name": "Período anterior fora da base",
+      "pass": true
+    },
+    {
+      "name": "Comparação anterior 28 dias",
+      "pass": true
+    },
+    {
+      "name": "Período invertido",
+      "pass": true
+    },
+    {
+      "name": "Repetição sintética anual explicitada",
+      "pass": true
+    }
+  ],
+  "rows": 5840,
+  "equipment": 8,
+  "metrics": {
+    "registros": 5840,
+    "horas_calendario": 140160,
+    "horas_operacao": 107742,
+    "horas_manutencao": 2034,
+    "horas_corretivas": 1030,
+    "paradas": 406,
+    "falhas_corretivas": 202,
+    "preventivas": 100,
+    "inspecoes": 104,
+    "prod10": 10101782,
+    "meta": 1030760,
+    "litros": 7696960,
+    "combustivel_centavos": 4190496920,
+    "manutencao_centavos": 258948000,
+    "producao_t": 1010178.2,
+    "custo_total_centavos": 4449444920,
+    "disponibilidade": 0.9854880136986301,
+    "utilizacao": 0.7800269319317146,
+    "mtbf": 533.3762376237623,
+    "mttr": 5.099009900990099,
+    "produtividade_t_h": 9.375899834790518,
+    "consumo_l_t": 7.619408140068753,
+    "aderencia": 0.9800324032752532,
+    "custo_t": 44.04613879016594,
+    "desvio_t": -20581.8
+  },
+  "previousPeriod": "Janela imediatamente anterior de mesma duração em dias, diferente de DATEADD mês/ano; retorna nulo se incompleta.",
+  "limits": [
+    "Interface não executada em navegador; Desktop Commander offline",
+    "SVG diagnóstico sem dependências; ECharts e exportação PNG previstos no B2",
+    "Sem implantação GitHub Pages; sem alterações PBIP"
+  ]
+}
