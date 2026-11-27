@@ -207,6 +207,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "Fleet_DimData_AnoMes",
+      "fieldChanges": true,
+      "filterChanges": true
     }
   }
 }

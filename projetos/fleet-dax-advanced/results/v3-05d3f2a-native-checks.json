@@ -1,0 +1,270 @@
+{
+  "candidate": "694cbd98921b4614a6bd7296150384cb0fb747db",
+  "base": "96d8faa",
+  "status": "PASS representative functional acceptance; exhaustive pairwise UI coverage not performed",
+  "native": {
+    "historicalComparisons": 450,
+    "filteredComparisons": 152,
+    "failures": 0,
+    "rawMonthlyEquipmentRows": 192,
+    "scenarios": 8,
+    "syncGroups": 4,
+    "slicers": 16,
+    "interactionRules": 336,
+    "representativeCrossFilterPages": 4,
+    "savedAndReopenedPages": 4,
+    "cacheRestoredWithoutRefresh": true,
+    "savedSyncGroupsMatch": true,
+    "savedInteractionRulesMatch": true,
+    "modelGitBlobIdenticalToBase": true,
+    "desktopProcessesAfter": 0,
+    "newAnalysisServicesProcessesAfter": 0
+  },
+  "tests": {
+    "unittest": 11,
+    "failed": 0
+  },
+  "uiCards": {
+    "cross-executive": [
+      "Produção (t), 105.281,8 cartão",
+      "Disponibilidade, 99,11% cartão",
+      "Custo por tonelada, R$ 46,38 cartão"
+    ],
+    "cross-performance": [
+      "Utilização, 77,74% cartão",
+      "Produtividade (t/h), 7,80 cartão",
+      "Consumo (L/t), 8,26 cartão",
+      "Horas de operação, 13.498,0 cartão"
+    ],
+    "cross-maintenance": [
+      "MTBF (h), 843,63 cartão",
+      "MTTR (h), 3,00 cartão",
+      "Falhas corretivas, 16 cartão",
+      "Horas de manutenção, 156,0 cartão"
+    ],
+    "cross-criticality": [
+      "Maior criticidade, 0,653 cartão",
+      "Disponibilidade, 99,11% cartão",
+      "Alta ou crítica, 1 cartão",
+      "Custo por tonelada, R$ 46,38 cartão"
+    ],
+    "type-executive": [
+      "Produção (t), 456.864,2 cartão",
+      "Disponibilidade, 98,69% cartão",
+      "Custo por tonelada, R$ 45,57 cartão"
+    ],
+    "type-performance": [
+      "Utilização, 77,94% cartão",
+      "Produtividade (t/h), 8,48 cartão",
+      "Consumo (L/t), 7,97 cartão",
+      "Horas de operação, 53.900,0 cartão"
+    ],
+    "type-maintenance": [
+      "MTBF (h), 528,43 cartão",
+      "MTTR (h), 4,76 cartão",
+      "Falhas corretivas, 102 cartão",
+      "Horas de manutenção, 920,0 cartão"
+    ],
+    "type-criticality": [
+      "Maior criticidade, 0,642 cartão",
+      "Disponibilidade, 98,69% cartão",
+      "Alta ou crítica, 2 cartão",
+      "Custo por tonelada, R$ 45,57 cartão"
+    ],
+    "area-executive": [
+      "Produção (t), 345.153,2 cartão",
+      "Disponibilidade, 98,51% cartão",
+      "Custo por tonelada, R$ 45,85 cartão"
+    ],
+    "area-performance": [
+      "Utilização, 77,96% cartão",
+      "Produtividade (t/h), 8,55 cartão",
+      "Consumo (L/t), 7,95 cartão",
+      "Horas de operação, 40.368,0 cartão"
+    ],
+    "area-maintenance": [
+      "MTBF (h), 480,57 cartão",
+      "MTTR (h), 5,19 cartão",
+      "Falhas corretivas, 84 cartão",
+      "Horas de manutenção, 782,0 cartão"
+    ],
+    "area-criticality": [
+      "Maior criticidade, 0,599 cartão",
+      "Disponibilidade, 98,51% cartão",
+      "Alta ou crítica, 2 cartão",
+      "Custo por tonelada, R$ 45,85 cartão"
+    ],
+    "reopened-executive": [
+      "Produção (t), 4.475,7 cartão",
+      "Disponibilidade, 99,19% cartão",
+      "Custo por tonelada, R$ 45,35 cartão"
+    ],
+    "reopened-performance": [
+      "Utilização, 77,51% cartão",
+      "Produtividade (t/h), 7,82 cartão",
+      "Consumo (L/t), 8,11 cartão",
+      "Horas de operação, 572,0 cartão"
+    ],
+    "reopened-maintenance": [
+      "MTBF (h), -- cartão",
+      "MTTR (h), -- cartão",
+      "Falhas corretivas, 0 cartão",
+      "Horas de manutenção, 6,0 cartão"
+    ],
+    "reopened-criticality": [
+      "Maior criticidade, 0,453 cartão",
+      "Disponibilidade, 99,19% cartão",
+      "Alta ou crítica, 0 cartão",
+      "Custo por tonelada, R$ 45,35 cartão"
+    ]
+  },
+  "evidence": [
+    {
+      "name": "baseline",
+      "sha256": "526ac5b80d95cb9083e3b7245b96ce818369847569a3409080363ce2125cc539",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/baseline.png"
+    },
+    {
+      "name": "equipment-selected",
+      "sha256": "2e3b84a4b3c8106ce2b78472a7914aeda204eeb42d0c594c217a660f8d320e50",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/equipment-selected.png"
+    },
+    {
+      "name": "sync-equipment-exec",
+      "sha256": "2e3b84a4b3c8106ce2b78472a7914aeda204eeb42d0c594c217a660f8d320e50",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/sync-equipment-exec.png"
+    },
+    {
+      "name": "saved-combined",
+      "sha256": "a112ccc8d7fe37a8486c450587f277d066ccd31762997f601b640c1a014cc4f8",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/saved-combined.png"
+    },
+    {
+      "name": "reset-criticality",
+      "sha256": "a9badaa567b38598e3f63b172080e29e86a7319b739c00d0a636777f199faaee",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/reset-criticality.png"
+    },
+    {
+      "name": "sync-equipment-performance",
+      "sha256": "3c2d8b3f2f91ef165939e4449bc8bfdff325584961c4f629184e6d8cebf9a65f",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/sync-equipment-performance.png"
+    },
+    {
+      "name": "sync-equipment-maintenance",
+      "sha256": "73e3340ab7bcd71f9c6c2a9c60f073662d82d0aafb825f706d9e41228be0082a",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/sync-equipment-maintenance.png"
+    },
+    {
+      "name": "sync-equipment-criticality",
+      "sha256": "f1481e7b7d448cd854033b242c3e9ab5841aaf10d66513d87ad6bd685e0db8e3",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/sync-equipment-criticality.png"
+    },
+    {
+      "name": "combined-executive",
+      "sha256": "0597744ff9cc769fb891f1ec3dbdd8de0d730d81058e8a5a0b68b46c8ca6efb5",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/combined-executive.png"
+    },
+    {
+      "name": "combined-performance",
+      "sha256": "8be6c09f3e05fb338154b5e4501ca10e2a2a47b16e8d277d8f6ebc860765e63f",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/combined-performance.png"
+    },
+    {
+      "name": "combined-maintenance",
+      "sha256": "b81069a513f10dd379477eeaf5a6a9222fd2d07746980204c6fa31bd0ab02145",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/combined-maintenance.png"
+    },
+    {
+      "name": "combined-criticality",
+      "sha256": "868e7062e8d4a95324f5bdeda4c68141d590082f81f0240a5543aa9f2524ee97",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/combined-criticality.png"
+    },
+    {
+      "name": "reopened-executive",
+      "sha256": "0eb7317c34152576d4182377b8b86598640849eb46b05ded7b59607b2672b9e6",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/reopened-executive.png"
+    },
+    {
+      "name": "reopened-performance",
+      "sha256": "00b30b249f71c7c31cb44022fd11277fd2bf403bb9f5c4dcffa4c11e94b92ef3",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/reopened-performance.png"
+    },
+    {
+      "name": "reopened-maintenance",
+      "sha256": "44110d386147ca85b4f236dde68582b067b310bc7ef93df0a28921aa97c024bb",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/reopened-maintenance.png"
+    },
+    {
+      "name": "reopened-criticality",
+      "sha256": "dacbd719960a1a5d1bc2c53d02bd9c7e2c199ba6458da73bc1a6b6870c0505b4",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/reopened-criticality.png"
+    },
+    {
+      "name": "type-executive",
+      "sha256": "26e42051f352b4986316a97cf40ea1b83a69f96e24bac55a2049ddddd49babe3",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/type-executive.png"
+    },
+    {
+      "name": "type-performance",
+      "sha256": "c3e7827f854ea7de73082f2eafe7fca6556a3207e77331910f92a66b82b6aab2",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/type-performance.png"
+    },
+    {
+      "name": "type-maintenance",
+      "sha256": "9e0015bb7ebdca0e7444c8905c012c1ce004a7874205d9c925ae50515f301d34",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/type-maintenance.png"
+    },
+    {
+      "name": "type-criticality",
+      "sha256": "1007b2d92a3b3aac665de0936cad0db536c2fb418fd6a5c8566facd973b52c46",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/type-criticality.png"
+    },
+    {
+      "name": "area-executive",
+      "sha256": "100f7bbae1fd9fab657be1be555872caae56f73d9fbea1c3c53a0c73a1526849",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/area-executive.png"
+    },
+    {
+      "name": "area-performance",
+      "sha256": "7f154fd5a95b3cb49c90e53034f237b6260d0a8c56a38497fe1582cf8e0dbbe1",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/area-performance.png"
+    },
+    {
+      "name": "area-maintenance",
+      "sha256": "379ea7a5289594abce1607848e8fdcaa3a19ae73ee66b1a10bc7320d42bccd5d",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/area-maintenance.png"
+    },
+    {
+      "name": "area-criticality",
+      "sha256": "c4c08e12df3a81617ee6bbce14e84f035b7e845fca21a6df1070de31f6655f8f",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/area-criticality.png"
+    },
+    {
+      "name": "cross-executive",
+      "sha256": "a45729456f40fca37ab943dd8345c1ba95ec7b2c2ac757ca394af5086bbf46b1",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/cross-executive.png"
+    },
+    {
+      "name": "cross-performance",
+      "sha256": "f64b6e98e75cdb6c9563369fb4559698e1a9231df6848fd0d73670a499d643cc",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/cross-performance.png"
+    },
+    {
+      "name": "cross-maintenance",
+      "sha256": "f5fdd5239ca44cd5cae924e330d7fd35702cb9f36280d640963a8f7d97a43dbc",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/cross-maintenance.png"
+    },
+    {
+      "name": "cross-criticality",
+      "sha256": "407b61d305d4e57656df8ec89cc15d1152bd3ece4ea96889c8ff250ec98a0ea4",
+      "localPath": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f2a-inspection/cross-criticality.png"
+    }
+  ],
+  "limitations": [
+    "Multi-selection and empty context tested via DAX, not UI.",
+    "336 explicit interactions checked statically and after save; representative graph selections tested on each page, not every pair.",
+    "Intervention-type chart intentionally isolated to avoid distorting operation/maintenance ratios; NoFilter rule verified statically, not clicked in UI.",
+    "Native save converted disposable model.bim to TMDL and created local cache; original source candidate preserved, not committed.",
+    "Initial UI automation targeted incorrect element and physical cursor; corrected via accessible ListItem InvokePattern. Normal closure did not complete; terminated only own disposable validation processes after save. Mobile/accessibility remain D3F2C."
+  ]
+}

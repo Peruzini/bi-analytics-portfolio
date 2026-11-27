@@ -207,6 +207,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "Fleet_DimEquipamento_Tipo",
+      "fieldChanges": true,
+      "filterChanges": true
     }
   }
 }
