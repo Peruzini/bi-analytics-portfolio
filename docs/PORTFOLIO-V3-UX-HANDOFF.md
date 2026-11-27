@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 27/11/2026 | Estado: UX-03A1 piloto desktop concluído; aceite visual pendente antes de UX-03A2 | Documento de continuidade operacional
+Atualização: 27/11/2026 | Estado: UX-03A1-R1 refinamento visual implementado; avaliação ao vivo pendente, Power BI aberto por solicitação expressa | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -108,3 +108,7 @@ D3F2C-R1 fica incorporado aos gates UX-05/06; não declarar concluído. A reorde
 **Próximo proposto: PORTFOLIO-V3-UX-03A2 — Expansão do redesign às três páginas Fleet restantes (após aceite visual do piloto).**
 
 Ler [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md) e [PR #13 — piloto Fleet](https://github.com/Peruzini/bi-analytics-portfolio/pull/13). Piloto final 9bde2c9, branch portfolio/v3-ux-03a1-fleet-pilot; base mobile Fleet f7bd9f8 agora preservada no remoto portfolio/v3-05d3f2c-fleet-mobile. E-commerce mobile d3e8cb2 segue local e não foi alterado. Evidências: [documentação](https://github.com/Peruzini/bi-analytics-portfolio/blob/portfolio/v3-ux-03a1-fleet-pilot/projetos/fleet-dax-advanced/docs/V3-UX-03A1-FLEET-PILOT.md), [captura nativa recortada](https://github.com/Peruzini/bi-analytics-portfolio/blob/portfolio/v3-ux-03a1-fleet-pilot/projetos/fleet-dax-advanced/results/v3-ux-03a1-pilot.png), [validações](https://github.com/Peruzini/bi-analytics-portfolio/blob/portfolio/v3-ux-03a1-fleet-pilot/projetos/fleet-dax-advanced/results/v3-ux-03a1-native-checks.json). 13/13 testes; 602/602 comparações nativas; filtro, reset e navegação para Performance verificados. 51 medidas, consultas existentes e demais páginas preservadas. Aplicar mesmo sistema somente após aceite visual; tema global, mobile, resumo dinâmico, acessibilidade e persistência ampla pendentes. Uma instância Power BI por vez, zero processos residuais, sem Worker, sem merge ou gastos.
+
+## Atualização UX-03A1-R1 — revisão visual
+
+[PR #14](https://github.com/Peruzini/bi-analytics-portfolio/pull/14), branch `portfolio/v3-ux-03a1-r1-fleet-polish`, commit `930b281`. A pedido do usuário, manter foco exclusivo na qualidade visual do piloto e não fechar a instância aberta para avaliação (PID 24148 no momento da entrega; confirmar estado antes de qualquer nova ação). Esta é uma exceção à regra anterior de fechamento. Não abrir instância adicional. 13/13 testes e 225/225 regressão; ações e modelo preservados. Não expandir às outras telas sem aprovação visual. [Captura real](https://github.com/Peruzini/bi-analytics-portfolio/blob/portfolio/v3-ux-03a1-r1-fleet-polish/projetos/fleet-dax-advanced/results/v3-ux-03a1-r1-pilot.png). Próximo: continuar refinando o piloto conforme feedback ao vivo.
