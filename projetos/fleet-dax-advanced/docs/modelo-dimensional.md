@@ -1,4 +1,6 @@
-# Modelo dimensional — Fleet Analytics
+# Modelo dimensional — Fleet Analytics (catálogo técnico legado)
+
+> Este documento descreve a arquitetura proposta do catálogo DAX/gerador legado, não o PBIP atual. Para o contrato canônico do PBIP, consulte [V3-05B1](V3-05B1-REGRAS-PBIP.md).
 
 ## Grão das tabelas
 
