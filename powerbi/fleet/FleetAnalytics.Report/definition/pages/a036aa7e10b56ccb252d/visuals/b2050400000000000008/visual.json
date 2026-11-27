@@ -73,6 +73,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'DADOS SINTÉTICOS · Score relativo: 35% indisponibilidade, 25% custo/t, 20% falhas, 20% manutenção | Não é risco absoluto'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

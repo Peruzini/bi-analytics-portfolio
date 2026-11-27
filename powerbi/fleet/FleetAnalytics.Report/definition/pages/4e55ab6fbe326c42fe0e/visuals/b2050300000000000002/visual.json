@@ -73,6 +73,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Quais ativos concentram as perdas de manutenção e como se comporta a confiabilidade?'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

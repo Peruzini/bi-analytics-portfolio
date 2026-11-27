@@ -73,6 +73,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Quais equipamentos apresentam a pior combinação relativa de custo, falhas e indisponibilidade?'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

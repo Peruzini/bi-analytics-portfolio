@@ -1,0 +1,41 @@
+{
+  "pages": [
+    {
+      "page": "Performance da Frota",
+      "visuals": 15,
+      "height": 2296,
+      "widthLimit": 323,
+      "altText": 15,
+      "mobileFiles": 15
+    },
+    {
+      "page": "Manutenção & Pareto",
+      "visuals": 16,
+      "height": 2584,
+      "widthLimit": 323,
+      "altText": 16,
+      "mobileFiles": 16
+    },
+    {
+      "page": "Visão Executiva",
+      "visuals": 14,
+      "height": 2034,
+      "widthLimit": 323,
+      "altText": 14,
+      "mobileFiles": 14
+    },
+    {
+      "page": "Criticidade",
+      "visuals": 14,
+      "height": 1996,
+      "widthLimit": 323,
+      "altText": 14,
+      "mobileFiles": 14
+    }
+  ],
+  "total": 59,
+  "static": "PASS",
+  "native": "PENDING",
+  "physicalPhone": "NOT TESTED",
+  "note": "Full-width sequential layout; wide tables and matrix may require horizontal scrolling. No native rendering or screen-reader claim before verification."
+}

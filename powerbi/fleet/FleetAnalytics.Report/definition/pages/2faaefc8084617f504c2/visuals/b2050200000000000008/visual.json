@@ -73,6 +73,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'DADOS SINTÉTICOS · Utilização = horas operadas / horas disponíveis | Produtividade = toneladas / horas operadas'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

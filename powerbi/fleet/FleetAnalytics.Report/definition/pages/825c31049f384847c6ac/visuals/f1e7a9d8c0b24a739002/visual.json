@@ -73,6 +73,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Quanto produzimos, qual a aderência à meta e onde priorizar atenção?'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

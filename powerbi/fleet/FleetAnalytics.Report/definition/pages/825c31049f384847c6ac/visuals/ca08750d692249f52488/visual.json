@@ -200,7 +200,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Filtrar tipo nesta página.'"
+                  "Value": "'Filtrar tipo nas quatro páginas.'"
                 }
               }
             }

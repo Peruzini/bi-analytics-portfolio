@@ -116,6 +116,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'02 / 04    FLEET ANALYTICS  |  PERFORMANCE DA FROTA'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

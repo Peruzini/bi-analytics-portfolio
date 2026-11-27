@@ -73,6 +73,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'DADOS SINTÉTICOS · 2025–2026 | Custo = combustível + manutenção | Criticidade relativa à seleção'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

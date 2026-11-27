@@ -116,6 +116,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'04 / 04    FLEET ANALYTICS  |  CRITICIDADE & PRIORIZAÇÃO'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

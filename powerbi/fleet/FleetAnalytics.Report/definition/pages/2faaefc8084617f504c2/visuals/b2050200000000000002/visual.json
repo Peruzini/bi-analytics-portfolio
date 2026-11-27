@@ -73,6 +73,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Quais equipamentos entregam mais produção por hora e utilizam melhor o tempo disponível?'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

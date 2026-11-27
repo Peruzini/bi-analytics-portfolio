@@ -116,6 +116,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'03 / 04    FLEET ANALYTICS  |  MANUTENÇÃO & CONFIABILIDADE'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }

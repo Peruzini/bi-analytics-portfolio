@@ -200,7 +200,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Filtrar equipamento nesta página.'"
+                  "Value": "'Filtrar equipamento nas quatro páginas.'"
                 }
               }
             }

@@ -73,6 +73,19 @@
             }
           }
         }
+      ],
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'DADOS SINTÉTICOS · Falha = evento corretivo (proxy) | MTBF/MTTR vazios se zero falhas | Empates Pareto agrupados'"
+                }
+              }
+            }
+          }
+        }
       ]
     }
   }
