@@ -7,7 +7,7 @@
     "width": 152,
     "height": 66,
     "z": 11000,
-    "tabOrder": 11000
+    "tabOrder": 14000
   },
   "visual": {
     "visualType": "actionButton",
@@ -31,7 +31,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FFFFFF'"
+                      "Value": "'#21586A'"
                     }
                   }
                 }
@@ -69,7 +69,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#172B3A'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }

@@ -3,11 +3,11 @@
   "name": "b2050100000000000003",
   "position": {
     "x": 216,
-    "y": 190,
-    "width": 240,
-    "height": 148,
+    "y": 218,
+    "width": 252,
+    "height": 140,
     "z": 12000,
-    "tabOrder": 12000
+    "tabOrder": 16000
   },
   "visual": {
     "visualType": "gauge",
@@ -193,7 +193,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },

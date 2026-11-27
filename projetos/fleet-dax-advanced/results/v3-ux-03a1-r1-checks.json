@@ -1,0 +1,20 @@
+{
+  "status": "Native desktop polish reviewed; user design approval pending",
+  "candidate": "6bb8b6d",
+  "base": "9bde2c9",
+  "visuals": 29,
+  "existingQueriesActionsSyncPreserved": 21,
+  "interactionRules": 77,
+  "regressionComparisons": 225,
+  "tests": 13,
+  "nativeCaptureSha256": "304199831431b70cc1b619ba74d7a3285fbbe91aa5a80d026ddaff6f20a671f3",
+  "reviewWindowLeftOpen": true,
+  "reviewPid": 24148,
+  "limitations": [
+    "One pilot page only; mobile and full accessibility not tested.",
+    "Canvas 1440x1113, taller than previous pilot; further compactness subject to design review.",
+    "Small scrollbar indicator remains on source context text in the editor preview.",
+    "Pane collapse not confirmed.",
+    "Native actions unchanged; previous representative test reused rather than repeated."
+  ]
+}

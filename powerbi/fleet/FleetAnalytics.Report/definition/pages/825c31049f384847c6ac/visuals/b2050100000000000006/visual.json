@@ -3,11 +3,11 @@
   "name": "b2050100000000000006",
   "position": {
     "x": 216,
-    "y": 962,
+    "y": 1071,
     "width": 1200,
-    "height": 38,
+    "height": 30,
     "z": 20000,
-    "tabOrder": 20000
+    "tabOrder": 26000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "DADOS SINTÉTICOS · 2025–2026 | Custo = combustível + manutenção | Criticidade relativa à seleção",
+                    "value": "Dados sintéticos · Custo = combustível + manutenção · Consulte o contexto dos filtros.",
                     "textStyle": {
                       "fontFamily": "Segoe UI",
                       "fontSize": "12px",
@@ -80,7 +80,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'DADOS SINTÉTICOS · 2025–2026 | Custo = combustível + manutenção | Criticidade relativa à seleção'"
+                  "Value": "'Dados sintéticos · Custo = combustível + manutenção · Consulte o contexto dos filtros.'"
                 }
               }
             }
