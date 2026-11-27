@@ -1,0 +1,293 @@
+{
+  "baseCommit": "63ec0bed15d1690f00936cc9d5552dcd2d7f026c",
+  "scope": "Execução das funções JS publicadas nesta sessão; renderização de strings SVG/HTML, sem navegador DOM ou rasterização PNG.",
+  "parity": [
+    {
+      "name": "Grão único diário",
+      "pass": true
+    },
+    {
+      "name": "730 datas",
+      "pass": true
+    },
+    {
+      "name": "Oito ativos e dimensão M",
+      "pass": true
+    },
+    {
+      "name": "Horas <= 24",
+      "pass": true
+    },
+    {
+      "name": "Todas as métricas totais B3",
+      "pass": true
+    },
+    {
+      "name": "24 meses B3",
+      "pass": true
+    },
+    {
+      "name": "Oito ativos B3",
+      "pass": true
+    },
+    {
+      "name": "Criticidade B3",
+      "pass": true
+    },
+    {
+      "name": "Componentes somam score",
+      "pass": true
+    },
+    {
+      "name": "Pareto B3",
+      "pass": true
+    },
+    {
+      "name": "Pareto final 100%",
+      "pass": true
+    },
+    {
+      "name": "Empates do Pareto",
+      "pass": true
+    },
+    {
+      "name": "Ranking de produção denso",
+      "pass": true
+    },
+    {
+      "name": "Agregado sem ranking",
+      "pass": true
+    },
+    {
+      "name": "Desvio em décimos conciliado",
+      "pass": true
+    },
+    {
+      "name": "Janeiro",
+      "pass": true
+    },
+    {
+      "name": "Janeiro EQ01 + tipo",
+      "pass": true
+    },
+    {
+      "name": "Sem parada",
+      "pass": true
+    },
+    {
+      "name": "Não corretiva",
+      "pass": true
+    },
+    {
+      "name": "Sem falha e sem perda nulos",
+      "pass": true
+    },
+    {
+      "name": "Contexto vazio",
+      "pass": true
+    },
+    {
+      "name": "Área Norte três ativos",
+      "pass": true
+    },
+    {
+      "name": "Filtro área+tipo",
+      "pass": true
+    },
+    {
+      "name": "Normalização relativa",
+      "pass": true
+    },
+    {
+      "name": "Período anterior fora da base",
+      "pass": true
+    },
+    {
+      "name": "Comparação anterior 28 dias",
+      "pass": true
+    },
+    {
+      "name": "Período invertido",
+      "pass": true
+    },
+    {
+      "name": "Repetição sintética anual explicitada",
+      "pass": true
+    }
+  ],
+  "dashboard": [
+    {
+      "name": "11 gráficos: inventário 2/3/4/2",
+      "pass": true
+    },
+    {
+      "name": "Desvios somam resultado",
+      "pass": true
+    },
+    {
+      "name": "Concentração 80% com empates",
+      "pass": true
+    },
+    {
+      "name": "Intervenções 406",
+      "pass": true
+    },
+    {
+      "name": "8 equipamentos com dimensão",
+      "pass": true
+    },
+    {
+      "name": "Score decomposto",
+      "pass": true
+    },
+    {
+      "name": "Filtro por área/tipo",
+      "pass": true
+    },
+    {
+      "name": "Filtro de mês e ativo",
+      "pass": true
+    },
+    {
+      "name": "Sem parada",
+      "pass": true
+    },
+    {
+      "name": "Comparação anterior indisponível",
+      "pass": true
+    },
+    {
+      "name": "Comparação anterior disponível",
+      "pass": true
+    },
+    {
+      "name": "Render executiva cenário 0",
+      "pass": true
+    },
+    {
+      "name": "Render performance cenário 0",
+      "pass": true
+    },
+    {
+      "name": "Render manutencao cenário 0",
+      "pass": true
+    },
+    {
+      "name": "Render criticidade cenário 0",
+      "pass": true
+    },
+    {
+      "name": "Render executiva cenário 1",
+      "pass": true
+    },
+    {
+      "name": "Render performance cenário 1",
+      "pass": true
+    },
+    {
+      "name": "Render manutencao cenário 1",
+      "pass": true
+    },
+    {
+      "name": "Render criticidade cenário 1",
+      "pass": true
+    },
+    {
+      "name": "Render executiva cenário 2",
+      "pass": true
+    },
+    {
+      "name": "Render performance cenário 2",
+      "pass": true
+    },
+    {
+      "name": "Render manutencao cenário 2",
+      "pass": true
+    },
+    {
+      "name": "Render criticidade cenário 2",
+      "pass": true
+    },
+    {
+      "name": "Render executiva cenário 3",
+      "pass": true
+    },
+    {
+      "name": "Render performance cenário 3",
+      "pass": true
+    },
+    {
+      "name": "Render manutencao cenário 3",
+      "pass": true
+    },
+    {
+      "name": "Render criticidade cenário 3",
+      "pass": true
+    },
+    {
+      "name": "Render executiva cenário 4",
+      "pass": true
+    },
+    {
+      "name": "Render performance cenário 4",
+      "pass": true
+    },
+    {
+      "name": "Render manutencao cenário 4",
+      "pass": true
+    },
+    {
+      "name": "Render criticidade cenário 4",
+      "pass": true
+    },
+    {
+      "name": "Render executiva cenário 5",
+      "pass": true
+    },
+    {
+      "name": "Render performance cenário 5",
+      "pass": true
+    },
+    {
+      "name": "Render manutencao cenário 5",
+      "pass": true
+    },
+    {
+      "name": "Render criticidade cenário 5",
+      "pass": true
+    }
+  ],
+  "pages": [
+    {
+      "id": "executiva",
+      "name": "Visão executiva",
+      "question": "Quanto produzimos frente à meta, e quais ativos explicam o desvio?",
+      "charts": 2
+    },
+    {
+      "id": "performance",
+      "name": "Performance da frota",
+      "question": "Onde se concentram produtividade, utilização e custo por tonelada?",
+      "charts": 3
+    },
+    {
+      "id": "manutencao",
+      "name": "Manutenção e confiabilidade",
+      "question": "Quais ativos concentram as perdas e como evolui a confiabilidade?",
+      "charts": 4
+    },
+    {
+      "id": "criticidade",
+      "name": "Criticidade e priorização",
+      "question": "Quais equipamentos priorizar e quais componentes explicam o score?",
+      "charts": 2
+    }
+  ],
+  "scenarios": 6,
+  "dependencies": "Nenhuma; SVG nativo, ECharts não incorporado",
+  "limits": [
+    "Navegador, exportação PNG e interação teclado/mouse pendentes de homologação",
+    "Desktop Commander offline",
+    "Não há deploy nem alterações PBIP"
+  ]
+}

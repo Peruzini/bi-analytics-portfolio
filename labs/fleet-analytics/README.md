@@ -1,14 +1,18 @@
-# Fleet Analytics — laboratório HTML (V3-05D3B1)
+# Fleet Analytics — Decision Center (V3-05D3B2)
 
-Base funcional de um futuro laboratório de oito páginas. Não é a versão final do relatório. Modelo reproduzido do candidato Power BI 6e91d4543e992b85a75f53274c3cea7a1881c5da, a partir das regras M/DAX e da dimensão de equipamentos. 730 dias, 8 equipamentos, 5.840 registros data/equipamento. Custos em centavos e produção em décimos, arredondamento decimal half-even; nulo para divisão por zero e seleção vazia. Criticidade e Pareto relativos ao contexto filtrado, com empates; ranking agregado não definido. Comparação anterior usa janela imediatamente anterior de duração igual em dias (não DATEADD); se não couber na base, retorna nulo. A base sintética repete 2025/26.
+Quatro páginas interativas sobre 5.840 registros sintéticos (730 dias × 8 ativos), com as regras M/DAX reproduzidas no motor do B1. 11 gráficos: produção/meta e desvios; dispersão produtividade/custo, utilização e produtividade mensal; Pareto combinado, MTBF/MTTR mensais e intervenções; composição do score e contexto indisponibilidade/custo. Filtros compartilhados por período, tipo, área e equipamento. Seleção de ativo em gráficos filtráveis via mouse/Enter/Espaço. Tabelas acessíveis com alternativas a cada gráfico; exportação CSV dos indicadores por ativo e PNG 2× por gráfico. Notas e insights derivados da seleção, não métricas inventadas.
 
-## Executar localmente
-Na raiz do repositório:
+## Executar
+Na raiz do clone:
 ```bash
 node labs/fleet-analytics/tests/parity.mjs
+node labs/fleet-analytics/tests/dashboard.mjs
 python -m http.server 8080 --bind 127.0.0.1 --directory labs/fleet-analytics
-```
-Abrir http://127.0.0.1:8080. Não requer npm nem serviço externo. Navegador moderno com módulos ES. Filtros inclusivos por data, tipo, área e equipamento, tabela, gráfico SVG diagnóstico e exportação de resumo CSV. CSS com tokens de identidade visual, layout responsivo, foco visível, navegação semântica e alternativa tabular. Contraste e responsividade ainda não homologados em navegador.
+``
+Abrir http://127.0.0.1:8080. Sem npm, CDN ou API externa. Optou-se por SVG nativo para reprodução offline e exportação; ECharts permanece uma alternativa futura, não foi incorporado. Os gráficos em mobile têm rolagem horizontal dentro do painel para preservar rótulos.
+
+## Contrato
+Criticidade relativa ao conjunto selecionado, não risco absoluto. Empates de Pareto agrupados. MTBF/MTTR nulos quando sem falhas. Comparação anterior de janela igual em dias, não DATEADD. Linhas de referência de dispersão são agregados ponderados, não metas; comparar por tipo de equipamento. Base sintética repete 2025/2026. Exportação e filtros requerem navegador moderno.
 
 ## Evidências
-28/28 verificações executadas sobre as mesmas funções publicadas em sessão JavaScript, comparando referência B3: totais, todos os meses, oito ativos, criticidade, Pareto e casos especiais. Ver [evidência](evidence/parity.json). Wrapper Node e interface ainda não executados em clone/navegador; Desktop Commander offline. Sem edição PBIP, sem merge ou deploy. A página é diagnóstica, não homologação das quatro telas. ECharts com dependência versionada e exportação PNG ficam para B2, evitando CDN e dependências desnecessárias nesta fundação. Design system e motor reaproveitáveis em módulos; para E-commerce, implementar motor próprio de grãos e filtros sobre o mesmo CSS/contrato visual.
+28 verificações B1 + 35 verificações B2 executadas em JavaScript nesta sessão. Ver [resultado](evidence/dashboard.json). Testes de geração HTML/SVG em seis cenários; não equivalem a execução DOM, teste de cliques, acessibilidade, screenshots ou exportação efetiva. Desktop Commander offline; homologação browser no D3D. Nenhum merge, deploy ou modificação PBIP.

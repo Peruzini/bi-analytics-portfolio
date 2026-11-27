@@ -1,0 +1,736 @@
+{
+  "lab": "fleet-analytics",
+  "browser": "158.0.8127.37",
+  "checks": [
+    {
+      "name": "1440x900/executiva/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/executiva/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/executiva/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/executiva/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/executiva/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440x900/executiva/PNG/production",
+      "pass": true,
+      "detail": {
+        "bytes": 60395,
+        "dims": [
+          1440,
+          600
+        ]
+      }
+    },
+    {
+      "name": "1440x900/executiva/PNG/deviation",
+      "pass": true,
+      "detail": {
+        "bytes": 60511,
+        "dims": [
+          1440,
+          644
+        ]
+      }
+    },
+    {
+      "name": "1440x900/executiva/CSV",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/executiva/keyboard filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/executiva/reset",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/executiva/pointer filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/executiva/filter persistence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/executiva/empty context",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440x900/performance/PNG/efficiency",
+      "pass": true,
+      "detail": {
+        "bytes": 64656,
+        "dims": [
+          1440,
+          660
+        ]
+      }
+    },
+    {
+      "name": "1440x900/performance/PNG/utilization",
+      "pass": true,
+      "detail": {
+        "bytes": 64593,
+        "dims": [
+          1440,
+          644
+        ]
+      }
+    },
+    {
+      "name": "1440x900/performance/PNG/productivity",
+      "pass": true,
+      "detail": {
+        "bytes": 43227,
+        "dims": [
+          1440,
+          600
+        ]
+      }
+    },
+    {
+      "name": "1440x900/performance/CSV",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/keyboard filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/reset",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/pointer filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/filter persistence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/performance/empty context",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440x900/manutencao/PNG/pareto",
+      "pass": true,
+      "detail": {
+        "bytes": 59992,
+        "dims": [
+          1440,
+          640
+        ]
+      }
+    },
+    {
+      "name": "1440x900/manutencao/PNG/mtbf",
+      "pass": true,
+      "detail": {
+        "bytes": 56886,
+        "dims": [
+          1440,
+          600
+        ]
+      }
+    },
+    {
+      "name": "1440x900/manutencao/PNG/mttr",
+      "pass": true,
+      "detail": {
+        "bytes": 59768,
+        "dims": [
+          1440,
+          600
+        ]
+      }
+    },
+    {
+      "name": "1440x900/manutencao/PNG/interventions",
+      "pass": true,
+      "detail": {
+        "bytes": 26415,
+        "dims": [
+          1440,
+          324
+        ]
+      }
+    },
+    {
+      "name": "1440x900/manutencao/CSV",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/keyboard filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/reset",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/pointer filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/filter persistence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/manutencao/empty context",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1440x900/criticidade/PNG/components",
+      "pass": true,
+      "detail": {
+        "bytes": 56879,
+        "dims": [
+          1440,
+          664
+        ]
+      }
+    },
+    {
+      "name": "1440x900/criticidade/PNG/risk-context",
+      "pass": true,
+      "detail": {
+        "bytes": 65915,
+        "dims": [
+          1440,
+          660
+        ]
+      }
+    },
+    {
+      "name": "1440x900/criticidade/CSV",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/keyboard filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/reset",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/pointer filter",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/filter persistence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/criticidade/empty context",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1440x900/console",
+      "pass": false,
+      "detail": [
+        "Failed to load resource: the server responded with a status of 404 (File not found)"
+      ]
+    },
+    {
+      "name": "1024x768/executiva/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1024x768/performance/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1024x768/manutencao/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1024x768/criticidade/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "1024x768/console",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390x844/executiva/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390x844/performance/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390x844/manutencao/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390x844/criticidade/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "390x844/console",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "320x720/executiva/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "320x720/performance/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "320x720/manutencao/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "320x720/criticidade/KPIs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/charts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/body width",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/valid SVG",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/text in SVG",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "320x720/console",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "1440x900-executiva.png",
+      "sha256": "48dbd36e5abfa23271acdd33f4b39ba2461128aafb728541f20f86df3672a814"
+    },
+    {
+      "file": "1440x900-performance.png",
+      "sha256": "5c2fd59ea46de4fbea95235ad47a7b9c9eb89fc7a9d1689bd3328073f7aa55a2"
+    },
+    {
+      "file": "1440x900-manutencao.png",
+      "sha256": "32064b4551d5df592a173f2ae491b75d33d348458b06e78aecaeddd5c7d01c71"
+    },
+    {
+      "file": "1440x900-criticidade.png",
+      "sha256": "8554623634ff84f1d2bf890cd482f7a80bab787c0557288d03240f148179a20d"
+    },
+    {
+      "file": "1024x768-executiva.png",
+      "sha256": "eb9cd6e2194a05d7f74f2ea0283c97aed206d3e6d92ce6a3e05345db17e64e2e"
+    },
+    {
+      "file": "1024x768-performance.png",
+      "sha256": "f69fc850c09d4b537578237bfb73e552fbf45b2a4c5026d7b860d03d6792f2d0"
+    },
+    {
+      "file": "1024x768-manutencao.png",
+      "sha256": "0e6271c4c88a5fcabd1f689fe06f65b5ee2df709e834bd2828ede80439b97f95"
+    },
+    {
+      "file": "1024x768-criticidade.png",
+      "sha256": "877523705976edb4fe20efab11208ea4eb87a50868a36dd12dff17beaccfeb3d"
+    },
+    {
+      "file": "390x844-executiva.png",
+      "sha256": "15423324cb23fc470cfdc7cf7512513254f6f339a0439c5cde2d06e60214cc91"
+    },
+    {
+      "file": "390x844-performance.png",
+      "sha256": "2cec664b8fba6f22970b442cba57e264847b18ffd3120f04e9d0da697b1a9a2a"
+    },
+    {
+      "file": "390x844-manutencao.png",
+      "sha256": "79fa561790118e4101ca9797c349530ae54fe042b2c8b0bb9dcdda58bf7a88f6"
+    },
+    {
+      "file": "390x844-criticidade.png",
+      "sha256": "fc5940f53883de0aa354a21328bb1f957398f2e8357f041fd72b20c41b7449e9"
+    },
+    {
+      "file": "320x720-executiva.png",
+      "sha256": "c3b654f88825267837e9f329ea5f615a69863b95e5f1290d3b8ab6cb2ef0d687"
+    },
+    {
+      "file": "320x720-performance.png",
+      "sha256": "841d13642e3b5ed196a34ea0112ab84c99550fff00597ee2efdc5f8fd8350e6e"
+    },
+    {
+      "file": "320x720-manutencao.png",
+      "sha256": "22cfb76600ddada11c29badd032d5f83fe71021742c130c896b9dfa4f702f941"
+    },
+    {
+      "file": "320x720-criticidade.png",
+      "sha256": "ccf232da984d9a83c2197bb6e2526a89537cac3fd9a819f8cdc6a587290d2c75"
+    }
+  ],
+  "pass": false
+}
