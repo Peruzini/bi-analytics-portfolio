@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 27/11/2026 | Estado: transição para UX-01 | Documento de continuidade operacional
+Atualização: 27/11/2026 | Estado: UX-01 concluído; próximo UX-02 | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -67,8 +67,8 @@ Investigar: navegação persistente e estado ativo, filtros compactos com seleç
 
 | Bloco | Entrega e gate | Estado |
 |---|---|---|
-| UX-01 | Pesquisa aprofundada de referências BI/UX/UI; benchmark comparativo, princípios aplicáveis ao Power BI, diagnóstico dos oito dashboards e recomendações priorizadas | PRÓXIMO |
-| UX-02 | Design System: tokens, paleta, contraste, grid, tipografia, cartões, filtros, navegação, tabelas, gráficos, estados e especificação mobile; aprovar direção antes de implementar | Pendente |
+| UX-01 | Pesquisa aprofundada de referências BI/UX/UI; benchmark comparativo, princípios aplicáveis ao Power BI, diagnóstico dos oito dashboards e recomendações priorizadas | PASS pesquisa documental |
+| UX-02 | Design System: tokens, paleta, contraste, grid, tipografia, cartões, filtros, navegação, tabelas, gráficos, estados e especificação mobile; aprovar direção antes de implementar | PRÓXIMO |
 | UX-03A | Redesign Fleet: prototipar uma página, validar direção, transpor para quatro páginas e preservar medidas e filtros | Pendente |
 | UX-03B | Redesign E-commerce: mesma estratégia, adequada às tarefas comerciais | Pendente |
 | UX-04 | Navegação e interação avançadas, limpeza de filtros, tooltips e drill-through onde fizerem sentido; testar comportamento e persistência | Pendente |
@@ -104,6 +104,6 @@ D3F2C-R1 fica incorporado aos gates UX-05/06; não declarar concluído. A reorde
 
 ## 8. Comando de continuidade
 
-**Próximo: PORTFOLIO-V3-UX-01 — Pesquisa aprofundada de UX/UI, Design Systems e referências internacionais de dashboards profissionais de Business Intelligence.**
+**Próximo: PORTFOLIO-V3-UX-02 — Design System e arquitetura de informação do portfólio.**
 
-Ler este handoff antes de executar. Produzir benchmark, diagnóstico por página, matriz de prioridades e recomendações factíveis em Power BI nativo. Não iniciar redesign nesta etapa. Manter o fluxo sem Worker, sem merge automático e sem gastos. Nenhum Power BI precisa ser aberto para a pesquisa inicial se as evidências existentes forem suficientes.
+Ler este handoff antes de executar. Ler [benchmark UX-01](PORTFOLIO-V3-UX-01-BENCHMARK.md), já concluído. Produzir tokens, componentes, wireframes desktop/mobile, variantes Fleet/E-commerce e critérios de aceite. Aprovar direção antes de alterar dashboards. Manter o fluxo sem Worker, sem merge automático e sem gastos. Não abrir Power BI para a especificação inicial se as evidências existentes forem suficientes.
