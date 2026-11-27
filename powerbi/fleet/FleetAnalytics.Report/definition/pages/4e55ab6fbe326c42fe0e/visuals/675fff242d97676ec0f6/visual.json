@@ -172,7 +172,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pareto — horas e % acumulado (referência 80%)'"
+                  "Value": "'Pareto — horas e participação acumulada'"
                 }
               }
             },
@@ -223,7 +223,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Pareto — horas e % acumulado (referência 80%). Valores conforme os filtros.'"
+                  "Value": "'Pareto de manutenção; 80% é referência de priorização, não meta.'"
                 }
               }
             }
@@ -233,10 +233,30 @@
     },
     "drillFilterOtherVisuals": true,
     "objects": {
-      "y2Axis": [
+      "categoryAxis": [
         {
           "properties": {
-            "show": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "secShow": {
               "expr": {
                 "Literal": {
                   "Value": "true"
@@ -268,32 +288,6 @@
               "expr": {
                 "Literal": {
                   "Value": "0L"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
                 }
               }
             }
