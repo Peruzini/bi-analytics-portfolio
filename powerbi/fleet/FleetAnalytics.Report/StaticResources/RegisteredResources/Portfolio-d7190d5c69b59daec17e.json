@@ -1,16 +1,16 @@
 {
   "name": "Portfolio Rafael Peruzini",
   "dataColors": [
-    "#2563EB",
-    "#0F766E",
-    "#D97706",
-    "#7C3AED",
-    "#DC2626",
-    "#0891B2"
+    "#137B88",
+    "#486B94",
+    "#B45345",
+    "#7693A7",
+    "#D39A46",
+    "#64748B"
   ],
   "background": "#FFFFFF",
-  "foreground": "#0F172A",
-  "tableAccent": "#2563EB",
+  "foreground": "#0B192B",
+  "tableAccent": "#137B88",
   "textClasses": {
     "label": {
       "fontFace": "Segoe UI",
@@ -20,12 +20,12 @@
     "title": {
       "fontFace": "Segoe UI Semibold",
       "fontSize": 13,
-      "color": "#0F172A"
+      "color": "#0B192B"
     },
     "callout": {
       "fontFace": "Segoe UI Semibold",
       "fontSize": 24,
-      "color": "#0F172A"
+      "color": "#103C49"
     }
   }
 }
