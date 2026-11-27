@@ -3,14 +3,14 @@
   "name": "97e96553b28e69bd57a9",
   "position": {
     "x": 24,
-    "y": 314,
-    "width": 610,
-    "height": 282,
+    "y": 288,
+    "width": 688,
+    "height": 330,
     "z": 11000,
     "tabOrder": 11000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "barChart",
     "query": {
       "queryState": {
         "Category": {
@@ -42,12 +42,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Índice Criticidade"
+                  "Property": "Componente Indisponibilidade"
                 }
               },
-              "queryRef": "Medidas.Índice Criticidade",
-              "nativeQueryRef": "Índice Criticidade",
-              "displayName": "Criticidade"
+              "queryRef": "Medidas.Componente Indisponibilidade",
+              "nativeQueryRef": "Componente Indisponibilidade",
+              "displayName": "Indisponibilidade (35%)"
             },
             {
               "field": {
@@ -57,12 +57,76 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Score Disponibilidade"
+                  "Property": "Componente Custo"
                 }
               },
-              "queryRef": "Medidas.Score Disponibilidade",
-              "nativeQueryRef": "Score Disponibilidade",
-              "displayName": "Indisponibilidade"
+              "queryRef": "Medidas.Componente Custo",
+              "nativeQueryRef": "Componente Custo",
+              "displayName": "Custo (25%)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Componente Falhas"
+                }
+              },
+              "queryRef": "Medidas.Componente Falhas",
+              "nativeQueryRef": "Componente Falhas",
+              "displayName": "Falhas (20%)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Componente Perdas"
+                }
+              },
+              "queryRef": "Medidas.Componente Perdas",
+              "nativeQueryRef": "Componente Perdas",
+              "displayName": "Perdas (20%)"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Índice Criticidade"
+                }
+              },
+              "queryRef": "Medidas.Índice Criticidade",
+              "nativeQueryRef": "Índice Criticidade",
+              "displayName": "Índice Criticidade"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Classe Criticidade"
+                }
+              },
+              "queryRef": "Medidas.Classe Criticidade",
+              "nativeQueryRef": "Classe Criticidade",
+              "displayName": "Classe Criticidade"
             }
           ]
         }
@@ -168,7 +232,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Criticidade × indisponibilidade por equipamento'"
+                  "Value": "'Composição ponderada da criticidade (0–1)'"
                 }
               }
             },
@@ -184,7 +248,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0B192B'"
+                      "Value": "'#103C49'"
                     }
                   }
                 }
@@ -219,7 +283,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Criticidade × indisponibilidade por equipamento. Compare as categorias de acordo com os filtros.'"
+                  "Value": "'Composição ponderada da criticidade (0–1). Valores no contexto dos filtros.'"
                 }
               }
             }
@@ -227,6 +291,129 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#486B94'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Componente Indisponibilidade"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#137B88'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Componente Custo"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B06F35'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Componente Falhas"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#617F98'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Medidas.Componente Perdas"
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "start": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "end": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "preferredCategoryWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "22D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

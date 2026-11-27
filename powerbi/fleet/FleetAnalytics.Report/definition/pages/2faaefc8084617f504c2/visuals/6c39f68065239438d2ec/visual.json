@@ -3,14 +3,14 @@
   "name": "6c39f68065239438d2ec",
   "position": {
     "x": 24,
-    "y": 314,
-    "width": 610,
-    "height": 282,
+    "y": 288,
+    "width": 688,
+    "height": 506,
     "z": 11000,
     "tabOrder": 11000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "scatterChart",
     "query": {
       "queryState": {
         "Category": {
@@ -32,8 +32,61 @@
             }
           ]
         },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Produtividade t/h"
+                }
+              },
+              "queryRef": "Medidas.Produtividade t/h",
+              "nativeQueryRef": "Produtividade t/h",
+              "displayName": "Produtividade t/h"
+            }
+          ]
+        },
         "Y": {
           "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Custo por Tonelada"
+                }
+              },
+              "queryRef": "Medidas.Custo por Tonelada",
+              "nativeQueryRef": "Custo por Tonelada",
+              "displayName": "Custo por Tonelada"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Utilização %"
+                }
+              },
+              "queryRef": "Medidas.Utilização %",
+              "nativeQueryRef": "Utilização %",
+              "displayName": "Utilização %"
+            },
             {
               "field": {
                 "Measure": {
@@ -47,27 +100,10 @@
               },
               "queryRef": "Medidas.Produção Total",
               "nativeQueryRef": "Produção Total",
-              "displayName": "Produção (t)"
+              "displayName": "Produção Total"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Medidas"
-                  }
-                },
-                "Property": "Produção Total"
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
     },
     "visualContainerObjects": {
@@ -153,7 +189,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Produção por equipamento'"
+                  "Value": "'Produtividade × custo por tonelada'"
                 }
               }
             },
@@ -169,7 +205,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0B192B'"
+                      "Value": "'#103C49'"
                     }
                   }
                 }
@@ -204,7 +240,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Produção por equipamento. Compare as categorias de acordo com os filtros.'"
+                  "Value": "'Produtividade × custo por tonelada. Valores no contexto dos filtros.'"
                 }
               }
             }
@@ -212,6 +248,78 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0B192B'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
   }
 }

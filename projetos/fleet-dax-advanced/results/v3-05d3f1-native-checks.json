@@ -1,0 +1,27 @@
+{
+  "candidate": "e0afdda7732c51c9b367f3fd1ff382f61fbb1b49",
+  "visualCandidate": "ac60d94415c5c73c70b5a4d83979cb793d3dceb5",
+  "base": "90f366f054ec56babc9860b45a0a56f6796973f1",
+  "modelBlob": "cb443aad5d4391a289f2fbe709b8032b32c0704e",
+  "modelUnchanged": true,
+  "changedFiles": 64,
+  "regression": {
+    "comparedValues": 225,
+    "failures": [],
+    "tolerance": 1e-7
+  },
+  "pythonTests": null,
+  "visualEvidence": {
+    "candidate": "ac60d94415c5c73c70b5a4d83979cb793d3dceb5",
+    "scope": "4 loaded native Desktop captures inspected",
+    "path": "%USERPROFILE%/portfolio-v3-05d/fleet-d3f1-inspection",
+    "hashes": [
+      "FFA1D3F6117EB8820A9C3836EB732538C0E9DF1379B631309C5510DE2F5880A0",
+      "EBCB951378579201F1AA4D1F8D0834EB3205EE2DACC23D5C8AD3E69B609EE533",
+      "9745F7BB6A24ECAAC3B2FD259E4E1705BAFFA32BC733D3CD703FECC82178D72D",
+      "1FB725774AC3AE7BDCCC0C08708019C17AB50C58266A388148AB5678DFAB2A6D"
+    ]
+  },
+  "finalVisualGate": "PENDING: second revision loaded DAX data but UI continued to show incomplete-table/cache warning and empty visuals; refresh and save/reopen not verified. Discard blank captures.",
+  "status": "PASS structural and DAX; visual R1 approved with reservations; R2 visual pending"
+}

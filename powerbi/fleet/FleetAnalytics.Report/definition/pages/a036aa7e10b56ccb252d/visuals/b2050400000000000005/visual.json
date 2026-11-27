@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "b2050400000000000005",
   "position": {
-    "x": 642,
-    "y": 194,
-    "width": 295,
-    "height": 104,
+    "x": 724,
+    "y": 178,
+    "width": 340,
+    "height": 92,
     "z": 9000,
     "tabOrder": 9000
   },
@@ -23,12 +23,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Falhas"
+                  "Property": "Ativos Alta ou Crítica"
                 }
               },
-              "queryRef": "Medidas.Falhas",
-              "nativeQueryRef": "Falhas",
-              "displayName": "Falhas corretivas"
+              "queryRef": "Medidas.Ativos Alta ou Crítica",
+              "nativeQueryRef": "Ativos Alta ou Crítica",
+              "displayName": "Alta ou crítica"
             }
           ]
         }
@@ -82,7 +82,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Falhas corretivas'"
+                  "Value": "'Alta ou crítica'"
                 }
               }
             },
@@ -200,7 +200,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Falhas corretivas, valor calculado no contexto dos filtros.'"
+                  "Value": "'Quantidade de ativos com criticidade alta ou crítica na seleção.'"
                 }
               }
             }

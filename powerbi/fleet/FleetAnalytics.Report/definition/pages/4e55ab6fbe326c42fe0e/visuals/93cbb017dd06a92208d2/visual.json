@@ -3,11 +3,11 @@
   "name": "93cbb017dd06a92208d2",
   "position": {
     "x": 24,
-    "y": 612,
-    "width": 1232,
-    "height": 298,
-    "z": 13000,
-    "tabOrder": 13000
+    "y": 828,
+    "width": 1392,
+    "height": 260,
+    "z": 15000,
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "tableEx",
@@ -73,7 +73,37 @@
               },
               "queryRef": "Medidas.Horas Manutenção Corretiva",
               "nativeQueryRef": "Horas Manutenção Corretiva",
-              "displayName": "Horas Manutenção Corretiva"
+              "displayName": "Horas corretivas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "MTBF"
+                }
+              },
+              "queryRef": "Medidas.MTBF",
+              "nativeQueryRef": "MTBF",
+              "displayName": "MTBF"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "MTTR"
+                }
+              },
+              "queryRef": "Medidas.MTTR",
+              "nativeQueryRef": "MTTR",
+              "displayName": "MTTR"
             },
             {
               "field": {
@@ -98,30 +128,32 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Participação Perdas %"
-                }
-              },
-              "queryRef": "Medidas.Participação Perdas %",
-              "nativeQueryRef": "Participação Perdas %",
-              "displayName": "Participação Perdas %"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
                   "Property": "Perdas Acumuladas %"
                 }
               },
               "queryRef": "Medidas.Perdas Acumuladas %",
               "nativeQueryRef": "Perdas Acumuladas %",
-              "displayName": "Perdas Acumuladas %"
+              "displayName": "Pareto"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medidas"
+                  }
+                },
+                "Property": "Horas Manutenção"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "objects": {
@@ -161,6 +193,13 @@
                       "Value": "'#F8FAFC'"
                     }
                   }
+                }
+              }
+            },
+            "columnAdjustment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'growToFit'"
                 }
               }
             }
@@ -313,7 +352,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0B192B'"
+                      "Value": "'#103C49'"
                     }
                   }
                 }
