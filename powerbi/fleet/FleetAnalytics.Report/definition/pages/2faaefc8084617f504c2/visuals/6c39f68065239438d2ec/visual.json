@@ -362,13 +362,8 @@
             },
             "value": {
               "expr": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Ref Produtividade Frota"
+                "SelectRef": {
+                  "ExpressionName": "Medidas.Ref Produtividade Frota"
                 }
               }
             },
@@ -410,7 +405,17 @@
                   "Value": "true"
                 }
               }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
             }
+          },
+          "selector": {
+            "id": "0"
           }
         }
       ],
@@ -426,13 +431,8 @@
             },
             "value": {
               "expr": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Medidas"
-                    }
-                  },
-                  "Property": "Ref Custo Frota"
+                "SelectRef": {
+                  "ExpressionName": "Medidas.Ref Custo Frota"
                 }
               }
             },
@@ -474,7 +474,17 @@
                   "Value": "true"
                 }
               }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
             }
+          },
+          "selector": {
+            "id": "0"
           }
         }
       ]
