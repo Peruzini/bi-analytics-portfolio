@@ -1,0 +1,34 @@
+{
+  "base": "0d672f66ab20c9f046c626ad3cb1823a350f74f3",
+  "pages": [
+    {
+      "page": "Performance da Frota",
+      "width": 1440,
+      "height": 1140,
+      "visuals": 15
+    },
+    {
+      "page": "Manutenção & Pareto",
+      "width": 1440,
+      "height": 1204,
+      "visuals": 16
+    },
+    {
+      "page": "Visão Executiva",
+      "width": 1440,
+      "height": 1076,
+      "visuals": 14
+    },
+    {
+      "page": "Criticidade",
+      "width": 1440,
+      "height": 1020,
+      "visuals": 14
+    }
+  ],
+  "originalMeasuresPreserved": 45,
+  "addedMeasures": 6,
+  "semanticModelExceptAddedMeasuresUnchanged": true,
+  "static": "PASS: bounds, overlap, unique tab order, field references",
+  "native": "PENDING"
+}
