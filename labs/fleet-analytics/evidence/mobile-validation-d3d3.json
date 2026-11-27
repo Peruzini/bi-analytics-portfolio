@@ -1,0 +1,584 @@
+{
+  "candidate": "d8c22154c9b81072e5e4c960abbe90abb79ac9e9",
+  "browser": "158.0.8127.37",
+  "scope": "Chromium emulation touch; not physical mobile",
+  "checks": [
+    {
+      "name": "sha256/1440x900-executiva.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/1440x900-performance.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/1440x900-manutencao.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/1440x900-criticidade.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/1024x768-executiva.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/1024x768-performance.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/1024x768-manutencao.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/1024x768-criticidade.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/390x844-executiva.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/390x844-performance.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/390x844-manutencao.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/390x844-criticidade.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/320x720-executiva.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/320x720-performance.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/320x720-manutencao.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "sha256/320x720-criticidade.png",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/executiva/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/performance/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/manutencao/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/criticidade/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "390x844/console",
+      "pass_": true,
+      "detail": []
+    },
+    {
+      "name": "320x720/executiva/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/executiva/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/performance/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/manutencao/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/criticidade/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "320x720/console",
+      "pass_": true,
+      "detail": []
+    },
+    {
+      "name": "1024x768/executiva/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/executiva/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/performance/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/manutencao/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/four KPIs",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/touch filter",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/persistence",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/reset",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/fit",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/PNG",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/CSV",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/criticidade/empty",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "1024x768/console",
+      "pass_": true,
+      "detail": []
+    }
+  ],
+  "screenshots_verified": 16,
+  "pass": true
+}
