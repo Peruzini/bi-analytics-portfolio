@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 28/11/2026 | Estado: UX-03A1-R2F3 labels executivos centralizados; aceite e navegação pendentes | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2G filtros padronizados e testados; navegação pendente | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -160,3 +160,7 @@ Mestre azul V2 aprovado expressamente pelo usuário. [PR #20](https://github.com
 ## Atualização UX-03A1-R2F3 — centralização dos labels executivos
 
 [PR #24](https://github.com/Peruzini/bi-analytics-portfolio/pull/24), commit `5ea1892`, branch `portfolio/v3-ux-03a1-r2f3-executive-labels`. Dicionário 35 registros, `_UX_Design` 52 medidas, total 120. 13 cartões de labels, três títulos de gráfico/tabela, quatro cabeçalhos de slicer e texto do botão Limpar filtros vinculados; 21 novos vínculos persistidos após salvamento. Nenhuma caixa de texto informativa restante na Visão Executiva; fundos vazios e metadados nativos permanecem. 19/19 testes, 225 regressões históricas e 42 comparações de invariância sob filtro e contexto vazio. 99 medidas anteriores e 144 regras intactas. Badge perdeu faixa decorativa pela conversão; fontes ajustadas. Power BI PID 24148 aberto e salvo. Próximo: UX-03A1-R2G — padronização visual e funcional dos filtros, seguida de homologação de navegação e acabamento. Sem expansão, merge ou deploy.
+
+## Atualização UX-03A1-R2G — filtros executivos
+
+[PR #25](https://github.com/Peruzini/bi-analytics-portfolio/pull/25), commit `6c93dd5`, branch `portfolio/v3-ux-03a1-r2g-filters`. Quatro dropdowns nativos, contador de campos diretamente filtrados, botão de limpeza dinâmico, 60 medidas UX e 128 totais. 20/20 testes, 225/225 regressão, 144 regras anteriores e 8 novas. UI: equipamento, período, combinação, tipo, área e limpeza via foco + Ctrl+Enter confirmados. Contorno ativo configurado mas sem contraste perceptível; múltiplos valores e vazio testados apenas em DAX; sincronização entre páginas preservada estruturalmente. Power BI PID 24148 aberto e contexto geral restaurado. Próximo: UX-03A1-R2H — homologação funcional da navegação via foco/teclado, sincronização de filtros e correção de eixos sob filtros estreitos, antes do acabamento final. Sem merge/deploy.
