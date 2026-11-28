@@ -86,3 +86,19 @@ class FleetExecutiveUXContract(unittest.TestCase):
                 self.assertEqual(val(v["visual"]["visualContainerObjects"]["background"][0]["properties"]["show"]), "false")
             for a,b in zip(content, content[1:]):
                 self.assertLessEqual(a["position"]["y"]+a["position"]["height"], b["position"]["y"])
+
+    def test_executive_table_formatting(self):
+        v = load(PILOT / "visuals/3ce9f418142478f499b7/visual.json")["visual"]
+        refs = [a["queryRef"] for a in v["query"]["queryState"]["Values"]["projections"]]
+        self.assertEqual(len(refs), 7)
+        self.assertEqual(v["query"]["sortDefinition"]["sort"][0]["direction"], "Ascending")
+        o = v["objects"]
+        color = next(a for a in o["values"] if "selector" in a)
+        self.assertEqual(color["selector"]["metadata"], refs[3])
+        self.assertEqual(color["properties"]["fontColor"]["solid"]["color"]["expr"]["Measure"]["Property"], "UX Desvio Cor")
+        bars = o["columnFormatting"][0]
+        self.assertEqual(bars["selector"]["metadata"], refs[4])
+        self.assertEqual(val(bars["properties"]["dataBars"]["hideText"]), "false")
+        self.assertEqual(val(bars["properties"]["dataBars"]["minValue"]), "0D")
+        self.assertEqual(val(bars["properties"]["dataBars"]["maxValue"]), "1.1D")
+        self.assertEqual(val(o["total"][0]["properties"]["totals"]), "true")
