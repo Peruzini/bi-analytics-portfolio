@@ -113,7 +113,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
         self.assertTrue(all(not v.get("parentGroupName") for v in buttons))
         self.assertEqual(len(buttons), 4)
         self.assertEqual([val(v["visual"]["visualContainerObjects"]["visualLink"][0]["properties"]["navigationSection"]).strip("'") for v in buttons], ["825c31049f384847c6ac","2faaefc8084617f504c2","4e55ab6fbe326c42fe0e","a036aa7e10b56ccb252d"])
-        self.assertEqual([val(v["visual"]["objects"]["fill"][1]["properties"]["fillColor"]["solid"]["color"]) for v in buttons], ["'#21586A'"]+["'#102B3D'"]*3)
+        self.assertEqual([v["visual"]["objects"]["fill"][1]["properties"]["fillColor"]["solid"]["color"]["expr"]["Measure"]["Property"] for v in buttons], ["COR Ativo"]+["COR Inativo"]*3)
         items = [v for v in children if v["name"] != "a103a100000000000002"] + buttons
         for i,v in enumerate(items):
             a=v["position"]
@@ -124,3 +124,21 @@ class FleetExecutiveUXContract(unittest.TestCase):
             for w in items[i+1:]:
                 b=w["position"]
                 self.assertFalse(a["x"]<b["x"]+b["width"] and b["x"]<a["x"]+a["width"] and a["y"]<b["y"]+b["height"] and b["y"]<a["y"]+a["height"])
+
+    def test_semantic_ux(self):
+        model = load(PAGES.parents[1].parent / "FleetAnalytics.SemanticModel/model.bim")["model"]
+        tables = {t["name"]:t for t in model["tables"]}
+        self.assertEqual(len(tables["Medidas"]["measures"]), 68)
+        self.assertEqual(len(tables["_UX_Design"]["measures"]), 31)
+        self.assertTrue(tables["_UX_Design"]["columns"][0]["isHidden"])
+        self.assertEqual(len(tables["_UX_Dicionario"]["columns"]), 6)
+        self.assertTrue(all(not r["fromTable"].startswith("_UX_") and not r["toTable"].startswith("_UX_") for r in model["relationships"]))
+        visuals = [load(f) for f in PILOT.glob("visuals/*/visual.json")]
+        cards = [v for v in visuals if v.get("parentGroupName") == "a103f000000000000000" and v.get("visual",{}).get("visualType") == "cardVisual"]
+        self.assertEqual(len(cards),5)
+        for v in cards:
+            self.assertTrue(v["visual"]["query"]["queryState"]["Data"]["projections"][0]["queryRef"].startswith("_UX_Design.LBL "))
+        buttons = [v for v in visuals if v.get("visual",{}).get("visualType") == "actionButton" and v["position"]["x"] < 192]
+        self.assertEqual(len(buttons),4)
+        for v in buttons:
+            self.assertTrue(v["visual"]["objects"]["text"][1]["properties"]["text"]["expr"]["Measure"]["Property"].startswith("NAV "))

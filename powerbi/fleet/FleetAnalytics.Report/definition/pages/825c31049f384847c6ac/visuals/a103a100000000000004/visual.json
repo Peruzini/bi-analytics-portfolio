@@ -30,8 +30,13 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#102B3D'"
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_UX_Design"
+                        }
+                      },
+                      "Property": "COR Inativo"
                     }
                   }
                 }
@@ -59,8 +64,13 @@
           "properties": {
             "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'▥  Performance'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_UX_Design"
+                    }
+                  },
+                  "Property": "NAV Performance"
                 }
               }
             },
@@ -68,8 +78,13 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#C7D7E2'"
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_UX_Design"
+                        }
+                      },
+                      "Property": "COR Texto Inativo"
                     }
                   }
                 }
@@ -184,6 +199,44 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#294F60'"
+                    }
+                  }
+                }
+              }
+            },
+            "width": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }
