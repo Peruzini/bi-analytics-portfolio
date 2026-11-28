@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 27/11/2026 | Estado: UX-03A1-R2C gráficos refinados; avaliação visual pendente; Power BI aberto | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2D0 componente mestre especificado; aplicação nativa pendente | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -128,3 +128,7 @@ Ler [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md) e [PR #13 — pil
 ## Atualização UX-03A1-R2C — gráficos executivos
 
 [PR #17](https://github.com/Peruzini/bi-analytics-portfolio/pull/17), commit `52b7d27`, branch `portfolio/v3-ux-03a1-r2c-charts`. Dois gráficos: produção com eixo mensal contínuo e oito marcas trimestrais no contexto geral, meta tracejada; desvio assinado com oito rótulos externos, seis barras vermelhas e duas verdes. 63 medidas intactas, uma coluna calculada Inicio Mes UX; 339/339 comparações DAX e 13/13 testes. Mesmo grid e regras de interação. Power BI PID 24148 aberto, sessão preservada. Próximo: redesign da tabela operacional e formatação condicional; navegação, filtros, mobile e acessibilidade ainda pendentes. Sem expansão ou merge.
+
+## Atualização UX-03A1-R2D0 — componente mestre KPI
+
+Por decisão do usuário, priorizar exclusivamente o cartão azul antes de derivar os demais KPIs. [Especificação mestre](PORTFOLIO-V3-UX-03A1-R2D0-KPI-MASTER.md) e [tokens/posição JSON](ux-v3/kpi-hero-master.v1.json). Região 300×140, x216/y196, 4 zonas internas, 12 padding horizontal, 8 vertical, gap 4. 14 checagens geométricas e 5 contrastes aprovados matematicamente. Agrupamento nativo real será testado em R2D1; não se trata de componente automaticamente sincronizado. Preservar demais KPIs, modelo, gráficos e tabela. Nenhuma edição PBIR ou DAX, nenhuma nova captura, nenhuma ação na janela Power BI nesta etapa. Última sessão conhecida PID 24148; conferir estado antes de editar e manter aberta conforme pedido. Próximo: UX-03A1-R2D1 — Construção nativa e homologação visual do cartão mestre azul. Depois do aceite, derivar os quatro restantes; redesign da tabela postergado. Sem merge/deploy.
