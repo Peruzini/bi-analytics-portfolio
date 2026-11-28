@@ -46,6 +46,15 @@
             "dataType": "int64",
             "sourceColumn": "Dia",
             "summarizeBy": "none"
+          },
+          {
+            "type": "calculated",
+            "name": "Inicio Mes UX",
+            "dataType": "dateTime",
+            "expression": "DATE(DimData[Ano], DimData[Mes], 1)",
+            "formatString": "MMM yy",
+            "summarizeBy": "none",
+            "lineageTag": "6a0c3cc0-32ad-5260-bb6b-c76969f2099f"
           }
         ],
         "partitions": [

@@ -1,0 +1,568 @@
+{
+    "all":  {
+                "old":  [
+                            {
+                                "DimData[AnoMes]":  "2025-01",
+                                "[prod]":  42950,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-02",
+                                "[prod]":  38727.8,
+                                "[meta]":  39536
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-03",
+                                "[prod]":  42843.1,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-04",
+                                "[prod]":  41572.2,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-05",
+                                "[prod]":  42811,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-06",
+                                "[prod]":  41472.5,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-07",
+                                "[prod]":  42919.4,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-08",
+                                "[prod]":  42880.9,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-09",
+                                "[prod]":  41587.9,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-10",
+                                "[prod]":  42916.8,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-11",
+                                "[prod]":  41479.7,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[AnoMes]":  "2025-12",
+                                "[prod]":  42927.8,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-01",
+                                "[prod]":  42950,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-02",
+                                "[prod]":  38727.8,
+                                "[meta]":  39536
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-03",
+                                "[prod]":  42843.1,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-04",
+                                "[prod]":  41572.2,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-05",
+                                "[prod]":  42811,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-06",
+                                "[prod]":  41472.5,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-07",
+                                "[prod]":  42919.4,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-08",
+                                "[prod]":  42880.9,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-09",
+                                "[prod]":  41587.9,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-10",
+                                "[prod]":  42916.8,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-11",
+                                "[prod]":  41479.7,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[AnoMes]":  "2026-12",
+                                "[prod]":  42927.8,
+                                "[meta]":  43772
+                            }
+                        ],
+                "new":  [
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1735700400000)\/",
+                                "[prod]":  42950,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1738378800000)\/",
+                                "[prod]":  38727.8,
+                                "[meta]":  39536
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1740798000000)\/",
+                                "[prod]":  42843.1,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1743476400000)\/",
+                                "[prod]":  41572.2,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1746068400000)\/",
+                                "[prod]":  42811,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1748746800000)\/",
+                                "[prod]":  41472.5,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1751338800000)\/",
+                                "[prod]":  42919.4,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1754017200000)\/",
+                                "[prod]":  42880.9,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1756695600000)\/",
+                                "[prod]":  41587.9,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1759287600000)\/",
+                                "[prod]":  42916.8,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1761966000000)\/",
+                                "[prod]":  41479.7,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1764558000000)\/",
+                                "[prod]":  42927.8,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1767236400000)\/",
+                                "[prod]":  42950,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1769914800000)\/",
+                                "[prod]":  38727.8,
+                                "[meta]":  39536
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1772334000000)\/",
+                                "[prod]":  42843.1,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1775012400000)\/",
+                                "[prod]":  41572.2,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1777604400000)\/",
+                                "[prod]":  42811,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1780282800000)\/",
+                                "[prod]":  41472.5,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1782874800000)\/",
+                                "[prod]":  42919.4,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1785553200000)\/",
+                                "[prod]":  42880.9,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1788231600000)\/",
+                                "[prod]":  41587.9,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1790823600000)\/",
+                                "[prod]":  42916.8,
+                                "[meta]":  43772
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1793502000000)\/",
+                                "[prod]":  41479.7,
+                                "[meta]":  42360
+                            },
+                            {
+                                "DimData[Inicio Mes UX]":  "\/Date(1796094000000)\/",
+                                "[prod]":  42927.8,
+                                "[meta]":  43772
+                            }
+                        ]
+            },
+    "equipment":  {
+                      "old":  [
+                                  {
+                                      "DimData[AnoMes]":  "2025-01",
+                                      "[prod]":  4475.7,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-02",
+                                      "[prod]":  4080.6,
+                                      "[meta]":  4256
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-03",
+                                      "[prod]":  4436.5,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-04",
+                                      "[prod]":  4362,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-05",
+                                      "[prod]":  4390.4,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-06",
+                                      "[prod]":  4362.2,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-07",
+                                      "[prod]":  4417.1,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-08",
+                                      "[prod]":  4603.4,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-09",
+                                      "[prod]":  4272.9,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-10",
+                                      "[prod]":  4469,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-11",
+                                      "[prod]":  4312.6,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2025-12",
+                                      "[prod]":  4458.5,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-01",
+                                      "[prod]":  4475.7,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-02",
+                                      "[prod]":  4080.6,
+                                      "[meta]":  4256
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-03",
+                                      "[prod]":  4436.5,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-04",
+                                      "[prod]":  4362,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-05",
+                                      "[prod]":  4390.4,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-06",
+                                      "[prod]":  4362.2,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-07",
+                                      "[prod]":  4417.1,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-08",
+                                      "[prod]":  4603.4,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-09",
+                                      "[prod]":  4272.9,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-10",
+                                      "[prod]":  4469,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-11",
+                                      "[prod]":  4312.6,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[AnoMes]":  "2026-12",
+                                      "[prod]":  4458.5,
+                                      "[meta]":  4712
+                                  }
+                              ],
+                      "new":  [
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1735700400000)\/",
+                                      "[prod]":  4475.7,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1738378800000)\/",
+                                      "[prod]":  4080.6,
+                                      "[meta]":  4256
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1740798000000)\/",
+                                      "[prod]":  4436.5,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1743476400000)\/",
+                                      "[prod]":  4362,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1746068400000)\/",
+                                      "[prod]":  4390.4,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1748746800000)\/",
+                                      "[prod]":  4362.2,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1751338800000)\/",
+                                      "[prod]":  4417.1,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1754017200000)\/",
+                                      "[prod]":  4603.4,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1756695600000)\/",
+                                      "[prod]":  4272.9,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1759287600000)\/",
+                                      "[prod]":  4469,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1761966000000)\/",
+                                      "[prod]":  4312.6,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1764558000000)\/",
+                                      "[prod]":  4458.5,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1767236400000)\/",
+                                      "[prod]":  4475.7,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1769914800000)\/",
+                                      "[prod]":  4080.6,
+                                      "[meta]":  4256
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1772334000000)\/",
+                                      "[prod]":  4436.5,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1775012400000)\/",
+                                      "[prod]":  4362,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1777604400000)\/",
+                                      "[prod]":  4390.4,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1780282800000)\/",
+                                      "[prod]":  4362.2,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1782874800000)\/",
+                                      "[prod]":  4417.1,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1785553200000)\/",
+                                      "[prod]":  4603.4,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1788231600000)\/",
+                                      "[prod]":  4272.9,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1790823600000)\/",
+                                      "[prod]":  4469,
+                                      "[meta]":  4712
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1793502000000)\/",
+                                      "[prod]":  4312.6,
+                                      "[meta]":  4560
+                                  },
+                                  {
+                                      "DimData[Inicio Mes UX]":  "\/Date(1796094000000)\/",
+                                      "[prod]":  4458.5,
+                                      "[meta]":  4712
+                                  }
+                              ]
+                  },
+    "month":  {
+                  "old":  [
+                              {
+                                  "DimData[AnoMes]":  "2025-10",
+                                  "[prod]":  42916.8,
+                                  "[meta]":  43772
+                              }
+                          ],
+                  "new":  [
+                              {
+                                  "DimData[Inicio Mes UX]":  "\/Date(1759287600000)\/",
+                                  "[prod]":  42916.8,
+                                  "[meta]":  43772
+                              }
+                          ]
+              },
+    "assets":  [
+                   {
+                       "DimEquipamento[Equipamento]":  "Caminhão 01",
+                       "[delta]":  -5678.1999999999971,
+                       "[deficit]":  -5678.1999999999971,
+                       "[surplus]":  null,
+                       "[color]":  "#B42318"
+                   },
+                   {
+                       "DimEquipamento[Equipamento]":  "Caminhão 02",
+                       "[delta]":  -4983.1999999999971,
+                       "[deficit]":  -4983.1999999999971,
+                       "[surplus]":  null,
+                       "[color]":  "#B42318"
+                   },
+                   {
+                       "DimEquipamento[Equipamento]":  "Caminhão 03",
+                       "[delta]":  -3779.3999999999942,
+                       "[deficit]":  -3779.3999999999942,
+                       "[surplus]":  null,
+                       "[color]":  "#B42318"
+                   },
+                   {
+                       "DimEquipamento[Equipamento]":  "Caminhão 04",
+                       "[delta]":  -3195,
+                       "[deficit]":  -3195,
+                       "[surplus]":  null,
+                       "[color]":  "#B42318"
+                   },
+                   {
+                       "DimEquipamento[Equipamento]":  "Escavadeira 01",
+                       "[delta]":  -2615.3999999999942,
+                       "[deficit]":  -2615.3999999999942,
+                       "[surplus]":  null,
+                       "[color]":  "#B42318"
+                   },
+                   {
+                       "DimEquipamento[Equipamento]":  "Escavadeira 02",
+                       "[delta]":  -1191.7999999999884,
+                       "[deficit]":  -1191.7999999999884,
+                       "[surplus]":  null,
+                       "[color]":  "#B42318"
+                   },
+                   {
+                       "DimEquipamento[Equipamento]":  "Carregadeira 01",
+                       "[delta]":  362,
+                       "[deficit]":  null,
+                       "[surplus]":  362,
+                       "[color]":  "#166534"
+                   },
+                   {
+                       "DimEquipamento[Equipamento]":  "Trator 01",
+                       "[delta]":  499.20000000001164,
+                       "[deficit]":  null,
+                       "[surplus]":  499.20000000001164,
+                       "[color]":  "#166534"
+                   }
+               ]
+}
