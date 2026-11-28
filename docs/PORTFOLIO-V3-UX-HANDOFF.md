@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 28/11/2026 | Estado: UX-03A1-R2F2 camada semântica UX implementada; aceite e navegação pendentes | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2F3 labels executivos centralizados; aceite e navegação pendentes | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -156,3 +156,7 @@ Mestre azul V2 aprovado expressamente pelo usuário. [PR #20](https://github.com
 ## Atualização UX-03A1-R2F2 — camada semântica UX
 
 [PR #23](https://github.com/Peruzini/bi-analytics-portfolio/pull/23), commit `a3fa801`, branch `portfolio/v3-ux-03a1-r2f2-semantic-ux`. Tabelas desconectadas `_UX_Dicionario` (14 registros, 6 campos) e `_UX_Design` (31 medidas em cinco pastas, coluna âncora oculta). Cinco caixas de texto informativas substituídas por cartões; quatro botões nativos com labels e cores vinculados a medidas. Destinos originais preservados; medidas DEST e token hover preparados, não vinculados. 68 medidas anteriores intactas, 99 totais, relações e 144 regras preservadas. 18/18 testes e 225/225 regressão. Recalculo nativo e salvamento realizados; Power BI PID 24148 aberto. Rodapé simplificado para Ativos e produção. Aceite visual pendente; navegação real ainda não confirmada. Próximo: homologar navegação e padronizar os demais labels/filtros da Visão Executiva, após revisão do usuário. Sem merge/deploy.
+
+## Atualização UX-03A1-R2F3 — centralização dos labels executivos
+
+[PR #24](https://github.com/Peruzini/bi-analytics-portfolio/pull/24), commit `5ea1892`, branch `portfolio/v3-ux-03a1-r2f3-executive-labels`. Dicionário 35 registros, `_UX_Design` 52 medidas, total 120. 13 cartões de labels, três títulos de gráfico/tabela, quatro cabeçalhos de slicer e texto do botão Limpar filtros vinculados; 21 novos vínculos persistidos após salvamento. Nenhuma caixa de texto informativa restante na Visão Executiva; fundos vazios e metadados nativos permanecem. 19/19 testes, 225 regressões históricas e 42 comparações de invariância sob filtro e contexto vazio. 99 medidas anteriores e 144 regras intactas. Badge perdeu faixa decorativa pela conversão; fontes ajustadas. Power BI PID 24148 aberto e salvo. Próximo: UX-03A1-R2G — padronização visual e funcional dos filtros, seguida de homologação de navegação e acabamento. Sem expansão, merge ou deploy.
