@@ -1,0 +1,87 @@
+{
+  "status": "native desktop applied; visual acceptance pending",
+  "base": "930b281",
+  "fiveKpiRegions": 5,
+  "visuals": 35,
+  "existingMeasuresPreserved": 51,
+  "presentationMeasuresAdded": 12,
+  "historicalComparisons": 225,
+  "tests": 13,
+  "interactionRules": 119,
+  "existingRulesPreserved": 77,
+  "contexts": {
+    "all": [
+      {
+        "[ader]": 0.9800324032752532,
+        "[status]": "Meta 100%  |  -2,00 p.p.  |  Abaixo",
+        "[delta]": "-20.581,8 t",
+        "[cor]": "#B42318",
+        "[desvio]": "Déficit frente à meta",
+        "[producao]": "1,01 mi t",
+        "[meta]": "Meta: 1.030.760 t",
+        "[disp]": "Disponibilidade física",
+        "[custo]": "Por tonelada produzida",
+        "[progress]": 0.9800324032752532,
+        "[remaining]": 0.019967596724746794,
+        "[bar]": "█████████████████████████████▍"
+      }
+    ],
+    "deficit": [
+      {
+        "[ader]": 0.9488266041816871,
+        "[status]": "Meta 100%  |  -5,12 p.p.  |  Abaixo",
+        "[delta]": "-5.678,2 t",
+        "[cor]": "#B42318",
+        "[desvio]": "Déficit frente à meta",
+        "[producao]": "105,3 mil t",
+        "[meta]": "Meta: 110.960 t",
+        "[disp]": "Disponibilidade física",
+        "[custo]": "Por tonelada produzida",
+        "[progress]": 0.9488266041816871,
+        "[remaining]": 0.05117339581831293,
+        "[bar]": "████████████████████████████▌░"
+      }
+    ],
+    "surplus": [
+      {
+        "[ader]": 1.003402167245962,
+        "[status]": "Meta 100%  |  +0,34 p.p.  |  Acima",
+        "[delta]": "+499,2 t",
+        "[cor]": "#166534",
+        "[desvio]": "Superação da meta",
+        "[producao]": "147,2 mil t",
+        "[meta]": "Meta: 146.730 t",
+        "[disp]": "Disponibilidade física",
+        "[custo]": "Por tonelada produzida",
+        "[progress]": 1,
+        "[remaining]": 0,
+        "[bar]": "██████████████████████████████"
+      }
+    ],
+    "empty": [
+      {
+        "[ader]": null,
+        "[status]": "Sem dados",
+        "[delta]": null,
+        "[cor]": "#475569",
+        "[desvio]": "Sem dados",
+        "[producao]": null,
+        "[meta]": "Meta sem dados",
+        "[disp]": "Sem dados",
+        "[custo]": "Sem dados",
+        "[progress]": null,
+        "[remaining]": null,
+        "[bar]": null
+      }
+    ]
+  },
+  "reviewPid": 24148,
+  "liveReloadSucceeded": true,
+  "leftOpen": true,
+  "snapshotSha256": "0ae51cba1c37d32f3ac98d38dc078e67fc1c98651c55db6eb54b0d9b897fe177",
+  "limitations": [
+    "Progress rendered as dynamic segmented text in native card, saturates at 100%; not a continuous chart.",
+    "Deficit, surplus and empty states verified in DAX, not each in UI. Exact target equality and physical mobile not tested.",
+    "No full user UX acceptance yet; other pages untouched."
+  ]
+}

@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "a103a100000000000001",
   "position": {
-    "x": 480,
+    "x": 528,
     "y": 218,
-    "width": 236,
-    "height": 140,
+    "width": 252,
+    "height": 100,
     "z": 13000,
     "tabOrder": 17000
   },
@@ -23,12 +23,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Desvio Produção (t)"
+                  "Property": "UX Desvio Exibicao"
                 }
               },
-              "queryRef": "Medidas.Desvio Produção (t)",
-              "nativeQueryRef": "Desvio Produção (t)",
-              "displayName": "Produção (t)"
+              "queryRef": "Medidas.UX Desvio Exibicao",
+              "nativeQueryRef": "UX Desvio Exibicao",
+              "displayName": "UX Desvio Exibicao"
             }
           ]
         }
@@ -41,7 +41,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "24D"
+                  "Value": "28D"
                 }
               }
             },
@@ -49,10 +49,29 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#172B3A'"
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "UX Desvio Cor"
                     }
                   }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
@@ -63,10 +82,10 @@
                 }
               }
             },
-            "valueDisplayUnits": {
+            "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "'left'"
                 }
               }
             }
@@ -89,7 +108,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Desvio da meta (t)'"
+                  "Value": "'Desvio da meta'"
                 }
               }
             },
@@ -108,6 +127,102 @@
                       "Value": "'#475569'"
                     }
                   }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "layout": [
+        {
+          "properties": {
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -134,7 +249,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#E7F2F3'"
+                      "Value": "'#FFFFFF'"
                     }
                   }
                 }
@@ -159,32 +274,44 @@
                   "Value": "false"
                 }
               }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#CBD5E1'"
-                    }
-                  }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             },
-            "radius": {
+            "bottom": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "0D"
                 }
               }
             },
-            "width": {
+            "left": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "10D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
@@ -207,7 +334,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Desvio de produção em toneladas frente à meta. Valor negativo representa déficit.'"
+                  "Value": "'Desvio da meta; valor no contexto dos filtros.'"
                 }
               }
             }

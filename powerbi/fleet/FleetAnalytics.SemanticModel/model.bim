@@ -712,6 +712,81 @@
             "expression": "CALCULATE([Indisponibilidade %], ALLSELECTED(DimEquipamento[Equipamento]))",
             "formatString": "0.00%",
             "displayFolder": "Data Visualization | Referencias"
+          },
+          {
+            "name": "UX Aderencia Status",
+            "expression": "VAR A = [Aderência Meta %] RETURN IF(ISBLANK(A), \"Sem dados\", \"Meta 100%  |  \" & FORMAT((A-1)*100, \"+0.00;-0.00;0.00\", \"pt-BR\") & \" p.p.  |  \" & SWITCH(TRUE(), ROUND(A*100,2)<100,\"Abaixo\",ROUND(A*100,2)>100,\"Acima\",\"Na meta\"))",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "8078e035-0f4f-5982-89c4-3fe571d79e1b"
+          },
+          {
+            "name": "UX Desvio Status",
+            "expression": "VAR D = [Desvio Produção (t)] RETURN IF(ISBLANK(D), \"Sem dados\", SWITCH(TRUE(), D<0, \"Déficit frente à meta\", D>0, \"Superação da meta\", \"Na meta planejada\"))",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "38da7cb3-63c9-5ff3-85a1-4013e06131b7"
+          },
+          {
+            "name": "UX Desvio Cor",
+            "expression": "VAR D = [Desvio Produção (t)] RETURN SWITCH(TRUE(), ISBLANK(D), \"#475569\", D<0, \"#B42318\", D>0, \"#166534\", \"#475569\")",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "e6aa6e93-8c2b-5611-9ae3-103f4883f809"
+          },
+          {
+            "name": "UX Meta Texto",
+            "expression": "VAR M = [Meta Produção] RETURN IF(ISBLANK(M), \"Meta sem dados\", \"Meta: \" & FORMAT(M, \"#,0\", \"pt-BR\") & \" t\")",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "708dd344-4230-5aba-8429-66ebf11b99a3"
+          },
+          {
+            "name": "UX Progresso Meta",
+            "expression": "VAR A = [Aderência Meta %] RETURN IF(NOT ISBLANK(A), MAX(0, MIN(1, A)))",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "2da89afd-8574-5f97-bec3-be1f3727bbba",
+            "formatString": "0.00%"
+          },
+          {
+            "name": "UX Restante Meta",
+            "expression": "VAR A = [UX Progresso Meta] RETURN IF(NOT ISBLANK(A), 1-A)",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "7c68e9dd-1b1f-5829-8e45-b97a5a5ebac5",
+            "formatString": "0.00%"
+          },
+          {
+            "name": "UX Producao Texto",
+            "expression": "VAR P = [Produção Total] RETURN IF(ISBLANK(P), BLANK(), SWITCH(TRUE(), ABS(P)>=1000000, FORMAT(P/1000000,\"0.00\",\"pt-BR\") & \" mi t\", ABS(P)>=1000, FORMAT(P/1000,\"0.0\",\"pt-BR\") & \" mil t\", FORMAT(P,\"#,0.0\",\"pt-BR\") & \" t\"))",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "e2adae1b-1b34-5e1c-b6b1-0bda6ed31cd2"
+          },
+          {
+            "name": "UX Aderencia Exibicao",
+            "expression": "VAR A = [Aderência Meta %] RETURN IF(NOT ISBLANK(A), A)",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "bdccd2a6-f7c3-5a88-8713-d25d940722a4",
+            "formatString": "0.00%"
+          },
+          {
+            "name": "UX Desvio Exibicao",
+            "expression": "VAR D = [Desvio Produção (t)] RETURN IF(NOT ISBLANK(D), FORMAT(D,\"+#,0.0;-#,0.0;0.0\",\"pt-BR\") & \" t\")",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "22462448-a007-5400-adb2-181e9f3c3cd7"
+          },
+          {
+            "name": "UX Disp Contexto",
+            "expression": "IF(NOT ISBLANK([Disponibilidade Física %]), \"Disponibilidade física\", \"Sem dados\")",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "afaf9fc4-ec11-5cda-9938-c490b52d72e2"
+          },
+          {
+            "name": "UX Custo Texto",
+            "expression": "IF(NOT ISBLANK([Custo por Tonelada]), \"Por tonelada produzida\", \"Sem dados\")",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "928fbb28-e91d-5f70-9fbd-c0b1e66327e4"
+          },
+          {
+            "name": "UX Progresso Linear",
+            "expression": "VAR A = [UX Progresso Meta] VAR B = MIN(240, MAX(0, ROUND(A * 240, 0))) VAR N = INT(B / 8) VAR R = MOD(B, 8) RETURN IF(ISBLANK(A), BLANK(), REPT(UNICHAR(9608), N) & IF(R > 0, UNICHAR(9616-R), \"\") & REPT(UNICHAR(9617), 30-N-IF(R > 0, 1, 0)))",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "35b49a55-cf5d-5c7d-98a7-1a76c3523ac8"
           }
         ]
       }
