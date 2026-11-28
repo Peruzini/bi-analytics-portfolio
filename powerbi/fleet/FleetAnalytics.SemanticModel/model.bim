@@ -1230,6 +1230,54 @@
             "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"FILTER_CLEAR\")",
             "displayFolder": "07 | Filtros",
             "lineageTag": "ab903275-67cd-557b-a890-d62d1ead37e0"
+          },
+          {
+            "name": "COR Filtro Periodo",
+            "expression": "IF(ISFILTERED(DimData[AnoMes]), \"#126B78\", \"#CBD5E1\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "98b7be4a-2085-5860-8f2b-c2d3fed43fbe"
+          },
+          {
+            "name": "COR Filtro Tipo",
+            "expression": "IF(ISFILTERED(DimEquipamento[Tipo]), \"#126B78\", \"#CBD5E1\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "ec1071d4-a4dd-5b2b-a468-9544d27b7a8c"
+          },
+          {
+            "name": "COR Filtro Area",
+            "expression": "IF(ISFILTERED(DimEquipamento[Area]), \"#126B78\", \"#CBD5E1\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "7364e2af-a96f-5fd3-88ed-2d9f30ffb4d3"
+          },
+          {
+            "name": "COR Filtro Equipamento",
+            "expression": "IF(ISFILTERED(DimEquipamento[Equipamento]), \"#126B78\", \"#CBD5E1\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "db0434d3-5463-5ad5-ae27-9f687d00267b"
+          },
+          {
+            "name": "QTD Filtros Ativos",
+            "expression": "INT(ISFILTERED(DimData[AnoMes])) + INT(ISFILTERED(DimEquipamento[Tipo])) + INT(ISFILTERED(DimEquipamento[Area])) + INT(ISFILTERED(DimEquipamento[Equipamento]))",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "6f08fe29-48e5-5f30-b26f-4bcf4257b02e"
+          },
+          {
+            "name": "LBL Filtros Ativos",
+            "expression": "VAR N = [QTD Filtros Ativos] RETURN IF(N=0, \"Sem filtros ativos\", FORMAT(N,\"0\") & IF(N=1,\" filtro ativo\",\" filtros ativos\"))",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "b342ecf7-8867-5af9-920e-809e7d8ab9d3"
+          },
+          {
+            "name": "COR Limpar Filtros",
+            "expression": "IF([QTD Filtros Ativos]>0, \"#21586A\", \"#64748B\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "a900e018-2462-5260-adcc-7a9108510083"
+          },
+          {
+            "name": "COR Estado Filtros",
+            "expression": "IF([QTD Filtros Ativos]>0, \"#126B78\", \"#475569\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "ca96e156-77f5-5f27-b1ef-959484bc8b85"
           }
         ]
       }
