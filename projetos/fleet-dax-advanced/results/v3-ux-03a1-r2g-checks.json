@@ -1,0 +1,110 @@
+{
+  "status": "Filter styling implemented and representative UI selection/reset passed",
+  "base": "5ea1892",
+  "uxMeasures": 60,
+  "totalMeasures": 128,
+  "existingMeasuresPreserved": 120,
+  "newMeasures": 8,
+  "dictionaryRows": 35,
+  "existingRulesPreserved": 144,
+  "newRules": 8,
+  "historicalComparisons": 225,
+  "tests": 20,
+  "nativeDax": {
+    "all": [
+      {
+        "[count]": 0,
+        "[label]": "Sem filtros ativos",
+        "[period]": "#CBD5E1",
+        "[type]": "#CBD5E1",
+        "[area]": "#CBD5E1",
+        "[asset]": "#CBD5E1",
+        "[reset]": "#64748B"
+      }
+    ],
+    "one": [
+      {
+        "[count]": 1,
+        "[label]": "1 filtro ativo",
+        "[period]": "#CBD5E1",
+        "[type]": "#CBD5E1",
+        "[area]": "#CBD5E1",
+        "[asset]": "#126B78",
+        "[reset]": "#21586A"
+      }
+    ],
+    "two": [
+      {
+        "[count]": 2,
+        "[label]": "2 filtros ativos",
+        "[period]": "#126B78",
+        "[type]": "#CBD5E1",
+        "[area]": "#CBD5E1",
+        "[asset]": "#126B78",
+        "[reset]": "#21586A"
+      }
+    ],
+    "multi": [
+      {
+        "[count]": 1,
+        "[label]": "1 filtro ativo",
+        "[period]": "#126B78",
+        "[type]": "#CBD5E1",
+        "[area]": "#CBD5E1",
+        "[asset]": "#CBD5E1",
+        "[reset]": "#21586A"
+      }
+    ],
+    "empty": [
+      {
+        "[count]": 1,
+        "[label]": "1 filtro ativo",
+        "[period]": "#CBD5E1",
+        "[type]": "#CBD5E1",
+        "[area]": "#CBD5E1",
+        "[asset]": "#126B78",
+        "[reset]": "#21586A"
+      }
+    ]
+  },
+  "nativeUI": {
+    "initial": [
+      "Situação do desvio, Sem filtros ativos cartão"
+    ],
+    "one": [
+      "Situação do desvio, 1 filtro ativo cartão"
+    ],
+    "two": [
+      "Situação do desvio, 2 filtros ativos cartão"
+    ],
+    "reset": [
+      "Situação do desvio, 2 filtros ativos cartão"
+    ],
+    "resetKeyboard": [
+      "Situação do desvio, Sem filtros ativos cartão"
+    ],
+    "restored": [
+      "Situação do desvio, Sem filtros ativos cartão"
+    ],
+    "type": [
+      "Situação do desvio, 1 filtro ativo cartão"
+    ],
+    "area": [
+      "Situação do desvio, 1 filtro ativo cartão"
+    ],
+    "final": [
+      "Situação do desvio, Sem filtros ativos cartão"
+    ]
+  },
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "snapshotSha256": "30ee198bc2cc72ad6f9310e0d1b3cd1144d29945615fabb25190a7dba0047552",
+  "activeSnapshotSha256": "1c891bb5ef5798dc00403ba115c6b074c9222ff19da70ee2808fbeb3c2f96a1f",
+  "limitations": [
+    "Dynamic slicer border color configured and measures verified in DAX, but no perceptible active border change in native capture. Selection value and count provide state feedback.",
+    "Reset Invoke alone did not clear; focus plus Ctrl+Enter succeeded in Desktop edit mode.",
+    "Multi-value and empty contexts tested in DAX only. Cross-page synchronization preserved structurally but not retested across pages.",
+    "Counter represents directly filtered fields, not selected values or only slicer provenance.",
+    "Axis labels repeat under narrow filters with fixed thousands units; chart redesign not changed in this block. Navigation validation remains pending."
+  ]
+}

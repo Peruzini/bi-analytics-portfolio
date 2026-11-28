@@ -24,7 +24,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
     def test_pilot_layout_and_delta_binding(self):
         page = load(PILOT / "page.json")
         visuals = [load(f) for f in PILOT.glob("visuals/*/visual.json")]
-        self.assertEqual(len(visuals), 55)
+        self.assertEqual(len(visuals), 56)
         delta = next(v for v in visuals if v["name"] == "a103a100000000000001")
         fields = [x["queryRef"] for role in delta["visual"]["query"]["queryState"].values() for x in role["projections"]]
         self.assertIn("Medidas.UX Desvio Exibicao", fields)
@@ -129,7 +129,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
         model = load(PAGES.parents[1].parent / "FleetAnalytics.SemanticModel/model.bim")["model"]
         tables = {t["name"]:t for t in model["tables"]}
         self.assertEqual(len(tables["Medidas"]["measures"]), 68)
-        self.assertEqual(len(tables["_UX_Design"]["measures"]), 52)
+        self.assertEqual(len(tables["_UX_Design"]["measures"]), 60)
         self.assertTrue(tables["_UX_Design"]["columns"][0]["isHidden"])
         self.assertEqual(len(tables["_UX_Dicionario"]["columns"]), 6)
         self.assertTrue(all(not r["fromTable"].startswith("_UX_") and not r["toTable"].startswith("_UX_") for r in model["relationships"]))
@@ -146,7 +146,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
     def test_executive_labels(self):
         visuals=[load(f) for f in PILOT.glob("visuals/*/visual.json")]
         cards=[v for v in visuals if v.get("visual",{}).get("visualType")=="cardVisual" and v["visual"]["query"]["queryState"]["Data"]["projections"][0]["queryRef"].startswith("_UX_Design.")]
-        self.assertEqual(len(cards),18)
+        self.assertEqual(len(cards),19)
         for v in visuals:
             z=v.get("visual",{})
             if z.get("visualType")=="textbox":
@@ -157,3 +157,12 @@ class FleetExecutiveUXContract(unittest.TestCase):
             v=load(PILOT/"visuals"/id/"visual.json")["visual"]
             self.assertEqual(v["visualContainerObjects"]["title"][0]["properties"]["text"]["expr"]["Measure"]["Expression"]["SourceRef"]["Entity"],"_UX_Design")
         self.assertEqual(load(PILOT/"visuals/a103a100000000000007/visual.json")["visual"]["objects"]["text"][1]["properties"]["text"]["expr"]["Measure"]["Property"],"LBL Limpar Filtros")
+
+    def test_active_filter_status(self):
+        v=load(PILOT/"visuals/a103e700000000000001/visual.json")
+        self.assertEqual(v["visual"]["query"]["queryState"]["Data"]["projections"][0]["queryRef"],"_UX_Design.LBL Filtros Ativos")
+        rules=load(PILOT/"page.json")["visualInteractions"]
+        inbound=[r for r in rules if r["target"]==v["name"]]
+        self.assertEqual(sum(r["type"]=="DataFilter" for r in inbound),4)
+        self.assertEqual(sum(r["type"]=="NoFilter" for r in inbound),4)
+        self.assertEqual(len(rules),152)
