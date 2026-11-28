@@ -24,7 +24,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
     def test_pilot_layout_and_delta_binding(self):
         page = load(PILOT / "page.json")
         visuals = [load(f) for f in PILOT.glob("visuals/*/visual.json")]
-        self.assertEqual(len(visuals), 40)
+        self.assertEqual(len(visuals), 52)
         delta = next(v for v in visuals if v["name"] == "a103a100000000000001")
         fields = [x["queryRef"] for role in delta["visual"]["query"]["queryState"].values() for x in role["projections"]]
         self.assertIn("Medidas.UX Desvio Exibicao", fields)
@@ -62,3 +62,27 @@ class FleetExecutiveUXContract(unittest.TestCase):
             for q in children[i+1:]:
                 b = q["position"]
                 self.assertFalse(a["x"] < b["x"] + b["width"] and b["x"] < a["x"] + a["width"] and a["y"] < b["y"] + b["height"] and b["y"] < a["y"] + a["height"])
+
+    def test_kpi_family_groups(self):
+        visuals = [load(f) for f in PILOT.glob("visuals/*/visual.json")]
+        groups = [v for v in visuals if "visualGroup" in v]
+        self.assertEqual(len(groups), 5)
+        self.assertEqual(sorted(g["position"]["width"] for g in groups), [180,180,240,252,300])
+        for group in groups:
+            if group["name"] == "a103d100000000000000":
+                continue
+            children = [v for v in visuals if v.get("parentGroupName") == group["name"]]
+            self.assertEqual(len(children), 4)
+            w = group["position"]["width"]
+            bg = next(v for v in children if v["position"]["z"] == 0)
+            self.assertEqual([bg["position"][k] for k in ("x","y","width","height")], [0,0,w,140])
+            self.assertEqual(val(bg["visual"]["visualContainerObjects"]["border"][0]["properties"]["radius"]), "10D")
+            content = sorted((v for v in children if v != bg), key=lambda v:v["position"]["y"])
+            for v in content:
+                a = v["position"]
+                self.assertEqual(a["x"], 16)
+                self.assertEqual(a["width"], w-32)
+                self.assertLessEqual(a["y"]+a["height"], 140)
+                self.assertEqual(val(v["visual"]["visualContainerObjects"]["background"][0]["properties"]["show"]), "false")
+            for a,b in zip(content, content[1:]):
+                self.assertLessEqual(a["position"]["y"]+a["position"]["height"], b["position"]["y"])
