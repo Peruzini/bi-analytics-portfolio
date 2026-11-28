@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "a103a1b0000000000003",
   "position": {
-    "x": 12,
-    "y": 87,
-    "width": 168,
-    "height": 35,
-    "z": 23000,
-    "tabOrder": 2000
+    "x": 14,
+    "y": 104,
+    "width": 164,
+    "height": 34,
+    "z": 3000,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,11 +19,11 @@
               {
                 "textRuns": [
                   {
-                    "value": "ANÁLISE OPERACIONAL",
+                    "value": "VISÕES ANALÍTICAS",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
                       "fontSize": "11px",
-                      "color": "#C7D7E2"
+                      "color": "#B8D6DF"
                     }
                   }
                 ],
@@ -80,7 +80,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'ANÁLISE OPERACIONAL'"
+                  "Value": "'VISÕES ANALÍTICAS'"
                 }
               }
             }
@@ -88,5 +88,6 @@
         }
       ]
     }
-  }
+  },
+  "parentGroupName": "a103f000000000000000"
 }

@@ -3,11 +3,11 @@
   "name": "a103a100000000000003",
   "position": {
     "x": 12,
-    "y": 132,
+    "y": 144,
     "width": 168,
-    "height": 44,
+    "height": 46,
     "z": 3000,
-    "tabOrder": 3000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "actionButton",
@@ -60,7 +60,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Visão Executiva'"
+                  "Value": "'▦  Visão Executiva'"
                 }
               }
             },
@@ -78,14 +78,21 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "13D"
+                  "Value": "12D"
                 }
               }
             },
             "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "'left'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
                 }
               }
             }
@@ -163,7 +170,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Visão Executiva'"
+                  "Value": "'Visão Executiva — página atual'"
                 }
               }
             }

@@ -1,0 +1,30 @@
+{
+  "status": "Native sidebar visual redesign applied; navigation UI gate pending",
+  "base": "b9781b1",
+  "group": "Navega??o | Fleet Analytics",
+  "decorativeChildren": 7,
+  "independentActionButtons": 4,
+  "actionBindingsPreserved": 4,
+  "measuresUnchanged": 68,
+  "interactionRulesUnchanged": 144,
+  "tests": 17,
+  "nativeObserved": {
+    "brandVisible": true,
+    "fourNavigationLabelsAndGlyphsVisible": true,
+    "activeAccentVisible": true,
+    "brandScrollbarRemoved": true
+  },
+  "navigationAutomation": {
+    "Performance": "not confirmed by UI automation",
+    "remainingDestinations": "not tested after failed representative attempt"
+  },
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "snapshotSha256": "53d18c2200a71eed5465f3817e5c2ff02dada299e3983756839658b44b0a22c5",
+  "limitations": [
+    "Icons use text glyphs inside native buttons, not custom SVG assets.",
+    "Active styling is local to executive pilot; other pages unchanged.",
+    "Initial fully grouped buttons produced group selection during automation. Final buttons independent above grouped decorative layer; link bindings unchanged, navigation UI still not confirmed.",
+    "Group movement and persistence not tested; no model changes; regression reused."
+  ]
+}

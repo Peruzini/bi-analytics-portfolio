@@ -3,11 +3,11 @@
   "name": "a103a100000000000005",
   "position": {
     "x": 12,
-    "y": 236,
+    "y": 252,
     "width": 168,
-    "height": 44,
+    "height": 46,
     "z": 5000,
-    "tabOrder": 5000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "actionButton",
@@ -60,7 +60,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Manutenção'"
+                  "Value": "'⚙  Manutenção'"
                 }
               }
             },
@@ -78,14 +78,21 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "13D"
+                  "Value": "12D"
                 }
               }
             },
             "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "'left'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
                 }
               }
             }
@@ -163,7 +170,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Manutenção'"
+                  "Value": "'Manutenção — abrir página'"
                 }
               }
             }

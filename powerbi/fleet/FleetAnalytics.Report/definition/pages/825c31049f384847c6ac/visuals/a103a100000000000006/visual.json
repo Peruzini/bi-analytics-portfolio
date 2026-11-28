@@ -3,11 +3,11 @@
   "name": "a103a100000000000006",
   "position": {
     "x": 12,
-    "y": 288,
+    "y": 306,
     "width": 168,
-    "height": 44,
+    "height": 46,
     "z": 6000,
-    "tabOrder": 6000
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "actionButton",
@@ -60,7 +60,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Criticidade'"
+                  "Value": "'△  Criticidade'"
                 }
               }
             },
@@ -78,14 +78,21 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "13D"
+                  "Value": "12D"
                 }
               }
             },
             "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "'left'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
                 }
               }
             }
@@ -163,7 +170,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Criticidade'"
+                  "Value": "'Criticidade — abrir página'"
                 }
               }
             }
