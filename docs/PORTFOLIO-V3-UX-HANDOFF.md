@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 27/11/2026 | Estado: UX-03A1-R2B grid refinado; avaliação visual pendente; Power BI aberto | Documento de continuidade operacional
+Atualização: 27/11/2026 | Estado: UX-03A1-R2C gráficos refinados; avaliação visual pendente; Power BI aberto | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -124,3 +124,7 @@ Ler [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md) e [PR #13 — pil
 ## Atualização UX-03A1-R2B — grid executivo
 
 [PR #16](https://github.com/Peruzini/bi-analytics-portfolio/pull/16), commit `3595b02`, branch `portfolio/v3-ux-03a1-r2b-grid`. Canvas 1440×1032 (−81 pontos, −7,28%), 27 posições alteradas. Candidato de 984 rejeitado por ocultar dois ativos; gráficos voltaram a 310 de altura, série temporal ampliada a 688 de largura, tabela 270. Oito ativos e total visíveis. Rótulos das pequenas barras positivas ainda ausentes; valores na tabela. 63 medidas e 119 regras intactas; 13/13 testes; regressão DAX anterior reutilizada por não haver mudança de modelo ou consulta. Mesma sessão PID 24148 mantida aberta, recarga sem modelo. Próximo: revisão visual e refinamento dos gráficos (eixos, séries, rótulos e barras positivas). Sem expansão ou merge.
+
+## Atualização UX-03A1-R2C — gráficos executivos
+
+[PR #17](https://github.com/Peruzini/bi-analytics-portfolio/pull/17), commit `52b7d27`, branch `portfolio/v3-ux-03a1-r2c-charts`. Dois gráficos: produção com eixo mensal contínuo e oito marcas trimestrais no contexto geral, meta tracejada; desvio assinado com oito rótulos externos, seis barras vermelhas e duas verdes. 63 medidas intactas, uma coluna calculada Inicio Mes UX; 339/339 comparações DAX e 13/13 testes. Mesmo grid e regras de interação. Power BI PID 24148 aberto, sessão preservada. Próximo: redesign da tabela operacional e formatação condicional; navegação, filtros, mobile e acessibilidade ainda pendentes. Sem expansão ou merge.
