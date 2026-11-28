@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 28/11/2026 | Estado: UX-03A1-R2D2 mestre V2 renderizado; aceite visual e edição/movimento pendentes | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2D3 família KPI aplicada; mestre V2 aprovado; aceite da família pendente | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -140,3 +140,7 @@ Por decisão do usuário, priorizar exclusivamente o cartão azul antes de deriv
 ## Atualização UX-03A1-R2D2 — Hero V2
 
 [PR #19](https://github.com/Peruzini/bi-analytics-portfolio/pull/19), commit `1c7258a`, branch `portfolio/v3-ux-03a1-r2d2-hero-v2`. Fundo arredondado, ícone alvo, barra SVG contínua ImageUrl em tabela nativa de uma célula, sete filhos do grupo. 300×140 mantido para preservar grid e demais KPIs; valor 31 pt, rodapé 11 pt. 14/14 testes, 225/225 regressão histórica, quatro contextos DAX e largura da barra verificada em três contextos mais ausência de dados. 66 medidas anteriores intactas, duas novas de apresentação. Power BI PID 24148 permanece aberto. Aceite visual, movimento e persistência do grupo pendentes; não replicar antes de aprovação. Sem merge/deploy.
+
+## Atualização UX-03A1-R2D3 — família de KPIs
+
+Mestre azul V2 aprovado expressamente pelo usuário. [PR #20](https://github.com/Peruzini/bi-analytics-portfolio/pull/20), commit `ad1ffbe`, branch `portfolio/v3-ux-03a1-r2d3-kpi-family`. Quatro grupos derivados, cinco grupos totais, fundo arredondado, header, valor e referência/status transparentes. 15/15 testes, 68 medidas e 144 regras intactas, oito consultas preservadas. Rodapé de custo 9 pt para evitar recorte. Nenhuma mudança no hero, gráficos, tabela ou outras páginas. Power BI PID 24148 permanece aberto. Revisão visual dos cinco cartões pendente; próximo: UX-03A1-R2E — redesign da tabela operacional após aceite da família. Movimento/persistência dos grupos e acessibilidade pendentes. Sem merge/deploy.
