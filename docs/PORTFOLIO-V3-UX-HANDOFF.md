@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 27/11/2026 | Estado: UX-03A1-R1 refinamento visual implementado; avaliação ao vivo pendente, Power BI aberto por solicitação expressa | Documento de continuidade operacional
+Atualização: 27/11/2026 | Estado: UX-03A1-R2 especificação KPI concluída; aplicação nativa pendente; Power BI aberto por solicitação expressa | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -112,3 +112,7 @@ Ler [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md) e [PR #13 — pil
 ## Atualização UX-03A1-R1 — revisão visual
 
 [PR #14](https://github.com/Peruzini/bi-analytics-portfolio/pull/14), branch `portfolio/v3-ux-03a1-r1-fleet-polish`, commit `930b281`. A pedido do usuário, manter foco exclusivo na qualidade visual do piloto e não fechar a instância aberta para avaliação (PID 24148 no momento da entrega; confirmar estado antes de qualquer nova ação). Esta é uma exceção à regra anterior de fechamento. Não abrir instância adicional. 13/13 testes e 225/225 regressão; ações e modelo preservados. Não expandir às outras telas sem aprovação visual. [Captura real](https://github.com/Peruzini/bi-analytics-portfolio/blob/portfolio/v3-ux-03a1-r1-fleet-polish/projetos/fleet-dax-advanced/results/v3-ux-03a1-r1-pilot.png). Próximo: continuar refinando o piloto conforme feedback ao vivo.
+
+## Atualização UX-03A1-R2 — especificação KPI
+
+[Especificação dos cinco KPIs](PORTFOLIO-V3-UX-03A1-R2-KPI-SPEC.md), commit f5d9064. Faixa x=216–1416, y=218–358, larguras 300/252/240/180/180, gap 12; aderência hero escuro, desvio com semântica dinâmica, três cards de apoio. Medidas existentes verificadas; não usar barra estática, valores fixos ou status sem limiar. Nenhuma alteração PBIR/DAX ou fechamento do Power BI nesta etapa. Próximo: UX-03A1-R2A — aplicação nativa e revisão visual dos KPIs, preservando sessão aberta e verificando alterações do usuário antes de editar; sem expansão das demais páginas.
