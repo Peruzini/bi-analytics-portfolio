@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 28/11/2026 | Estado: UX-03A1-R2D1 grupo nativo implementado; aceite visual e edição/movimento pendentes | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2D2 mestre V2 renderizado; aceite visual e edição/movimento pendentes | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -136,3 +136,7 @@ Por decisão do usuário, priorizar exclusivamente o cartão azul antes de deriv
 ## Atualização UX-03A1-R2D1 — cartão mestre agrupado
 
 [PR #18](https://github.com/Peruzini/bi-analytics-portfolio/pull/18), commit `afceb25`, branch `portfolio/v3-ux-03a1-r2d1-hero`. Grupo nativo ScaleMode, fundo único, cinco filhos transparentes, quatro zonas. 300×140 mantido; fonte valor 28 pt e rodapé 9 pt para evitar recortes. 14 testes, 225/225 regressão histórica e quatro contextos DAX. 63 medidas anteriores intactas e três novas de apresentação. Grupo reconhecido no painel Seleção, mas movimento, edição individual e round-trip ainda pendentes. Barra segmentada dinâmica mantida, raio não confirmado. Power BI PID 24148 permanece aberto. Não replicar antes do aceite visual. Próximo: revisão do mestre com usuário e validação de manipulação do grupo. Sem merge/deploy.
+
+## Atualização UX-03A1-R2D2 — Hero V2
+
+[PR #19](https://github.com/Peruzini/bi-analytics-portfolio/pull/19), commit `1c7258a`, branch `portfolio/v3-ux-03a1-r2d2-hero-v2`. Fundo arredondado, ícone alvo, barra SVG contínua ImageUrl em tabela nativa de uma célula, sete filhos do grupo. 300×140 mantido para preservar grid e demais KPIs; valor 31 pt, rodapé 11 pt. 14/14 testes, 225/225 regressão histórica, quatro contextos DAX e largura da barra verificada em três contextos mais ausência de dados. 66 medidas anteriores intactas, duas novas de apresentação. Power BI PID 24148 permanece aberto. Aceite visual, movimento e persistência do grupo pendentes; não replicar antes de aprovação. Sem merge/deploy.
