@@ -1,0 +1,2609 @@
+{
+  "tokens": {
+    "version": "1.0.0-proposed",
+    "name": "Enterprise Analytics Workspace",
+    "units": "logical report canvas coordinates; typography in pt, verify in Power BI Desktop",
+    "colors": {
+      "canvas": "#F4F7FA",
+      "surface": "#FFFFFF",
+      "text": "#172B3A",
+      "secondary": "#475569",
+      "border": "#CBD5E1",
+      "controlBorder": "#64748B",
+      "focus": "#1D4ED8",
+      "positive": "#166534",
+      "negative": "#B42318",
+      "warning": "#92400E",
+      "neutral": "#475569",
+      "positiveBg": "#E7F5EB",
+      "negativeBg": "#FDECE9",
+      "warningBg": "#FFF4D6",
+      "fleet": {
+        "sidebar": "#102B3D",
+        "active": "#21586A",
+        "onNav": "#FFFFFF",
+        "navMuted": "#C7D7E2",
+        "accent": "#126B78",
+        "secondarySeries": "#64748B",
+        "series": [
+          "#126B78",
+          "#4266A3",
+          "#8A5D15",
+          "#6D4D8D",
+          "#64748B",
+          "#A34536"
+        ]
+      },
+      "ecommerce": {
+        "sidebar": "#103B33",
+        "active": "#21654F",
+        "onNav": "#FFFFFF",
+        "navMuted": "#C8DED4",
+        "accent": "#16684F",
+        "secondarySeries": "#475569",
+        "series": [
+          "#16684F",
+          "#3467A1",
+          "#8A5D15",
+          "#754B91",
+          "#64748B",
+          "#A34536"
+        ]
+      }
+    },
+    "typography": {
+      "font": "Segoe UI",
+      "desktop": {
+        "pageTitle": 28,
+        "subtitle": 14,
+        "sectionTitle": 16,
+        "kpiHero": 36,
+        "kpiSecondary": 26,
+        "kpiLabel": 12,
+        "body": 12,
+        "axis": 11,
+        "table": 12,
+        "nav": 13
+      },
+      "mobile": {
+        "pageTitle": 20,
+        "sectionTitle": 14,
+        "kpiHero": 30,
+        "kpiSecondary": 22,
+        "kpiLabel": 12,
+        "body": 12,
+        "axis": 11,
+        "table": 11,
+        "nav": 12
+      }
+    },
+    "spacing": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32
+    ],
+    "radius": {
+      "panel": 8,
+      "control": 6
+    },
+    "desktop": {
+      "width": 1440,
+      "sidebar": 192,
+      "contentX": 216,
+      "contentWidth": 1200,
+      "rightMargin": 24,
+      "columns": 12,
+      "columnWidth": 89,
+      "gutter": 12,
+      "headerY": 24,
+      "filtersY": 96,
+      "filterHeight": 56,
+      "contextY": 160,
+      "contextHeight": 24,
+      "kpiY": 196,
+      "kpiHeight": 112,
+      "analysisY": 324
+    },
+    "mobile": {
+      "width": 323,
+      "padding": 8,
+      "contentWidth": 307,
+      "gutter": 8,
+      "halfWidths": [
+        149,
+        150
+      ],
+      "headerHeight": 104,
+      "navHeight": 104,
+      "contextHeight": 56,
+      "heroHeight": 144,
+      "secondaryHeight": 112,
+      "filterHeight": 116,
+      "chartHeight": 300,
+      "touchTargetGoal": 48,
+      "notes": "Logical units are not CSS px. Validate actual hit areas and text. Full-width controls if half-width clipping occurs."
+    }
+  },
+  "layouts": [
+    {
+      "project": "fleet",
+      "id": "executive",
+      "title": "Visão Executiva",
+      "question": "Atingimos a meta? Onde agir?",
+      "kpis": [
+        "Aderência à meta",
+        "Produção total",
+        "Disponibilidade",
+        "Custo/t"
+      ],
+      "filters": [
+        "Período",
+        "Tipo",
+        "Área",
+        "Equipamento"
+      ],
+      "desktop": {
+        "width": 1440,
+        "height": 944,
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "w": 192,
+          "h": 944
+        },
+        "blocks": [
+          {
+            "id": "header",
+            "label": "Visão Executiva",
+            "x": 216,
+            "y": 24,
+            "w": 1200,
+            "h": 56
+          },
+          {
+            "id": "context",
+            "label": "Contexto e seleção",
+            "x": 216,
+            "y": 160,
+            "w": 1200,
+            "h": 24
+          },
+          {
+            "id": "filter0",
+            "label": "Período",
+            "x": 216,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter1",
+            "label": "Tipo",
+            "x": 478,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter2",
+            "label": "Área",
+            "x": 740,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter3",
+            "label": "Equipamento",
+            "x": 1002,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "reset",
+            "label": "Limpar filtros",
+            "x": 1264,
+            "y": 96,
+            "w": 152,
+            "h": 56
+          },
+          {
+            "id": "kpi0",
+            "label": "Aderência à meta",
+            "x": 216,
+            "y": 196,
+            "w": 392,
+            "h": 112
+          },
+          {
+            "id": "kpi1",
+            "label": "Produção total",
+            "x": 620,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "kpi2",
+            "label": "Disponibilidade",
+            "x": 923,
+            "y": 196,
+            "w": 190,
+            "h": 112
+          },
+          {
+            "id": "kpi3",
+            "label": "Custo/t",
+            "x": 1125,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "chart0",
+            "label": "Produção × meta",
+            "x": 216,
+            "y": 324,
+            "w": 695,
+            "h": 300
+          },
+          {
+            "id": "chart1",
+            "label": "Desvios por ativo",
+            "x": 923,
+            "y": 324,
+            "w": 493,
+            "h": 300
+          },
+          {
+            "id": "chart2",
+            "label": "Resumo por equipamento",
+            "x": 216,
+            "y": 636,
+            "w": 1200,
+            "h": 256
+          },
+          {
+            "id": "footer",
+            "label": "Dados sintéticos · metodologia",
+            "x": 216,
+            "y": 904,
+            "w": 1200,
+            "h": 24
+          }
+        ]
+      },
+      "mobile": {
+        "width": 323,
+        "height": 2392,
+        "blocks": [
+          {
+            "label": "Visão Executiva",
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Navegação (2×2)",
+            "x": 8,
+            "y": 120,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Contexto da seleção",
+            "x": 8,
+            "y": 232,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Aderência à meta",
+            "x": 8,
+            "y": 296,
+            "w": 307,
+            "h": 144
+          },
+          {
+            "label": "Produção total",
+            "x": 8,
+            "y": 448,
+            "w": 149,
+            "h": 112
+          },
+          {
+            "label": "Disponibilidade",
+            "x": 165,
+            "y": 448,
+            "w": 150,
+            "h": 112
+          },
+          {
+            "label": "Custo/t",
+            "x": 8,
+            "y": 568,
+            "w": 307,
+            "h": 112
+          },
+          {
+            "label": "Filtros comuns / limpar",
+            "x": 8,
+            "y": 688,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Período",
+            "x": 8,
+            "y": 752,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Tipo",
+            "x": 8,
+            "y": 876,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Área",
+            "x": 8,
+            "y": 1000,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Equipamento",
+            "x": 8,
+            "y": 1124,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Limpar filtros",
+            "x": 8,
+            "y": 1248,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Produção × meta",
+            "x": 8,
+            "y": 1312,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Desvios por ativo",
+            "x": 8,
+            "y": 1620,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Resumo por equipamento",
+            "x": 8,
+            "y": 1928,
+            "w": 307,
+            "h": 320
+          },
+          {
+            "label": "Dados sintéticos · metodologia",
+            "x": 8,
+            "y": 2256,
+            "w": 307,
+            "h": 128
+          }
+        ],
+        "firstContent": "context and KPI before filters; keep filters visible in scroll, no fixed chrome claim"
+      }
+    },
+    {
+      "project": "fleet",
+      "id": "performance",
+      "title": "Performance",
+      "question": "Quais ativos são mais eficientes?",
+      "kpis": [
+        "Produtividade",
+        "Utilização",
+        "Consumo L/t",
+        "Horas operacionais"
+      ],
+      "filters": [
+        "Período",
+        "Tipo",
+        "Área",
+        "Equipamento"
+      ],
+      "desktop": {
+        "width": 1440,
+        "height": 1104,
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "w": 192,
+          "h": 1104
+        },
+        "blocks": [
+          {
+            "id": "header",
+            "label": "Performance",
+            "x": 216,
+            "y": 24,
+            "w": 1200,
+            "h": 56
+          },
+          {
+            "id": "context",
+            "label": "Contexto e seleção",
+            "x": 216,
+            "y": 160,
+            "w": 1200,
+            "h": 24
+          },
+          {
+            "id": "filter0",
+            "label": "Período",
+            "x": 216,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter1",
+            "label": "Tipo",
+            "x": 478,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter2",
+            "label": "Área",
+            "x": 740,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter3",
+            "label": "Equipamento",
+            "x": 1002,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "reset",
+            "label": "Limpar filtros",
+            "x": 1264,
+            "y": 96,
+            "w": 152,
+            "h": 56
+          },
+          {
+            "id": "kpi0",
+            "label": "Produtividade",
+            "x": 216,
+            "y": 196,
+            "w": 392,
+            "h": 112
+          },
+          {
+            "id": "kpi1",
+            "label": "Utilização",
+            "x": 620,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "kpi2",
+            "label": "Consumo L/t",
+            "x": 923,
+            "y": 196,
+            "w": 190,
+            "h": 112
+          },
+          {
+            "id": "kpi3",
+            "label": "Horas operacionais",
+            "x": 1125,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "chart0",
+            "label": "Produtividade × custo",
+            "x": 216,
+            "y": 324,
+            "w": 695,
+            "h": 440
+          },
+          {
+            "id": "chart1",
+            "label": "Utilização por ativo",
+            "x": 923,
+            "y": 324,
+            "w": 493,
+            "h": 214
+          },
+          {
+            "id": "chart2",
+            "label": "Produtividade mensal",
+            "x": 923,
+            "y": 550,
+            "w": 493,
+            "h": 214
+          },
+          {
+            "id": "chart3",
+            "label": "Desempenho por ativo",
+            "x": 216,
+            "y": 776,
+            "w": 1200,
+            "h": 272
+          },
+          {
+            "id": "footer",
+            "label": "Dados sintéticos · metodologia",
+            "x": 216,
+            "y": 1064,
+            "w": 1200,
+            "h": 24
+          }
+        ]
+      },
+      "mobile": {
+        "width": 323,
+        "height": 2700,
+        "blocks": [
+          {
+            "label": "Performance",
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Navegação (2×2)",
+            "x": 8,
+            "y": 120,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Contexto da seleção",
+            "x": 8,
+            "y": 232,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Produtividade",
+            "x": 8,
+            "y": 296,
+            "w": 307,
+            "h": 144
+          },
+          {
+            "label": "Utilização",
+            "x": 8,
+            "y": 448,
+            "w": 149,
+            "h": 112
+          },
+          {
+            "label": "Consumo L/t",
+            "x": 165,
+            "y": 448,
+            "w": 150,
+            "h": 112
+          },
+          {
+            "label": "Horas operacionais",
+            "x": 8,
+            "y": 568,
+            "w": 307,
+            "h": 112
+          },
+          {
+            "label": "Filtros comuns / limpar",
+            "x": 8,
+            "y": 688,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Período",
+            "x": 8,
+            "y": 752,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Tipo",
+            "x": 8,
+            "y": 876,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Área",
+            "x": 8,
+            "y": 1000,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Equipamento",
+            "x": 8,
+            "y": 1124,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Limpar filtros",
+            "x": 8,
+            "y": 1248,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Produtividade × custo",
+            "x": 8,
+            "y": 1312,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Utilização por ativo",
+            "x": 8,
+            "y": 1620,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Produtividade mensal",
+            "x": 8,
+            "y": 1928,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Desempenho por ativo",
+            "x": 8,
+            "y": 2236,
+            "w": 307,
+            "h": 320
+          },
+          {
+            "label": "Dados sintéticos · metodologia",
+            "x": 8,
+            "y": 2564,
+            "w": 307,
+            "h": 128
+          }
+        ],
+        "firstContent": "context and KPI before filters; keep filters visible in scroll, no fixed chrome claim"
+      }
+    },
+    {
+      "project": "fleet",
+      "id": "maintenance",
+      "title": "Manutenção",
+      "question": "Onde se concentram as perdas?",
+      "kpis": [
+        "Horas de manutenção",
+        "MTBF",
+        "MTTR",
+        "Falhas"
+      ],
+      "filters": [
+        "Período",
+        "Tipo",
+        "Área",
+        "Equipamento"
+      ],
+      "desktop": {
+        "width": 1440,
+        "height": 1212,
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "w": 192,
+          "h": 1212
+        },
+        "blocks": [
+          {
+            "id": "header",
+            "label": "Manutenção",
+            "x": 216,
+            "y": 24,
+            "w": 1200,
+            "h": 56
+          },
+          {
+            "id": "context",
+            "label": "Contexto e seleção",
+            "x": 216,
+            "y": 160,
+            "w": 1200,
+            "h": 24
+          },
+          {
+            "id": "filter0",
+            "label": "Período",
+            "x": 216,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter1",
+            "label": "Tipo",
+            "x": 478,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter2",
+            "label": "Área",
+            "x": 740,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter3",
+            "label": "Equipamento",
+            "x": 1002,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "reset",
+            "label": "Limpar filtros",
+            "x": 1264,
+            "y": 96,
+            "w": 152,
+            "h": 56
+          },
+          {
+            "id": "kpi0",
+            "label": "Horas de manutenção",
+            "x": 216,
+            "y": 196,
+            "w": 392,
+            "h": 112
+          },
+          {
+            "id": "kpi1",
+            "label": "MTBF",
+            "x": 620,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "kpi2",
+            "label": "MTTR",
+            "x": 923,
+            "y": 196,
+            "w": 190,
+            "h": 112
+          },
+          {
+            "id": "kpi3",
+            "label": "Falhas",
+            "x": 1125,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "chart0",
+            "label": "Pareto de perdas (80%)",
+            "x": 216,
+            "y": 324,
+            "w": 796,
+            "h": 288
+          },
+          {
+            "id": "chart1",
+            "label": "Intervenções por tipo",
+            "x": 1024,
+            "y": 324,
+            "w": 392,
+            "h": 288
+          },
+          {
+            "id": "chart2",
+            "label": "MTBF mensal",
+            "x": 216,
+            "y": 624,
+            "w": 594,
+            "h": 220
+          },
+          {
+            "id": "chart3",
+            "label": "MTTR mensal",
+            "x": 822,
+            "y": 624,
+            "w": 594,
+            "h": 220
+          },
+          {
+            "id": "chart4",
+            "label": "Detalhe de manutenção",
+            "x": 216,
+            "y": 856,
+            "w": 1200,
+            "h": 300
+          },
+          {
+            "id": "footer",
+            "label": "Dados sintéticos · metodologia",
+            "x": 216,
+            "y": 1172,
+            "w": 1200,
+            "h": 24
+          }
+        ]
+      },
+      "mobile": {
+        "width": 323,
+        "height": 3008,
+        "blocks": [
+          {
+            "label": "Manutenção",
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Navegação (2×2)",
+            "x": 8,
+            "y": 120,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Contexto da seleção",
+            "x": 8,
+            "y": 232,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Horas de manutenção",
+            "x": 8,
+            "y": 296,
+            "w": 307,
+            "h": 144
+          },
+          {
+            "label": "MTBF",
+            "x": 8,
+            "y": 448,
+            "w": 149,
+            "h": 112
+          },
+          {
+            "label": "MTTR",
+            "x": 165,
+            "y": 448,
+            "w": 150,
+            "h": 112
+          },
+          {
+            "label": "Falhas",
+            "x": 8,
+            "y": 568,
+            "w": 307,
+            "h": 112
+          },
+          {
+            "label": "Filtros comuns / limpar",
+            "x": 8,
+            "y": 688,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Período",
+            "x": 8,
+            "y": 752,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Tipo",
+            "x": 8,
+            "y": 876,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Área",
+            "x": 8,
+            "y": 1000,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Equipamento",
+            "x": 8,
+            "y": 1124,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Limpar filtros",
+            "x": 8,
+            "y": 1248,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Pareto de perdas (80%)",
+            "x": 8,
+            "y": 1312,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "MTBF mensal",
+            "x": 8,
+            "y": 1620,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "MTTR mensal",
+            "x": 8,
+            "y": 1928,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Intervenções por tipo",
+            "x": 8,
+            "y": 2236,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Detalhe de manutenção",
+            "x": 8,
+            "y": 2544,
+            "w": 307,
+            "h": 320
+          },
+          {
+            "label": "Dados sintéticos · metodologia",
+            "x": 8,
+            "y": 2872,
+            "w": 307,
+            "h": 128
+          }
+        ],
+        "firstContent": "context and KPI before filters; keep filters visible in scroll, no fixed chrome claim"
+      }
+    },
+    {
+      "project": "fleet",
+      "id": "criticality",
+      "title": "Criticidade",
+      "question": "Quais ativos priorizar?",
+      "kpis": [
+        "Ativos alta/crítica",
+        "Índice de criticidade",
+        "Disponibilidade",
+        "Custo/t"
+      ],
+      "filters": [
+        "Período",
+        "Tipo",
+        "Área",
+        "Equipamento"
+      ],
+      "desktop": {
+        "width": 1440,
+        "height": 962,
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "w": 192,
+          "h": 962
+        },
+        "blocks": [
+          {
+            "id": "header",
+            "label": "Criticidade",
+            "x": 216,
+            "y": 24,
+            "w": 1200,
+            "h": 56
+          },
+          {
+            "id": "context",
+            "label": "Contexto e seleção",
+            "x": 216,
+            "y": 160,
+            "w": 1200,
+            "h": 24
+          },
+          {
+            "id": "filter0",
+            "label": "Período",
+            "x": 216,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter1",
+            "label": "Tipo",
+            "x": 478,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter2",
+            "label": "Área",
+            "x": 740,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter3",
+            "label": "Equipamento",
+            "x": 1002,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "reset",
+            "label": "Limpar filtros",
+            "x": 1264,
+            "y": 96,
+            "w": 152,
+            "h": 56
+          },
+          {
+            "id": "kpi0",
+            "label": "Ativos alta/crítica",
+            "x": 216,
+            "y": 196,
+            "w": 392,
+            "h": 112
+          },
+          {
+            "id": "kpi1",
+            "label": "Índice de criticidade",
+            "x": 620,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "kpi2",
+            "label": "Disponibilidade",
+            "x": 923,
+            "y": 196,
+            "w": 190,
+            "h": 112
+          },
+          {
+            "id": "kpi3",
+            "label": "Custo/t",
+            "x": 1125,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "chart0",
+            "label": "Ranking de criticidade",
+            "x": 216,
+            "y": 324,
+            "w": 1200,
+            "h": 270
+          },
+          {
+            "id": "chart1",
+            "label": "Componentes ponderados",
+            "x": 216,
+            "y": 606,
+            "w": 594,
+            "h": 300
+          },
+          {
+            "id": "chart2",
+            "label": "Indisponibilidade × custo",
+            "x": 822,
+            "y": 606,
+            "w": 594,
+            "h": 300
+          },
+          {
+            "id": "footer",
+            "label": "Dados sintéticos · metodologia",
+            "x": 216,
+            "y": 922,
+            "w": 1200,
+            "h": 24
+          }
+        ]
+      },
+      "mobile": {
+        "width": 323,
+        "height": 2372,
+        "blocks": [
+          {
+            "label": "Criticidade",
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Navegação (2×2)",
+            "x": 8,
+            "y": 120,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Contexto da seleção",
+            "x": 8,
+            "y": 232,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Ativos alta/crítica",
+            "x": 8,
+            "y": 296,
+            "w": 307,
+            "h": 144
+          },
+          {
+            "label": "Índice de criticidade",
+            "x": 8,
+            "y": 448,
+            "w": 149,
+            "h": 112
+          },
+          {
+            "label": "Disponibilidade",
+            "x": 165,
+            "y": 448,
+            "w": 150,
+            "h": 112
+          },
+          {
+            "label": "Custo/t",
+            "x": 8,
+            "y": 568,
+            "w": 307,
+            "h": 112
+          },
+          {
+            "label": "Filtros comuns / limpar",
+            "x": 8,
+            "y": 688,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Período",
+            "x": 8,
+            "y": 752,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Tipo",
+            "x": 8,
+            "y": 876,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Área",
+            "x": 8,
+            "y": 1000,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Equipamento",
+            "x": 8,
+            "y": 1124,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Limpar filtros",
+            "x": 8,
+            "y": 1248,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Ranking de criticidade",
+            "x": 8,
+            "y": 1312,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Componentes ponderados",
+            "x": 8,
+            "y": 1620,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Indisponibilidade × custo",
+            "x": 8,
+            "y": 1928,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Dados sintéticos · metodologia",
+            "x": 8,
+            "y": 2236,
+            "w": 307,
+            "h": 128
+          }
+        ],
+        "firstContent": "context and KPI before filters; keep filters visible in scroll, no fixed chrome claim"
+      }
+    },
+    {
+      "project": "ecommerce",
+      "id": "executive",
+      "title": "Visão Executiva",
+      "question": "Como evoluiu a receita?",
+      "kpis": [
+        "Receita reconhecida",
+        "MoM meses completos",
+        "Pedidos concluídos",
+        "Ticket médio"
+      ],
+      "filters": [
+        "Mês",
+        "Região",
+        "Status",
+        "Canal"
+      ],
+      "desktop": {
+        "width": 1440,
+        "height": 1258,
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "w": 192,
+          "h": 1258
+        },
+        "blocks": [
+          {
+            "id": "header",
+            "label": "Visão Executiva",
+            "x": 216,
+            "y": 24,
+            "w": 1200,
+            "h": 56
+          },
+          {
+            "id": "context",
+            "label": "Contexto e seleção",
+            "x": 216,
+            "y": 160,
+            "w": 1200,
+            "h": 24
+          },
+          {
+            "id": "filter0",
+            "label": "Mês",
+            "x": 216,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter1",
+            "label": "Região",
+            "x": 478,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter2",
+            "label": "Status",
+            "x": 740,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter3",
+            "label": "Canal",
+            "x": 1002,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "reset",
+            "label": "Limpar filtros",
+            "x": 1264,
+            "y": 96,
+            "w": 152,
+            "h": 56
+          },
+          {
+            "id": "kpi0",
+            "label": "Receita reconhecida",
+            "x": 216,
+            "y": 196,
+            "w": 392,
+            "h": 112
+          },
+          {
+            "id": "kpi1",
+            "label": "MoM meses completos",
+            "x": 620,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "kpi2",
+            "label": "Pedidos concluídos",
+            "x": 923,
+            "y": 196,
+            "w": 190,
+            "h": 112
+          },
+          {
+            "id": "kpi3",
+            "label": "Ticket médio",
+            "x": 1125,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "chart0",
+            "label": "Receita × mês anterior",
+            "x": 216,
+            "y": 324,
+            "w": 695,
+            "h": 300
+          },
+          {
+            "id": "chart1",
+            "label": "Receita por região",
+            "x": 923,
+            "y": 324,
+            "w": 493,
+            "h": 300
+          },
+          {
+            "id": "chart2",
+            "label": "Receita média por dia",
+            "x": 216,
+            "y": 636,
+            "w": 1200,
+            "h": 174
+          },
+          {
+            "id": "chart3",
+            "label": "Resumo mensal",
+            "x": 216,
+            "y": 822,
+            "w": 1200,
+            "h": 380
+          },
+          {
+            "id": "footer",
+            "label": "Dados sintéticos · metodologia",
+            "x": 216,
+            "y": 1218,
+            "w": 1200,
+            "h": 24
+          }
+        ]
+      },
+      "mobile": {
+        "width": 323,
+        "height": 2700,
+        "blocks": [
+          {
+            "label": "Visão Executiva",
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Navegação (2×2)",
+            "x": 8,
+            "y": 120,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Contexto da seleção",
+            "x": 8,
+            "y": 232,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Receita reconhecida",
+            "x": 8,
+            "y": 296,
+            "w": 307,
+            "h": 144
+          },
+          {
+            "label": "MoM meses completos",
+            "x": 8,
+            "y": 448,
+            "w": 149,
+            "h": 112
+          },
+          {
+            "label": "Pedidos concluídos",
+            "x": 165,
+            "y": 448,
+            "w": 150,
+            "h": 112
+          },
+          {
+            "label": "Ticket médio",
+            "x": 8,
+            "y": 568,
+            "w": 307,
+            "h": 112
+          },
+          {
+            "label": "Filtros comuns / limpar",
+            "x": 8,
+            "y": 688,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Mês",
+            "x": 8,
+            "y": 752,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Região",
+            "x": 8,
+            "y": 876,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Status",
+            "x": 8,
+            "y": 1000,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Canal",
+            "x": 8,
+            "y": 1124,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Limpar filtros",
+            "x": 8,
+            "y": 1248,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Receita × mês anterior",
+            "x": 8,
+            "y": 1312,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Receita por região",
+            "x": 8,
+            "y": 1620,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Receita média por dia",
+            "x": 8,
+            "y": 1928,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Resumo mensal",
+            "x": 8,
+            "y": 2236,
+            "w": 307,
+            "h": 320
+          },
+          {
+            "label": "Dados sintéticos · metodologia",
+            "x": 8,
+            "y": 2564,
+            "w": 307,
+            "h": 128
+          }
+        ],
+        "firstContent": "context and KPI before filters; keep filters visible in scroll, no fixed chrome claim"
+      }
+    },
+    {
+      "project": "ecommerce",
+      "id": "orders",
+      "title": "Receita e Pedidos",
+      "question": "Quais exceções afetam os pedidos?",
+      "kpis": [
+        "Taxa de conclusão",
+        "Pedidos totais",
+        "Cancelamento",
+        "Reembolso"
+      ],
+      "filters": [
+        "Mês",
+        "Região",
+        "Status",
+        "Canal"
+      ],
+      "desktop": {
+        "width": 1440,
+        "height": 1274,
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "w": 192,
+          "h": 1274
+        },
+        "blocks": [
+          {
+            "id": "header",
+            "label": "Receita e Pedidos",
+            "x": 216,
+            "y": 24,
+            "w": 1200,
+            "h": 56
+          },
+          {
+            "id": "context",
+            "label": "Contexto e seleção",
+            "x": 216,
+            "y": 160,
+            "w": 1200,
+            "h": 24
+          },
+          {
+            "id": "filter0",
+            "label": "Mês",
+            "x": 216,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter1",
+            "label": "Região",
+            "x": 478,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter2",
+            "label": "Status",
+            "x": 740,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter3",
+            "label": "Canal",
+            "x": 1002,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "reset",
+            "label": "Limpar filtros",
+            "x": 1264,
+            "y": 96,
+            "w": 152,
+            "h": 56
+          },
+          {
+            "id": "kpi0",
+            "label": "Taxa de conclusão",
+            "x": 216,
+            "y": 196,
+            "w": 392,
+            "h": 112
+          },
+          {
+            "id": "kpi1",
+            "label": "Pedidos totais",
+            "x": 620,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "kpi2",
+            "label": "Cancelamento",
+            "x": 923,
+            "y": 196,
+            "w": 190,
+            "h": 112
+          },
+          {
+            "id": "kpi3",
+            "label": "Reembolso",
+            "x": 1125,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "chart0",
+            "label": "Composição por status",
+            "x": 216,
+            "y": 324,
+            "w": 594,
+            "h": 250
+          },
+          {
+            "id": "chart1",
+            "label": "Cancelamento e reembolso",
+            "x": 822,
+            "y": 324,
+            "w": 594,
+            "h": 250
+          },
+          {
+            "id": "chart2",
+            "label": "Receita diária + média 7d",
+            "x": 216,
+            "y": 586,
+            "w": 594,
+            "h": 240
+          },
+          {
+            "id": "chart3",
+            "label": "Receita acumulada",
+            "x": 822,
+            "y": 586,
+            "w": 594,
+            "h": 240
+          },
+          {
+            "id": "chart4",
+            "label": "Pedidos e receita mensal",
+            "x": 216,
+            "y": 838,
+            "w": 1200,
+            "h": 380
+          },
+          {
+            "id": "footer",
+            "label": "Dados sintéticos · metodologia",
+            "x": 216,
+            "y": 1234,
+            "w": 1200,
+            "h": 24
+          }
+        ]
+      },
+      "mobile": {
+        "width": 323,
+        "height": 3008,
+        "blocks": [
+          {
+            "label": "Receita e Pedidos",
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Navegação (2×2)",
+            "x": 8,
+            "y": 120,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Contexto da seleção",
+            "x": 8,
+            "y": 232,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Taxa de conclusão",
+            "x": 8,
+            "y": 296,
+            "w": 307,
+            "h": 144
+          },
+          {
+            "label": "Pedidos totais",
+            "x": 8,
+            "y": 448,
+            "w": 149,
+            "h": 112
+          },
+          {
+            "label": "Cancelamento",
+            "x": 165,
+            "y": 448,
+            "w": 150,
+            "h": 112
+          },
+          {
+            "label": "Reembolso",
+            "x": 8,
+            "y": 568,
+            "w": 307,
+            "h": 112
+          },
+          {
+            "label": "Filtros comuns / limpar",
+            "x": 8,
+            "y": 688,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Mês",
+            "x": 8,
+            "y": 752,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Região",
+            "x": 8,
+            "y": 876,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Status",
+            "x": 8,
+            "y": 1000,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Canal",
+            "x": 8,
+            "y": 1124,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Limpar filtros",
+            "x": 8,
+            "y": 1248,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Composição por status",
+            "x": 8,
+            "y": 1312,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Cancelamento e reembolso",
+            "x": 8,
+            "y": 1620,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Receita diária + média 7d",
+            "x": 8,
+            "y": 1928,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Receita acumulada",
+            "x": 8,
+            "y": 2236,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Pedidos e receita mensal",
+            "x": 8,
+            "y": 2544,
+            "w": 307,
+            "h": 320
+          },
+          {
+            "label": "Dados sintéticos · metodologia",
+            "x": 8,
+            "y": 2872,
+            "w": 307,
+            "h": 128
+          }
+        ],
+        "firstContent": "context and KPI before filters; keep filters visible in scroll, no fixed chrome claim"
+      }
+    },
+    {
+      "project": "ecommerce",
+      "id": "products",
+      "title": "Clientes e Produtos",
+      "question": "Onde estão recorrência e concentração?",
+      "kpis": [
+        "Taxa de recompra",
+        "Receita de itens",
+        "Compradores",
+        "Recorrentes"
+      ],
+      "filters": [
+        "Mês",
+        "Região",
+        "Categoria (local)",
+        "Status",
+        "Canal"
+      ],
+      "desktop": {
+        "width": 1440,
+        "height": 1264,
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "w": 192,
+          "h": 1264
+        },
+        "blocks": [
+          {
+            "id": "header",
+            "label": "Clientes e Produtos",
+            "x": 216,
+            "y": 24,
+            "w": 1200,
+            "h": 56
+          },
+          {
+            "id": "context",
+            "label": "Contexto e seleção",
+            "x": 216,
+            "y": 160,
+            "w": 1200,
+            "h": 24
+          },
+          {
+            "id": "filter0",
+            "label": "Mês",
+            "x": 216,
+            "y": 96,
+            "w": 192,
+            "h": 56
+          },
+          {
+            "id": "filter1",
+            "label": "Região",
+            "x": 420,
+            "y": 96,
+            "w": 192,
+            "h": 56
+          },
+          {
+            "id": "filter2",
+            "label": "Categoria (local)",
+            "x": 624,
+            "y": 96,
+            "w": 192,
+            "h": 56
+          },
+          {
+            "id": "filter3",
+            "label": "Status",
+            "x": 828,
+            "y": 96,
+            "w": 192,
+            "h": 56
+          },
+          {
+            "id": "filter4",
+            "label": "Canal",
+            "x": 1032,
+            "y": 96,
+            "w": 192,
+            "h": 56
+          },
+          {
+            "id": "reset",
+            "label": "Limpar filtros",
+            "x": 1236,
+            "y": 96,
+            "w": 180,
+            "h": 56
+          },
+          {
+            "id": "kpi0",
+            "label": "Taxa de recompra",
+            "x": 216,
+            "y": 196,
+            "w": 392,
+            "h": 112
+          },
+          {
+            "id": "kpi1",
+            "label": "Receita de itens",
+            "x": 620,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "kpi2",
+            "label": "Compradores",
+            "x": 923,
+            "y": 196,
+            "w": 190,
+            "h": 112
+          },
+          {
+            "id": "kpi3",
+            "label": "Recorrentes",
+            "x": 1125,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "chart0",
+            "label": "Receita por categoria",
+            "x": 216,
+            "y": 324,
+            "w": 493,
+            "h": 280
+          },
+          {
+            "id": "chart1",
+            "label": "Categoria × região",
+            "x": 721,
+            "y": 324,
+            "w": 695,
+            "h": 280
+          },
+          {
+            "id": "chart2",
+            "label": "Receita × recompra",
+            "x": 216,
+            "y": 616,
+            "w": 594,
+            "h": 280
+          },
+          {
+            "id": "chart3",
+            "label": "Pareto Top 10",
+            "x": 822,
+            "y": 616,
+            "w": 594,
+            "h": 280
+          },
+          {
+            "id": "chart4",
+            "label": "Detalhe de produtos",
+            "x": 216,
+            "y": 908,
+            "w": 1200,
+            "h": 300
+          },
+          {
+            "id": "footer",
+            "label": "Dados sintéticos · metodologia",
+            "x": 216,
+            "y": 1224,
+            "w": 1200,
+            "h": 24
+          }
+        ]
+      },
+      "mobile": {
+        "width": 323,
+        "height": 3192,
+        "blocks": [
+          {
+            "label": "Clientes e Produtos",
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Navegação (2×2)",
+            "x": 8,
+            "y": 120,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Contexto da seleção",
+            "x": 8,
+            "y": 232,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Taxa de recompra",
+            "x": 8,
+            "y": 296,
+            "w": 307,
+            "h": 144
+          },
+          {
+            "label": "Receita de itens",
+            "x": 8,
+            "y": 448,
+            "w": 149,
+            "h": 112
+          },
+          {
+            "label": "Compradores",
+            "x": 165,
+            "y": 448,
+            "w": 150,
+            "h": 112
+          },
+          {
+            "label": "Recorrentes",
+            "x": 8,
+            "y": 568,
+            "w": 307,
+            "h": 112
+          },
+          {
+            "label": "Filtros comuns / limpar",
+            "x": 8,
+            "y": 688,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Mês",
+            "x": 8,
+            "y": 752,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Região",
+            "x": 8,
+            "y": 876,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Categoria (local)",
+            "x": 8,
+            "y": 1000,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Status",
+            "x": 8,
+            "y": 1124,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Canal",
+            "x": 8,
+            "y": 1248,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Limpar filtros",
+            "x": 8,
+            "y": 1372,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Receita por categoria",
+            "x": 8,
+            "y": 1436,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Receita × recompra",
+            "x": 8,
+            "y": 1744,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Pareto Top 10",
+            "x": 8,
+            "y": 2052,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Categoria × região",
+            "x": 8,
+            "y": 2360,
+            "w": 307,
+            "h": 360
+          },
+          {
+            "label": "Detalhe de produtos",
+            "x": 8,
+            "y": 2728,
+            "w": 307,
+            "h": 320
+          },
+          {
+            "label": "Dados sintéticos · metodologia",
+            "x": 8,
+            "y": 3056,
+            "w": 307,
+            "h": 128
+          }
+        ],
+        "firstContent": "context and KPI before filters; keep filters visible in scroll, no fixed chrome claim"
+      }
+    },
+    {
+      "project": "ecommerce",
+      "id": "channels",
+      "title": "Canais e Pedidos",
+      "question": "Quais canais têm melhor resultado?",
+      "kpis": [
+        "Receita reconhecida",
+        "Taxa de conclusão",
+        "Pedidos totais",
+        "Ticket médio"
+      ],
+      "filters": [
+        "Mês",
+        "Região",
+        "Status",
+        "Canal"
+      ],
+      "desktop": {
+        "width": 1440,
+        "height": 1252,
+        "sidebar": {
+          "x": 0,
+          "y": 0,
+          "w": 192,
+          "h": 1252
+        },
+        "blocks": [
+          {
+            "id": "header",
+            "label": "Canais e Pedidos",
+            "x": 216,
+            "y": 24,
+            "w": 1200,
+            "h": 56
+          },
+          {
+            "id": "context",
+            "label": "Contexto e seleção",
+            "x": 216,
+            "y": 160,
+            "w": 1200,
+            "h": 24
+          },
+          {
+            "id": "filter0",
+            "label": "Mês",
+            "x": 216,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter1",
+            "label": "Região",
+            "x": 478,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter2",
+            "label": "Status",
+            "x": 740,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "filter3",
+            "label": "Canal",
+            "x": 1002,
+            "y": 96,
+            "w": 250,
+            "h": 56
+          },
+          {
+            "id": "reset",
+            "label": "Limpar filtros",
+            "x": 1264,
+            "y": 96,
+            "w": 152,
+            "h": 56
+          },
+          {
+            "id": "kpi0",
+            "label": "Receita reconhecida",
+            "x": 216,
+            "y": 196,
+            "w": 392,
+            "h": 112
+          },
+          {
+            "id": "kpi1",
+            "label": "Taxa de conclusão",
+            "x": 620,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "kpi2",
+            "label": "Pedidos totais",
+            "x": 923,
+            "y": 196,
+            "w": 190,
+            "h": 112
+          },
+          {
+            "id": "kpi3",
+            "label": "Ticket médio",
+            "x": 1125,
+            "y": 196,
+            "w": 291,
+            "h": 112
+          },
+          {
+            "id": "chart0",
+            "label": "Participação por canal",
+            "x": 216,
+            "y": 324,
+            "w": 594,
+            "h": 250
+          },
+          {
+            "id": "chart1",
+            "label": "Ticket × conclusão",
+            "x": 822,
+            "y": 324,
+            "w": 594,
+            "h": 250
+          },
+          {
+            "id": "chart2",
+            "label": "Pequenos múltiplos por canal",
+            "x": 216,
+            "y": 586,
+            "w": 1200,
+            "h": 380
+          },
+          {
+            "id": "chart3",
+            "label": "Resumo por canal",
+            "x": 216,
+            "y": 978,
+            "w": 1200,
+            "h": 218
+          },
+          {
+            "id": "footer",
+            "label": "Dados sintéticos · metodologia",
+            "x": 216,
+            "y": 1212,
+            "w": 1200,
+            "h": 24
+          }
+        ]
+      },
+      "mobile": {
+        "width": 323,
+        "height": 2960,
+        "blocks": [
+          {
+            "label": "Canais e Pedidos",
+            "x": 8,
+            "y": 8,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Navegação (2×2)",
+            "x": 8,
+            "y": 120,
+            "w": 307,
+            "h": 104
+          },
+          {
+            "label": "Contexto da seleção",
+            "x": 8,
+            "y": 232,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Receita reconhecida",
+            "x": 8,
+            "y": 296,
+            "w": 307,
+            "h": 144
+          },
+          {
+            "label": "Taxa de conclusão",
+            "x": 8,
+            "y": 448,
+            "w": 149,
+            "h": 112
+          },
+          {
+            "label": "Pedidos totais",
+            "x": 165,
+            "y": 448,
+            "w": 150,
+            "h": 112
+          },
+          {
+            "label": "Ticket médio",
+            "x": 8,
+            "y": 568,
+            "w": 307,
+            "h": 112
+          },
+          {
+            "label": "Filtros comuns / limpar",
+            "x": 8,
+            "y": 688,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Mês",
+            "x": 8,
+            "y": 752,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Região",
+            "x": 8,
+            "y": 876,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Status",
+            "x": 8,
+            "y": 1000,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Canal",
+            "x": 8,
+            "y": 1124,
+            "w": 307,
+            "h": 116
+          },
+          {
+            "label": "Limpar filtros",
+            "x": 8,
+            "y": 1248,
+            "w": 307,
+            "h": 56
+          },
+          {
+            "label": "Participação por canal",
+            "x": 8,
+            "y": 1312,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Ticket × conclusão",
+            "x": 8,
+            "y": 1620,
+            "w": 307,
+            "h": 300
+          },
+          {
+            "label": "Pequenos múltiplos por canal",
+            "x": 8,
+            "y": 1928,
+            "w": 307,
+            "h": 560
+          },
+          {
+            "label": "Resumo por canal",
+            "x": 8,
+            "y": 2496,
+            "w": 307,
+            "h": 320
+          },
+          {
+            "label": "Dados sintéticos · metodologia",
+            "x": 8,
+            "y": 2824,
+            "w": 307,
+            "h": 128
+          }
+        ],
+        "firstContent": "context and KPI before filters; keep filters visible in scroll, no fixed chrome claim"
+      }
+    }
+  ],
+  "validation": {
+    "geometryChecks": 2534,
+    "contrast": [
+      {
+        "name": "text/surface",
+        "foreground": "#172B3A",
+        "background": "#FFFFFF",
+        "ratio": 14.55,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "secondary/canvas",
+        "foreground": "#475569",
+        "background": "#F4F7FA",
+        "ratio": 7.05,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "secondary/surface",
+        "foreground": "#475569",
+        "background": "#FFFFFF",
+        "ratio": 7.58,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "control/surface",
+        "foreground": "#64748B",
+        "background": "#FFFFFF",
+        "ratio": 4.76,
+        "minimum": 3,
+        "status": "PASS"
+      },
+      {
+        "name": "focus/surface",
+        "foreground": "#1D4ED8",
+        "background": "#FFFFFF",
+        "ratio": 6.7,
+        "minimum": 3,
+        "status": "PASS"
+      },
+      {
+        "name": "positive/tint",
+        "foreground": "#166534",
+        "background": "#E7F5EB",
+        "ratio": 6.34,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "negative/tint",
+        "foreground": "#B42318",
+        "background": "#FDECE9",
+        "ratio": 5.75,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "warning/tint",
+        "foreground": "#92400E",
+        "background": "#FFF4D6",
+        "ratio": 6.47,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "fleet nav active",
+        "foreground": "#FFFFFF",
+        "background": "#21586A",
+        "ratio": 7.87,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "fleet nav muted",
+        "foreground": "#C7D7E2",
+        "background": "#102B3D",
+        "ratio": 9.93,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "fleet accent/surface",
+        "foreground": "#126B78",
+        "background": "#FFFFFF",
+        "ratio": 6.18,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "ecommerce nav active",
+        "foreground": "#FFFFFF",
+        "background": "#21654F",
+        "ratio": 6.91,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "ecommerce nav muted",
+        "foreground": "#C8DED4",
+        "background": "#103B33",
+        "ratio": 8.76,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "name": "ecommerce accent/surface",
+        "foreground": "#16684F",
+        "background": "#FFFFFF",
+        "ratio": 6.72,
+        "minimum": 4.5,
+        "status": "PASS"
+      }
+    ],
+    "scope": "proposed layout regions only; not native PBIR, theme import, actual visual fit or WCAG compliance"
+  }
+}

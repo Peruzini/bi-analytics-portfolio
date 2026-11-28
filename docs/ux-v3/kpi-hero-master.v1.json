@@ -1,0 +1,174 @@
+{
+  "version": "1.0-proposed",
+  "component": "KPI / Hero / Aderencia",
+  "base": {
+    "commit": "52b7d27",
+    "page": "825c31049f384847c6ac",
+    "region": {
+      "x": 216,
+      "y": 196,
+      "width": 300,
+      "height": 140
+    }
+  },
+  "container": {
+    "padding": {
+      "top": 8,
+      "right": 12,
+      "bottom": 8,
+      "left": 12
+    },
+    "gap": 4,
+    "radius": 8,
+    "background": "#102B3D",
+    "shadow": false,
+    "border": false
+  },
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Header",
+      "x": 12,
+      "y": 8,
+      "w": 276,
+      "h": 20,
+      "typography": {
+        "family": "Segoe UI",
+        "sizePt": 12,
+        "weight": "semibold",
+        "color": "#C7D7E2"
+      },
+      "text": "Aderência à meta",
+      "optionalIcon": "target; decorative only"
+    },
+    {
+      "id": "B",
+      "name": "Valor",
+      "x": 12,
+      "y": 32,
+      "w": 276,
+      "h": 48,
+      "typography": {
+        "family": "Segoe UI Semibold",
+        "sizePt": 34,
+        "color": "#FFFFFF"
+      },
+      "binding": "UX Aderencia Exibicao",
+      "format": "0.00%"
+    },
+    {
+      "id": "C",
+      "name": "Progresso",
+      "x": 12,
+      "y": 84,
+      "w": 276,
+      "h": 20,
+      "track": {
+        "x": 12,
+        "y": 90,
+        "w": 276,
+        "h": 8,
+        "radius": 4,
+        "color": "#365363",
+        "fill": "#5EEAD4"
+      },
+      "binding": "UX Progresso Meta",
+      "fallbackBinding": "UX Progresso Linear",
+      "saturation": 1
+    },
+    {
+      "id": "D",
+      "name": "Rodapé",
+      "x": 12,
+      "y": 108,
+      "w": 276,
+      "h": 24,
+      "typography": {
+        "family": "Segoe UI",
+        "sizePt": 11,
+        "color": "#C7D7E2"
+      },
+      "children": [
+        {
+          "id": "D1",
+          "x": 12,
+          "y": 108,
+          "w": 88,
+          "h": 24,
+          "binding": "Ref Meta 100%",
+          "prefix": "Meta:"
+        },
+        {
+          "id": "D2",
+          "x": 108,
+          "y": 108,
+          "w": 180,
+          "h": 24,
+          "align": "right",
+          "binding": "dynamic delta and state derived from Aderência Meta %",
+          "colors": {
+            "below": "#FCA5A5",
+            "above": "#86EFAC",
+            "equal": "#C7D7E2",
+            "empty": "#C7D7E2"
+          }
+        }
+      ]
+    }
+  ],
+  "group": {
+    "name": "KPI | Hero | Aderencia",
+    "children": [
+      "00 | Fundo",
+      "01 | Header",
+      "02 | Valor",
+      "03 | Progresso",
+      "04 | Referencia",
+      "05 | Desvio e status"
+    ],
+    "preferred": "native grouped composition with one background and transparent child visuals; use native card reference labels if they render within same geometry",
+    "fallback": "same-color card surfaces with no interior border; if native clipping persists, stop and propose taller strip before changing other cards",
+    "boundsAreLogical": true
+  },
+  "validation": {
+    "scope": "geometry and selected contrast pairs only; no native acceptance",
+    "geometryChecks": 14,
+    "contrast": [
+      {
+        "fg": "#C7D7E2",
+        "bg": "#102B3D",
+        "ratio": 9.93,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "fg": "#FFFFFF",
+        "bg": "#102B3D",
+        "ratio": 14.63,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "fg": "#FCA5A5",
+        "bg": "#102B3D",
+        "ratio": 7.71,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "fg": "#86EFAC",
+        "bg": "#102B3D",
+        "ratio": 10.42,
+        "minimum": 4.5,
+        "status": "PASS"
+      },
+      {
+        "fg": "#5EEAD4",
+        "bg": "#365363",
+        "ratio": 5.51,
+        "minimum": 3,
+        "status": "PASS"
+      }
+    ]
+  }
+}
