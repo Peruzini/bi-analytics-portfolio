@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "a103a2a0000000000002",
   "position": {
-    "x": 216,
-    "y": 306,
-    "width": 300,
-    "height": 30,
-    "z": 32000,
-    "tabOrder": 62000
+    "x": 108,
+    "y": 108,
+    "width": 180,
+    "height": 32,
+    "z": 5000,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,12 +23,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "UX Aderencia Status"
+                  "Property": "UX Hero Delta"
                 }
               },
-              "queryRef": "Medidas.UX Aderencia Status",
-              "nativeQueryRef": "UX Aderencia Status",
-              "displayName": "UX Aderencia Status"
+              "queryRef": "Medidas.UX Hero Delta",
+              "nativeQueryRef": "UX Hero Delta",
+              "displayName": "UX Hero Delta"
             }
           ]
         }
@@ -41,7 +41,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "9D"
                 }
               }
             },
@@ -49,8 +49,13 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#C7D7E2'"
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Medidas"
+                        }
+                      },
+                      "Property": "UX Hero Cor"
                     }
                   }
                 }
@@ -80,7 +85,7 @@
             "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'left'"
+                  "Value": "'right'"
                 }
               }
             }
@@ -185,7 +190,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "100D"
                 }
               }
             }
@@ -235,25 +240,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#102B3D'"
-                    }
-                  }
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "false"
                 }
               }
             }
@@ -293,14 +280,14 @@
             "left": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             },
             "right": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             }
@@ -329,7 +316,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Referência e desvio em pontos percentuais; valor no contexto dos filtros.'"
+                  "Value": "'Desvio em pontos percentuais e situação'"
                 }
               }
             }
@@ -337,5 +324,6 @@
         }
       ]
     }
-  }
+  },
+  "parentGroupName": "a103d100000000000000"
 }

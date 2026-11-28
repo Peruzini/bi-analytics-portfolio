@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "b2050100000000000003",
   "position": {
-    "x": 216,
-    "y": 196,
-    "width": 300,
-    "height": 84,
-    "z": 12000,
-    "tabOrder": 16000
+    "x": 12,
+    "y": 33,
+    "width": 276,
+    "height": 54,
+    "z": 2000,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -41,7 +41,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "34D"
+                  "Value": "28D"
                 }
               }
             },
@@ -103,7 +103,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -192,7 +192,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "100D"
                 }
               }
             }
@@ -242,25 +242,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#102B3D'"
-                    }
-                  }
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "false"
                 }
               }
             }
@@ -300,14 +282,14 @@
             "left": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             },
             "right": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             }
@@ -336,7 +318,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Aderência à meta; valor no contexto dos filtros.'"
+                  "Value": "'Percentual de aderência à meta'"
                 }
               }
             }
@@ -344,5 +326,6 @@
         }
       ]
     }
-  }
+  },
+  "parentGroupName": "a103d100000000000000"
 }

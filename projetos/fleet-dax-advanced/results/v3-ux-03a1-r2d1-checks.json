@@ -1,0 +1,60 @@
+{
+  "status": "Native group rendered; visual approval pending",
+  "base": "52b7d27",
+  "group": "KPI | Hero | Aderencia",
+  "children": 5,
+  "regions": 4,
+  "surface": "group background",
+  "measuresPreserved": 63,
+  "presentationMeasuresAdded": 3,
+  "daxHistorical": 225,
+  "tests": 14,
+  "contexts": {
+    "all": [
+      {
+        "[value]": 0.9800324032752532,
+        "[meta]": "Meta: 100%",
+        "[delta]": "-2,00 p.p. · Abaixo",
+        "[cor]": "#FCA5A5",
+        "[progress]": 0.9800324032752532
+      }
+    ],
+    "deficit": [
+      {
+        "[value]": 0.9488266041816871,
+        "[meta]": "Meta: 100%",
+        "[delta]": "-5,12 p.p. · Abaixo",
+        "[cor]": "#FCA5A5",
+        "[progress]": 0.9488266041816871
+      }
+    ],
+    "surplus": [
+      {
+        "[value]": 1.003402167245962,
+        "[meta]": "Meta: 100%",
+        "[delta]": "+0,34 p.p. · Acima",
+        "[cor]": "#86EFAC",
+        "[progress]": 1
+      }
+    ],
+    "empty": [
+      {
+        "[value]": null,
+        "[meta]": "Sem dados",
+        "[delta]": "Sem dados",
+        "[cor]": "#C7D7E2",
+        "[progress]": null
+      }
+    ]
+  },
+  "groupRecognizedInSelectionPane": true,
+  "nativeCaptureSha256": "f1c7287d01e5619f114b7c946b11ffa829c0d3aaa06cdddc0e97d1b4260cc297",
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "limitations": [
+    "Initial text clipping resolved by changing internal positions and font sizes: 28 pt value, 9 pt footer, 13 px header. Outer dimensions preserved.",
+    "Progress remains native dynamic segmented glyphs, not continuous shape. Group background is square; radius not established.",
+    "Group recognized in selection pane, but movement, child editing and saved round-trip not tested.",
+    "DAX tested four contexts; exact equality and UI filter combinations not tested. No other KPI or page redesigned."
+  ]
+}
