@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 28/11/2026 | Estado: UX-03A1-R2D3 família KPI aplicada; mestre V2 aprovado; aceite da família pendente | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2E tabela operacional refinada; revisão visual pendente | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -144,3 +144,7 @@ Por decisão do usuário, priorizar exclusivamente o cartão azul antes de deriv
 ## Atualização UX-03A1-R2D3 — família de KPIs
 
 Mestre azul V2 aprovado expressamente pelo usuário. [PR #20](https://github.com/Peruzini/bi-analytics-portfolio/pull/20), commit `ad1ffbe`, branch `portfolio/v3-ux-03a1-r2d3-kpi-family`. Quatro grupos derivados, cinco grupos totais, fundo arredondado, header, valor e referência/status transparentes. 15/15 testes, 68 medidas e 144 regras intactas, oito consultas preservadas. Rodapé de custo 9 pt para evitar recorte. Nenhuma mudança no hero, gráficos, tabela ou outras páginas. Power BI PID 24148 permanece aberto. Revisão visual dos cinco cartões pendente; próximo: UX-03A1-R2E — redesign da tabela operacional após aceite da família. Movimento/persistência dos grupos e acessibilidade pendentes. Sem merge/deploy.
+
+## Atualização UX-03A1-R2E — tabela operacional
+
+[PR #21](https://github.com/Peruzini/bi-analytics-portfolio/pull/21), commit `b9781b1`, branch `portfolio/v3-ux-03a1-r2e-table`. Tabela nativa de sete campos preservados, cabeçalho azul escuro, linhas alternadas, desvios vermelho/verde por UX Desvio Cor, barras de aderência com valores numéricos e escala configurada 0–110%, total geral destacado. Oito ativos e total visíveis sem rolagem na captura final após correção de larguras e espaçamento. 16/16 testes, 68 medidas e 144 regras intactas. Nenhuma alteração no modelo, consultas, outros visuais ou páginas; regressão anterior reutilizada. Power BI PID 24148 mantido aberto. Próximo: UX-03A1-R2F — refinamento da navegação lateral com iconografia e hierarquia; depois filtros e acabamento. Sem merge/deploy.
