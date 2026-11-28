@@ -1,0 +1,27 @@
+{
+  "status": "Native operational table refined; visual review pending",
+  "base": "ad1ffbe",
+  "columnsPreserved": 7,
+  "measuresUnchanged": 68,
+  "interactionRulesUnchanged": 144,
+  "tests": 16,
+  "nativeObserved": {
+    "eightAssetsVisible": true,
+    "totalVisible": true,
+    "negativeRed": 6,
+    "positiveGreen": 2,
+    "dataBarsVisible": true,
+    "numericAdherenceVisible": true,
+    "noVisibleScrollbars": true
+  },
+  "tableOnly": true,
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "snapshotSha256": "20f25e3f1a0f7d5a741b52e7c1b4e0d36dec47815ee9e2ca16a210c83e1ac154",
+  "limitations": [
+    "Data bars configured on adherence, with 0?110% scale and original numeric values retained; values over the scale may saturate.",
+    "Total row has a distinct neutral background rather than conditional cell color or data bars.",
+    "First candidate had scrollbars and partially obscured final row; column widths and row padding corrected.",
+    "No model/query changes; previous numerical regression reused. Filter and selection UI not revalidated in this block."
+  ]
+}
