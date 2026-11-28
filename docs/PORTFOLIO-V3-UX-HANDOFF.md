@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 28/11/2026 | Estado: UX-03A1-R2G filtros padronizados e testados; navegação pendente | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2H parcial; padrão de componentes v2 registrado; R2H1 e três blocos visuais pendentes | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -164,3 +164,11 @@ Mestre azul V2 aprovado expressamente pelo usuário. [PR #20](https://github.com
 ## Atualização UX-03A1-R2G — filtros executivos
 
 [PR #25](https://github.com/Peruzini/bi-analytics-portfolio/pull/25), commit `6c93dd5`, branch `portfolio/v3-ux-03a1-r2g-filters`. Quatro dropdowns nativos, contador de campos diretamente filtrados, botão de limpeza dinâmico, 60 medidas UX e 128 totais. 20/20 testes, 225/225 regressão, 144 regras anteriores e 8 novas. UI: equipamento, período, combinação, tipo, área e limpeza via foco + Ctrl+Enter confirmados. Contorno ativo configurado mas sem contraste perceptível; múltiplos valores e vazio testados apenas em DAX; sincronização entre páginas preservada estruturalmente. Power BI PID 24148 aberto e contexto geral restaurado. Próximo: UX-03A1-R2H — homologação funcional da navegação via foco/teclado, sincronização de filtros e correção de eixos sob filtros estreitos, antes do acabamento final. Sem merge/deploy.
+
+## Atualização operacional — 28/11/2026: R2H/R2H1 e revisão de três blocos
+
+Nova norma: [Práticas de componentes Power BI v2](ux-v3/PRACTICAS-COMPONENTES-POWERBI.md), commit `e111f00a`. Consolidada a arquitetura de cartões nativos com labels por medidas, superfícies e filhos transparentes, dicionário de apresentação, botões nativos, tokens e gates de aceitação. A captura do usuário mostra o botão Limpar filtros e a região da tabela assinalados; como terceiro bloco adotou-se provisoriamente nota/rodapé inferior, sem presumir aprovação do escopo. Não modificar terceiro bloco antes da confirmação.
+
+Estado R2H: correção de escalas em dois gráficos (unidade 1 t, sem precisão forçada) renderizada em janeiro/2025 + Caminhão 01; Performance acionada uma vez com janela restaurada e Ctrl+Enter, período e equipamento confirmados no destino. Tentativas posteriores de Performance, Manutenção e Criticidade não confirmadas. Processo de automação anterior encerrado; sessão PID 24148 aberta, com alterações não salvas detectadas na última consulta. Candidato local `portfolio/v3-ux-03a1-r2h-functional` no worktree `fleet-ux03a1-r2h`, base `6c93dd5`, dois JSON de gráfico alterados, sem commit/push. A captura do usuário mostra Sem filtros ativos, mas não substitui a verificação de estado corrente. Não salvar alterações desconhecidas. PR #25 continua sendo última base remota confirmada para implementação.
+
+Ordem de continuidade: **R2H1** concluir homologação de navegação e sincronização, separar teste por botão e por aba, conferir estado, restaurar contexto geral, versionar a correção mesmo que haja ressalva explicitamente documentada; **R2I-A** redesenhar Limpar filtros; **R2I-B** reconstruir tabela como componente de dados; **R2I-C** confirmar e refinar a terceira região (provisoriamente nota metodológica). Depois acabamento final e aceite do piloto antes de expansão. Sem merge/deploy, sem fechar Power BI. Não repetir testes ou capturas sem motivo; uma captura final por bloco quando necessária. Esta atualização é documental, não representa execução dos três redesigns.
