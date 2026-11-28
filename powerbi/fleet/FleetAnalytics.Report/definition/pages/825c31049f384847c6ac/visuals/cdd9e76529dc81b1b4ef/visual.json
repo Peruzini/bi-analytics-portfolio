@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "cdd9e76529dc81b1b4ef",
   "position": {
-    "x": 728,
+    "x": 792,
     "y": 218,
-    "width": 264,
-    "height": 140,
+    "width": 240,
+    "height": 100,
     "z": 14000,
     "tabOrder": 18000
   },
@@ -23,12 +23,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Produção Total"
+                  "Property": "UX Producao Texto"
                 }
               },
-              "queryRef": "Medidas.Produção Total",
-              "nativeQueryRef": "Produção Total",
-              "displayName": "Produção (t)"
+              "queryRef": "Medidas.UX Producao Texto",
+              "nativeQueryRef": "UX Producao Texto",
+              "displayName": "UX Producao Texto"
             }
           ]
         }
@@ -41,7 +41,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "24D"
+                  "Value": "26D"
                 }
               }
             },
@@ -50,9 +50,23 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#126B78'"
+                      "Value": "'#172B3A'"
                     }
                   }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI Semibold'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             },
@@ -63,10 +77,10 @@
                 }
               }
             },
-            "valueDisplayUnits": {
+            "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "'left'"
                 }
               }
             }
@@ -89,7 +103,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Produção (t)'"
+                  "Value": "'Produção realizada'"
                 }
               }
             },
@@ -108,6 +122,102 @@
                       "Value": "'#475569'"
                     }
                   }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Segoe UI'"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "layout": [
+        {
+          "properties": {
+            "paddingUniform": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -159,32 +269,44 @@
                   "Value": "false"
                 }
               }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#CBD5E1'"
-                    }
-                  }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "top": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             },
-            "radius": {
+            "bottom": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "0D"
                 }
               }
             },
-            "width": {
+            "left": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "10D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ],
@@ -207,7 +329,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Produção (t), valor calculado no contexto dos filtros.'"
+                  "Value": "'Produção realizada; valor no contexto dos filtros.'"
                 }
               }
             }
