@@ -1,0 +1,29 @@
+{
+  "status": "Native desktop chart refinement applied; user visual acceptance pending",
+  "base": "3595b02",
+  "visualsChanged": 2,
+  "measuresPreserved": 63,
+  "calculatedColumnsAdded": 1,
+  "historicalDaxComparisons": 225,
+  "monthlyValueComparisons": 98,
+  "assetValueColorComparisons": 16,
+  "totalDaxComparisons": 339,
+  "testsPassed": 13,
+  "nativeObserved": {
+    "monthlyPoints": 24,
+    "horizontalAxisQuarterlyTicks": 8,
+    "solidRealizedDashedTarget": true,
+    "assetsAndLabelsVisible": 8,
+    "negativeRed": 6,
+    "positiveGreen": 2
+  },
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "snapshotSha256": "dbb3f4652ba5363c83a67e1e7c8920076c519c3b152cadcd639ba115da222b8d",
+  "limitations": [
+    "Initial date axis setting did not render continuously; corrected to Scalar. Calculated column required recalculation and save in live session.",
+    "Initial stacked bars placed labels inside; switched to signed single-series clustered bars with conditional fill per asset.",
+    "Bar labels rounded to whole tonnes; exact values retained in table and model.",
+    "Line axis auto-scales; no zero baseline claimed. Chart selection UI not retested; interactions unchanged structurally. Mobile and accessibility remain pending."
+  ]
+}
