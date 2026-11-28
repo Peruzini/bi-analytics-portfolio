@@ -167,8 +167,13 @@
             },
             "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'Produção mensal × meta (t)'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_UX_Design"
+                    }
+                  },
+                  "Property": "LBL Grafico Producao"
                 }
               }
             },

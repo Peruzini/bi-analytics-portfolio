@@ -704,8 +704,13 @@
             },
             "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'Desempenho por equipamento'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_UX_Design"
+                    }
+                  },
+                  "Property": "LBL Tabela Desempenho"
                 }
               }
             },

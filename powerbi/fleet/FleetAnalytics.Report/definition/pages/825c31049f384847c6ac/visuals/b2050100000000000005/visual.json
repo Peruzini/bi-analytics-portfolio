@@ -186,8 +186,13 @@
             },
             "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'Desvio por equipamento (t)'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_UX_Design"
+                    }
+                  },
+                  "Property": "LBL Grafico Desvio"
                 }
               }
             },

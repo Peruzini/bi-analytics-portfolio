@@ -889,7 +889,7 @@
             "mode": "import",
             "source": {
               "type": "calculated",
-              "expression": "DATATABLE(\"Chave\", STRING, \"Label\", STRING, \"Icone\", STRING, \"Cor\", STRING, \"Ordem\", INTEGER, \"Destino\", STRING, {{\"BRAND\", \"FLEET\", \"\", \"#FFFFFF\", 1, \"\"}, {\"SUBTITLE\", \"A N A L Y T I C S\", \"\", \"#B8D6DF\", 2, \"\"}, {\"SECTION\", \"VISÕES ANALÍTICAS\", \"\", \"#B8D6DF\", 3, \"\"}, {\"NAV_01\", \"Visão Executiva\", \"▦\", \"#FFFFFF\", 4, \"825c31049f384847c6ac\"}, {\"NAV_02\", \"Performance\", \"▥\", \"#C7D7E2\", 5, \"2faaefc8084617f504c2\"}, {\"NAV_03\", \"Manutenção\", \"⚙\", \"#C7D7E2\", 6, \"4e55ab6fbe326c42fe0e\"}, {\"NAV_04\", \"Criticidade\", \"△\", \"#C7D7E2\", 7, \"a036aa7e10b56ccb252d\"}, {\"FOOT\", \"CASE DE PORTFÓLIO\", \"\", \"#B8D6DF\", 8, \"\"}, {\"DESCRIPTION\", \"Ativos e produção\", \"\", \"#FFFFFF\", 9, \"\"}, {\"TOKEN_BG\", \"\", \"\", \"#102B3D\", 10, \"\"}, {\"TOKEN_ACTIVE\", \"\", \"\", \"#21586A\", 11, \"\"}, {\"TOKEN_IDLE\", \"\", \"\", \"#173748\", 12, \"\"}, {\"TOKEN_ACCENT\", \"\", \"\", \"#5EEAD4\", 13, \"\"}, {\"TOKEN_HOVER\", \"\", \"\", \"#294F60\", 14, \"\"}})"
+              "expression": "DATATABLE(\"Chave\", STRING, \"Label\", STRING, \"Icone\", STRING, \"Cor\", STRING, \"Ordem\", INTEGER, \"Destino\", STRING, {{\"BRAND\", \"FLEET\", \"\", \"#FFFFFF\", 1, \"\"}, {\"SUBTITLE\", \"A N A L Y T I C S\", \"\", \"#B8D6DF\", 2, \"\"}, {\"SECTION\", \"VISÕES ANALÍTICAS\", \"\", \"#B8D6DF\", 3, \"\"}, {\"NAV_01\", \"Visão Executiva\", \"▦\", \"#FFFFFF\", 4, \"825c31049f384847c6ac\"}, {\"NAV_02\", \"Performance\", \"▥\", \"#C7D7E2\", 5, \"2faaefc8084617f504c2\"}, {\"NAV_03\", \"Manutenção\", \"⚙\", \"#C7D7E2\", 6, \"4e55ab6fbe326c42fe0e\"}, {\"NAV_04\", \"Criticidade\", \"△\", \"#C7D7E2\", 7, \"a036aa7e10b56ccb252d\"}, {\"FOOT\", \"CASE DE PORTFÓLIO\", \"\", \"#B8D6DF\", 8, \"\"}, {\"DESCRIPTION\", \"Ativos e produção\", \"\", \"#FFFFFF\", 9, \"\"}, {\"TOKEN_BG\", \"\", \"\", \"#102B3D\", 10, \"\"}, {\"TOKEN_ACTIVE\", \"\", \"\", \"#21586A\", 11, \"\"}, {\"TOKEN_IDLE\", \"\", \"\", \"#173748\", 12, \"\"}, {\"TOKEN_ACCENT\", \"\", \"\", \"#5EEAD4\", 13, \"\"}, {\"TOKEN_HOVER\", \"\", \"\", \"#294F60\", 14, \"\"}, {\"PAGE_TITLE\", \"Visão Executiva\", \"\", \"#172B3A\", 15, \"\"}, {\"PAGE_SUBTITLE\", \"Atingimos a meta? Identifique o desvio e os ativos que exigem ação.\", \"\", \"#475569\", 16, \"\"}, {\"PAGE_BADGE\", \"BASE SINTÉTICA  |  2025–2026\", \"\", \"#475569\", 17, \"\"}, {\"SEC_01\", \"01  /  RESULTADO E META\", \"\", \"#475569\", 18, \"\"}, {\"SEC_02\", \"02  /  EVOLUÇÃO E DESVIOS\", \"\", \"#475569\", 19, \"\"}, {\"SEC_03\", \"03  /  DETALHE POR EQUIPAMENTO\", \"\", \"#475569\", 20, \"\"}, {\"PAGE_NOTE\", \"Dados sintéticos · Custo = combustível + manutenção · Consulte o contexto dos filtros.\", \"\", \"#475569\", 21, \"\"}, {\"KPI_01\", \"Aderência à meta\", \"\", \"#C7D7E2\", 22, \"\"}, {\"ICO_TARGET\", \"◎\", \"\", \"#C7D7E2\", 23, \"\"}, {\"KPI_02\", \"Desvio da meta\", \"\", \"#475569\", 24, \"\"}, {\"KPI_03\", \"Produção realizada\", \"\", \"#475569\", 25, \"\"}, {\"KPI_04\", \"Disponibilidade\", \"\", \"#475569\", 26, \"\"}, {\"KPI_05\", \"Custo unitário\", \"\", \"#475569\", 27, \"\"}, {\"CHART_01\", \"Produção mensal × meta (t)\", \"\", \"#172B3A\", 28, \"\"}, {\"CHART_02\", \"Desvio por equipamento (t)\", \"\", \"#172B3A\", 29, \"\"}, {\"TABLE_01\", \"Desempenho por equipamento\", \"\", \"#172B3A\", 30, \"\"}, {\"FILTER_01\", \"Período\", \"\", \"#172B3A\", 31, \"\"}, {\"FILTER_02\", \"Tipo\", \"\", \"#172B3A\", 32, \"\"}, {\"FILTER_03\", \"Área\", \"\", \"#172B3A\", 33, \"\"}, {\"FILTER_04\", \"Equipamento\", \"\", \"#172B3A\", 34, \"\"}, {\"FILTER_CLEAR\", \"Limpar filtros\", \"\", \"#FFFFFF\", 35, \"\"}})"
             }
           }
         ]
@@ -1104,6 +1104,132 @@
             "expression": "[UX Hero Delta]",
             "displayFolder": "05 | Formatacao dinamica",
             "lineageTag": "009df366-2fca-5a8f-833e-92c26f8d5aa6"
+          },
+          {
+            "name": "LBL Titulo Executivo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"PAGE_TITLE\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "44b3a206-60f5-5beb-a487-2786d0a9837a"
+          },
+          {
+            "name": "LBL Subtitulo Executivo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"PAGE_SUBTITLE\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "bf5c75f7-c45d-551a-8b39-39b5658c6cc3"
+          },
+          {
+            "name": "LBL Base Sintetica",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"PAGE_BADGE\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "ad99a7e1-877e-546d-a429-057b77b96c77"
+          },
+          {
+            "name": "LBL Secao Resultado",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"SEC_01\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "d04f54a0-5867-58a5-99bd-c27dba9b2c9d"
+          },
+          {
+            "name": "LBL Secao Evolucao",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"SEC_02\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "f1b1b814-07e0-50ec-af3c-62120c975323"
+          },
+          {
+            "name": "LBL Secao Detalhe",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"SEC_03\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "fee60a0b-ac62-5412-a028-395a84832992"
+          },
+          {
+            "name": "LBL Nota Metodologica",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"PAGE_NOTE\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "26f25191-e25a-5436-9570-2884f7d296e8"
+          },
+          {
+            "name": "LBL KPI Aderencia",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"KPI_01\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "4e6fe937-6780-5c13-ac0b-66b9a4a62888"
+          },
+          {
+            "name": "ICO Meta",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"ICO_TARGET\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "af59d9e2-b8ed-5904-8439-53726538a0c2"
+          },
+          {
+            "name": "LBL KPI Desvio",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"KPI_02\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "f47b8525-e8f2-5b18-a0cb-d2501fc01b7a"
+          },
+          {
+            "name": "LBL KPI Producao",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"KPI_03\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "f4cbb620-052f-502f-a8c7-ab822c3c3e60"
+          },
+          {
+            "name": "LBL KPI Disponibilidade",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"KPI_04\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "937d9f64-d2bc-528d-bd00-a0ee8fb7bbce"
+          },
+          {
+            "name": "LBL KPI Custo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"KPI_05\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "aed32540-e8c2-5590-b940-aae37820a0a9"
+          },
+          {
+            "name": "LBL Grafico Producao",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"CHART_01\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "69bc00e5-d651-5703-8d13-0da9b8cd9f20"
+          },
+          {
+            "name": "LBL Grafico Desvio",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"CHART_02\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "07a65f0b-531c-53a9-88fd-86147c1b2c52"
+          },
+          {
+            "name": "LBL Tabela Desempenho",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"TABLE_01\")",
+            "displayFolder": "06 | Executivo",
+            "lineageTag": "aa6d6706-6c66-55f9-88d7-e2f79199d0dd"
+          },
+          {
+            "name": "LBL Filtro Periodo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"FILTER_01\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "20038c4a-347c-5c1d-9ee2-ffb7e36beeae"
+          },
+          {
+            "name": "LBL Filtro Tipo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"FILTER_02\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "a8a0c983-3607-5867-b7e8-78e4e3c4e120"
+          },
+          {
+            "name": "LBL Filtro Area",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"FILTER_03\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "d0ae83f7-9ae2-599e-a0a3-30d052bbd54d"
+          },
+          {
+            "name": "LBL Filtro Equipamento",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"FILTER_04\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "49368ab5-6f1d-5705-8635-b22e1bea53ba"
+          },
+          {
+            "name": "LBL Limpar Filtros",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"FILTER_CLEAR\")",
+            "displayFolder": "07 | Filtros",
+            "lineageTag": "ab903275-67cd-557b-a890-d62d1ead37e0"
           }
         ]
       }
