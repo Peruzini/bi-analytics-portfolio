@@ -1,0 +1,34 @@
+{
+  "status": "Native grid refinement applied, user review pending",
+  "base": "d9064e8",
+  "oldCanvas": [
+    1440,
+    1113
+  ],
+  "newCanvas": [
+    1440,
+    1032
+  ],
+  "heightReduction": 81,
+  "heightReductionPct": 7.28,
+  "positionsChanged": 27,
+  "visuals": 35,
+  "interactionRulesPreserved": 119,
+  "originalAndPresentationMeasuresUnchanged": 63,
+  "tests": 13,
+  "nativeObserved": {
+    "assetsInDeviationChart": 8,
+    "assetsInTable": 8,
+    "tableTotalVisible": true,
+    "kpiValuesPreservedInUI": true
+  },
+  "liveReloadWithoutModelReload": true,
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "snapshotSha256": "3b419273ac33ad7842d3a89abee7b0347e946a236c27c4b2b8c9617ccd61331e",
+  "limitations": [
+    "984-height candidate hid two surplus assets; rejected, chart height restored to 310.",
+    "Small positive bars do not show labels at current width; values remain in table. Table scrollbar visible although all eight assets and total are visible.",
+    "No DAX changes; previous numerical regression reused. Mobile and accessibility not revalidated."
+  ]
+}
