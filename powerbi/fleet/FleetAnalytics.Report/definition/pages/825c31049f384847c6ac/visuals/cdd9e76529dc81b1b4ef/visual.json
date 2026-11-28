@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "cdd9e76529dc81b1b4ef",
   "position": {
-    "x": 792,
-    "y": 196,
-    "width": 240,
-    "height": 100,
-    "z": 14000,
-    "tabOrder": 18000
+    "x": 16,
+    "y": 32,
+    "width": 208,
+    "height": 55,
+    "z": 2000,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -96,7 +96,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -185,7 +185,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "100D"
                 }
               }
             }
@@ -235,25 +235,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#FFFFFF'"
-                    }
-                  }
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "false"
                 }
               }
             }
@@ -293,14 +275,14 @@
             "left": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             },
             "right": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             }
@@ -337,5 +319,6 @@
         }
       ]
     }
-  }
+  },
+  "parentGroupName": "a103d300000000000020"
 }

@@ -1,0 +1,24 @@
+{
+  "status": "Native KPI family applied; user review pending",
+  "base": "1c7258a",
+  "masterApprovedByUser": true,
+  "groups": 5,
+  "newGroups": 4,
+  "newChildrenPerGroup": 4,
+  "visualContainers": 52,
+  "previousHeroUnchanged": true,
+  "otherVisualsUnchanged": true,
+  "measuresUnchanged": 68,
+  "interactionRulesUnchanged": 144,
+  "queriesPreserved": 8,
+  "tests": 15,
+  "modelReload": false,
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "nativeSnapshotSha256": "307ed1b6dcdb3b9284caf90ad5224b8b8e505b9efdc11896ca672e41b715f21f",
+  "limitations": [
+    "Cost footer reduced to 9 pt to avoid truncation; narrow cards retain lower footer sizes.",
+    "No progress bar in cards without an appropriate target; no invented status.",
+    "No fresh DAX regression because the model and all queries are unchanged. Group movement and save/reload persistence not individually tested."
+  ]
+}
