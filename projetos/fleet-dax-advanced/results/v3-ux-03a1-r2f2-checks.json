@@ -1,0 +1,160 @@
+{
+  "status": "Native presentation layer applied; visual acceptance pending",
+  "base": "6f40493",
+  "dictionaryRows": 14,
+  "dictionaryColumns": 6,
+  "presentationMeasures": 31,
+  "existingMeasuresPreserved": 68,
+  "totalMeasures": 99,
+  "nativeCards": 5,
+  "dynamicNativeButtons": 4,
+  "relationshipsUnchanged": true,
+  "interactionRulesUnchanged": 144,
+  "historicalComparisons": 225,
+  "tests": 18,
+  "nativeDax": {
+    "dictionary": [
+      {
+        "_UX_Dicionario[Chave]": "BRAND",
+        "_UX_Dicionario[Label]": "FLEET",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#FFFFFF",
+        "_UX_Dicionario[Ordem]": 1,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "SUBTITLE",
+        "_UX_Dicionario[Label]": "A N A L Y T I C S",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#B8D6DF",
+        "_UX_Dicionario[Ordem]": 2,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "SECTION",
+        "_UX_Dicionario[Label]": "VISÕES ANALÍTICAS",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#B8D6DF",
+        "_UX_Dicionario[Ordem]": 3,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "NAV_01",
+        "_UX_Dicionario[Label]": "Visão Executiva",
+        "_UX_Dicionario[Icone]": "▦",
+        "_UX_Dicionario[Cor]": "#FFFFFF",
+        "_UX_Dicionario[Ordem]": 4,
+        "_UX_Dicionario[Destino]": "825c31049f384847c6ac"
+      },
+      {
+        "_UX_Dicionario[Chave]": "NAV_02",
+        "_UX_Dicionario[Label]": "Performance",
+        "_UX_Dicionario[Icone]": "▥",
+        "_UX_Dicionario[Cor]": "#C7D7E2",
+        "_UX_Dicionario[Ordem]": 5,
+        "_UX_Dicionario[Destino]": "2faaefc8084617f504c2"
+      },
+      {
+        "_UX_Dicionario[Chave]": "NAV_03",
+        "_UX_Dicionario[Label]": "Manutenção",
+        "_UX_Dicionario[Icone]": "⚙",
+        "_UX_Dicionario[Cor]": "#C7D7E2",
+        "_UX_Dicionario[Ordem]": 6,
+        "_UX_Dicionario[Destino]": "4e55ab6fbe326c42fe0e"
+      },
+      {
+        "_UX_Dicionario[Chave]": "NAV_04",
+        "_UX_Dicionario[Label]": "Criticidade",
+        "_UX_Dicionario[Icone]": "△",
+        "_UX_Dicionario[Cor]": "#C7D7E2",
+        "_UX_Dicionario[Ordem]": 7,
+        "_UX_Dicionario[Destino]": "a036aa7e10b56ccb252d"
+      },
+      {
+        "_UX_Dicionario[Chave]": "FOOT",
+        "_UX_Dicionario[Label]": "CASE DE PORTFÓLIO",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#B8D6DF",
+        "_UX_Dicionario[Ordem]": 8,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "DESCRIPTION",
+        "_UX_Dicionario[Label]": "Ativos e produção",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#FFFFFF",
+        "_UX_Dicionario[Ordem]": 9,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_BG",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#102B3D",
+        "_UX_Dicionario[Ordem]": 10,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_ACTIVE",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#21586A",
+        "_UX_Dicionario[Ordem]": 11,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_IDLE",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#173748",
+        "_UX_Dicionario[Ordem]": 12,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_ACCENT",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#5EEAD4",
+        "_UX_Dicionario[Ordem]": 13,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_HOVER",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#294F60",
+        "_UX_Dicionario[Ordem]": 14,
+        "_UX_Dicionario[Destino]": ""
+      }
+    ],
+    "labels": [
+      {
+        "[marca]": "FLEET",
+        "[submarca]": "A N A L Y T I C S",
+        "[secao]": "VISÕES ANALÍTICAS",
+        "[executivo]": "▦  Visão Executiva",
+        "[performance]": "▥  Performance",
+        "[manutencao]": "⚙  Manutenção",
+        "[criticidade]": "△  Criticidade",
+        "[rodape]": "CASE DE PORTFÓLIO",
+        "[descricao]": "Ativos e produção",
+        "[fundo]": "#102B3D",
+        "[ativo]": "#21586A",
+        "[inativo]": "#173748",
+        "[dest1]": "825c31049f384847c6ac",
+        "[dest2]": "2faaefc8084617f504c2",
+        "[dest3]": "4e55ab6fbe326c42fe0e",
+        "[dest4]": "a036aa7e10b56ccb252d"
+      }
+    ]
+  },
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "snapshotSha256": "f3d35a5b6b7d60395f2539e2758242151472e21b4588308791ad3357b27b752d",
+  "limitations": [
+    "Existing presentation measures in Medidas are not migrated; new layer aliases selected measures.",
+    "Destination measures are dictionary metadata; actual page navigation bindings remain literal original IDs. Hover token is prepared but not applied.",
+    "Navigation activation remains pending native UI validation. Other pages and header labels not converted.",
+    "Description shortened to Ativos e producao for narrow rail. Initial calculated table refresh required."
+  ]
+}

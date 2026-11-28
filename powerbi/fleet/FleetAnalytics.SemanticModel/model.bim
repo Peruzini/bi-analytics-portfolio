@@ -829,6 +829,283 @@
             "lineageTag": "bf8103eb-ef7c-59c9-bcdd-507f08a4ecf9"
           }
         ]
+      },
+      {
+        "name": "_UX_Dicionario",
+        "lineageTag": "38a868d0-e516-54fb-8d89-f1ef7d973403",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Chave",
+            "dataType": "string",
+            "sourceColumn": "[Chave]",
+            "summarizeBy": "none",
+            "lineageTag": "948fd30a-d4fa-5b9a-b47d-ded7c847338f"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Label",
+            "dataType": "string",
+            "sourceColumn": "[Label]",
+            "summarizeBy": "none",
+            "lineageTag": "869acafb-9b24-514d-856d-76a2a08f659f"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Icone",
+            "dataType": "string",
+            "sourceColumn": "[Icone]",
+            "summarizeBy": "none",
+            "lineageTag": "69a3200d-38f1-53ce-a52f-8b37c5ce2bbb"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Cor",
+            "dataType": "string",
+            "sourceColumn": "[Cor]",
+            "summarizeBy": "none",
+            "lineageTag": "10cab60c-5865-51c5-b0d2-ee65be76635e"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Ordem",
+            "dataType": "int64",
+            "sourceColumn": "[Ordem]",
+            "summarizeBy": "none",
+            "lineageTag": "59fd6a4e-efb2-562b-83da-5d6d21279cb7"
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Destino",
+            "dataType": "string",
+            "sourceColumn": "[Destino]",
+            "summarizeBy": "none",
+            "lineageTag": "8bfa5068-71ce-5d0d-bade-4cc3df56b4b7"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_UX_Dicionario",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "DATATABLE(\"Chave\", STRING, \"Label\", STRING, \"Icone\", STRING, \"Cor\", STRING, \"Ordem\", INTEGER, \"Destino\", STRING, {{\"BRAND\", \"FLEET\", \"\", \"#FFFFFF\", 1, \"\"}, {\"SUBTITLE\", \"A N A L Y T I C S\", \"\", \"#B8D6DF\", 2, \"\"}, {\"SECTION\", \"VISÕES ANALÍTICAS\", \"\", \"#B8D6DF\", 3, \"\"}, {\"NAV_01\", \"Visão Executiva\", \"▦\", \"#FFFFFF\", 4, \"825c31049f384847c6ac\"}, {\"NAV_02\", \"Performance\", \"▥\", \"#C7D7E2\", 5, \"2faaefc8084617f504c2\"}, {\"NAV_03\", \"Manutenção\", \"⚙\", \"#C7D7E2\", 6, \"4e55ab6fbe326c42fe0e\"}, {\"NAV_04\", \"Criticidade\", \"△\", \"#C7D7E2\", 7, \"a036aa7e10b56ccb252d\"}, {\"FOOT\", \"CASE DE PORTFÓLIO\", \"\", \"#B8D6DF\", 8, \"\"}, {\"DESCRIPTION\", \"Ativos e produção\", \"\", \"#FFFFFF\", 9, \"\"}, {\"TOKEN_BG\", \"\", \"\", \"#102B3D\", 10, \"\"}, {\"TOKEN_ACTIVE\", \"\", \"\", \"#21586A\", 11, \"\"}, {\"TOKEN_IDLE\", \"\", \"\", \"#173748\", 12, \"\"}, {\"TOKEN_ACCENT\", \"\", \"\", \"#5EEAD4\", 13, \"\"}, {\"TOKEN_HOVER\", \"\", \"\", \"#294F60\", 14, \"\"}})"
+            }
+          }
+        ]
+      },
+      {
+        "name": "_UX_Design",
+        "lineageTag": "2880d235-cb55-51ab-9d18-7b13fe504261",
+        "columns": [
+          {
+            "type": "calculatedTableColumn",
+            "name": "Anchor",
+            "dataType": "int64",
+            "sourceColumn": "[Anchor]",
+            "summarizeBy": "none",
+            "lineageTag": "06ae8cdb-44c5-5c07-b30a-d1e2c2002970",
+            "isHidden": true
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_UX_Design",
+            "mode": "import",
+            "source": {
+              "type": "calculated",
+              "expression": "DATATABLE(\"Anchor\", INTEGER, {{1}})"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "LBL Marca",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"BRAND\")",
+            "displayFolder": "01 | Labels",
+            "lineageTag": "c1118649-28a2-5fb5-b904-589d71b887a9"
+          },
+          {
+            "name": "LBL Submarca",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"SUBTITLE\")",
+            "displayFolder": "01 | Labels",
+            "lineageTag": "88e933e8-1ede-585e-99a3-dbe8618dcca6"
+          },
+          {
+            "name": "LBL Secao",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"SECTION\")",
+            "displayFolder": "01 | Labels",
+            "lineageTag": "dacb3b7e-5b1e-5056-b838-f8ab3187a641"
+          },
+          {
+            "name": "LBL Executivo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"NAV_01\")",
+            "displayFolder": "01 | Labels",
+            "lineageTag": "197144d7-c33c-5646-aeae-f3dd8a107b22"
+          },
+          {
+            "name": "LBL Performance",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"NAV_02\")",
+            "displayFolder": "01 | Labels",
+            "lineageTag": "c2d8a520-9fa8-5060-99d7-734c20380de8"
+          },
+          {
+            "name": "LBL Manutencao",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"NAV_03\")",
+            "displayFolder": "01 | Labels",
+            "lineageTag": "1e08e44d-78ea-5d5e-b0eb-c8ac31514bf5"
+          },
+          {
+            "name": "LBL Criticidade",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"NAV_04\")",
+            "displayFolder": "01 | Labels",
+            "lineageTag": "4385f985-0e00-5d08-93d3-033eddc9371f"
+          },
+          {
+            "name": "LBL Rodape",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"FOOT\")",
+            "displayFolder": "01 | Labels",
+            "lineageTag": "315c12ac-5963-5c43-9b24-4cf435c5cf68"
+          },
+          {
+            "name": "LBL Descricao",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Label], '_UX_Dicionario'[Chave], \"DESCRIPTION\")",
+            "displayFolder": "01 | Labels",
+            "lineageTag": "734da07e-6ec0-5c81-854f-59887b573ca5"
+          },
+          {
+            "name": "ICO Executivo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Icone], '_UX_Dicionario'[Chave], \"NAV_01\")",
+            "displayFolder": "02 | Iconografia",
+            "lineageTag": "931a4b57-ece6-506f-a485-987096a71cfc"
+          },
+          {
+            "name": "NAV Executivo",
+            "expression": "[ICO Executivo] & \"  \" & [LBL Executivo]",
+            "displayFolder": "04 | Navegacao",
+            "lineageTag": "cf026259-78f1-5a59-9bec-0ff5a46c3f30"
+          },
+          {
+            "name": "DEST Executivo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Destino], '_UX_Dicionario'[Chave], \"NAV_01\")",
+            "displayFolder": "04 | Navegacao",
+            "lineageTag": "4da5de18-af0f-5a08-80d9-4403aeb35f89"
+          },
+          {
+            "name": "ICO Performance",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Icone], '_UX_Dicionario'[Chave], \"NAV_02\")",
+            "displayFolder": "02 | Iconografia",
+            "lineageTag": "dcd57b5c-b0d3-5244-bebb-293d7e00eb05"
+          },
+          {
+            "name": "NAV Performance",
+            "expression": "[ICO Performance] & \"  \" & [LBL Performance]",
+            "displayFolder": "04 | Navegacao",
+            "lineageTag": "fc2a9f99-e581-503a-892c-f206182cdf1c"
+          },
+          {
+            "name": "DEST Performance",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Destino], '_UX_Dicionario'[Chave], \"NAV_02\")",
+            "displayFolder": "04 | Navegacao",
+            "lineageTag": "f60dfe0f-06fb-5e10-ba5e-9f6020c0672c"
+          },
+          {
+            "name": "ICO Manutencao",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Icone], '_UX_Dicionario'[Chave], \"NAV_03\")",
+            "displayFolder": "02 | Iconografia",
+            "lineageTag": "7e562324-1cf1-5c4b-a443-79ed2a6740da"
+          },
+          {
+            "name": "NAV Manutencao",
+            "expression": "[ICO Manutencao] & \"  \" & [LBL Manutencao]",
+            "displayFolder": "04 | Navegacao",
+            "lineageTag": "cc69ad7f-92ea-572a-8f81-3ea77878b456"
+          },
+          {
+            "name": "DEST Manutencao",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Destino], '_UX_Dicionario'[Chave], \"NAV_03\")",
+            "displayFolder": "04 | Navegacao",
+            "lineageTag": "f909294d-57fa-554c-8c46-5491a5a192e4"
+          },
+          {
+            "name": "ICO Criticidade",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Icone], '_UX_Dicionario'[Chave], \"NAV_04\")",
+            "displayFolder": "02 | Iconografia",
+            "lineageTag": "8434a6e3-039a-58e0-b185-821751a8ae84"
+          },
+          {
+            "name": "NAV Criticidade",
+            "expression": "[ICO Criticidade] & \"  \" & [LBL Criticidade]",
+            "displayFolder": "04 | Navegacao",
+            "lineageTag": "e889a99d-1371-565f-95a3-2f3b96914ca8"
+          },
+          {
+            "name": "DEST Criticidade",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Destino], '_UX_Dicionario'[Chave], \"NAV_04\")",
+            "displayFolder": "04 | Navegacao",
+            "lineageTag": "842cf9bf-6c07-517f-84dc-0415be20d5cb"
+          },
+          {
+            "name": "COR Fundo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Cor], '_UX_Dicionario'[Chave], \"TOKEN_BG\")",
+            "displayFolder": "03 | Design Tokens",
+            "lineageTag": "1a5b6152-2562-591d-85f9-740a55f2a958"
+          },
+          {
+            "name": "COR Ativo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Cor], '_UX_Dicionario'[Chave], \"TOKEN_ACTIVE\")",
+            "displayFolder": "03 | Design Tokens",
+            "lineageTag": "b20efb7c-9053-5259-bb90-1d63500468d5"
+          },
+          {
+            "name": "COR Inativo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Cor], '_UX_Dicionario'[Chave], \"TOKEN_IDLE\")",
+            "displayFolder": "03 | Design Tokens",
+            "lineageTag": "121d2900-5ebe-5807-b507-c67e0a7054fc"
+          },
+          {
+            "name": "COR Acento",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Cor], '_UX_Dicionario'[Chave], \"TOKEN_ACCENT\")",
+            "displayFolder": "03 | Design Tokens",
+            "lineageTag": "0b1feb7f-b6e4-5bfe-9349-a8e6da4b9298"
+          },
+          {
+            "name": "COR Hover",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Cor], '_UX_Dicionario'[Chave], \"TOKEN_HOVER\")",
+            "displayFolder": "03 | Design Tokens",
+            "lineageTag": "ccec7875-e519-51bc-9c56-b2e7a40211e5"
+          },
+          {
+            "name": "COR Texto Ativo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Cor], '_UX_Dicionario'[Chave], \"NAV_01\")",
+            "displayFolder": "03 | Design Tokens",
+            "lineageTag": "1a7e86ff-2389-52cf-984e-9fcee470c148"
+          },
+          {
+            "name": "COR Texto Inativo",
+            "expression": "LOOKUPVALUE('_UX_Dicionario'[Cor], '_UX_Dicionario'[Chave], \"NAV_02\")",
+            "displayFolder": "03 | Design Tokens",
+            "lineageTag": "905b437e-96e6-5535-b8e6-3068c64c543b"
+          },
+          {
+            "name": "FMT Desvio",
+            "expression": "[UX Desvio Status]",
+            "displayFolder": "05 | Formatacao dinamica",
+            "lineageTag": "fe628d93-60c6-58f3-a6cb-44325ebe0d99"
+          },
+          {
+            "name": "FMT Referencia",
+            "expression": "[UX Hero Referencia]",
+            "displayFolder": "05 | Formatacao dinamica",
+            "lineageTag": "35f84184-9d5d-53ee-86c6-d503b19d1384"
+          },
+          {
+            "name": "FMT Status",
+            "expression": "[UX Hero Delta]",
+            "displayFolder": "05 | Formatacao dinamica",
+            "lineageTag": "009df366-2fca-5a8f-833e-92c26f8d5aa6"
+          }
+        ]
       }
     ],
     "relationships": [
