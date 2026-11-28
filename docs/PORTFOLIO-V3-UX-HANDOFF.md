@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 28/11/2026 | Estado: UX-03A1-R2E tabela operacional refinada; revisão visual pendente | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2F menu lateral refinado; homologação funcional da navegação pendente | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -148,3 +148,7 @@ Mestre azul V2 aprovado expressamente pelo usuário. [PR #20](https://github.com
 ## Atualização UX-03A1-R2E — tabela operacional
 
 [PR #21](https://github.com/Peruzini/bi-analytics-portfolio/pull/21), commit `b9781b1`, branch `portfolio/v3-ux-03a1-r2e-table`. Tabela nativa de sete campos preservados, cabeçalho azul escuro, linhas alternadas, desvios vermelho/verde por UX Desvio Cor, barras de aderência com valores numéricos e escala configurada 0–110%, total geral destacado. Oito ativos e total visíveis sem rolagem na captura final após correção de larguras e espaçamento. 16/16 testes, 68 medidas e 144 regras intactas. Nenhuma alteração no modelo, consultas, outros visuais ou páginas; regressão anterior reutilizada. Power BI PID 24148 mantido aberto. Próximo: UX-03A1-R2F — refinamento da navegação lateral com iconografia e hierarquia; depois filtros e acabamento. Sem merge/deploy.
+
+## Atualização UX-03A1-R2F — menu lateral
+
+[PR #22](https://github.com/Peruzini/bi-analytics-portfolio/pull/22), commit `6f40493`, branch `portfolio/v3-ux-03a1-r2f-sidebar`. Grupo decorativo nativo com sete filhos e quatro botões PageNavigation independentes, iconografia textual, alinhamento esquerdo e faixa turquesa para a Visão Executiva. A primeira tentativa agrupava os botões; a seleção do grupo interferiu no acionamento automatizado. Separados os botões; vínculos originais preservados, mas Performance ainda não teve acionamento confirmado por automação. 17/17 testes, 68 medidas e 144 regras intactas. Captura final sem recorte da marca. Não afirmar homologação funcional da navegação. Power BI PID 24148 aberto na Visão Executiva. Próximo: UX-03A1-R2F1 — homologar navegação nativa; depois R2G — filtros e acabamento. Sem merge/deploy.
