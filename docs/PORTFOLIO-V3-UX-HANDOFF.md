@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 27/11/2026 | Estado: UX-03A1-R2A KPIs implementados; avaliação visual pendente; Power BI aberto | Documento de continuidade operacional
+Atualização: 27/11/2026 | Estado: UX-03A1-R2B grid refinado; avaliação visual pendente; Power BI aberto | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -120,3 +120,7 @@ Ler [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md) e [PR #13 — pil
 ## Atualização UX-03A1-R2A — KPIs nativos
 
 [PR #15](https://github.com/Peruzini/bi-analytics-portfolio/pull/15), commit `d9064e8`, branch `portfolio/v3-ux-03a1-r2a-kpi`. Cinco regiões, 12 medidas de apresentação novas, 51 originais intactas. 13 testes e 225 valores históricos coincidentes; quatro contextos DAX (geral, déficit, superação, vazio). Barra nativa de texto dinâmica segmentada, saturada em 100%; alternativa ao gráfico de barra que não coube na altura. Desktop Bridge recarregou a mesma janela PID 24148 (confirmar estado antes de editar; cópia salva e backup local). Não fechar nem abrir segunda instância. Demais páginas intactas. Próximo: revisão visual ao vivo da faixa KPI e reorganização do grid somente após feedback. Sem merge/deploy.
+
+## Atualização UX-03A1-R2B — grid executivo
+
+[PR #16](https://github.com/Peruzini/bi-analytics-portfolio/pull/16), commit `3595b02`, branch `portfolio/v3-ux-03a1-r2b-grid`. Canvas 1440×1032 (−81 pontos, −7,28%), 27 posições alteradas. Candidato de 984 rejeitado por ocultar dois ativos; gráficos voltaram a 310 de altura, série temporal ampliada a 688 de largura, tabela 270. Oito ativos e total visíveis. Rótulos das pequenas barras positivas ainda ausentes; valores na tabela. 63 medidas e 119 regras intactas; 13/13 testes; regressão DAX anterior reutilizada por não haver mudança de modelo ou consulta. Mesma sessão PID 24148 mantida aberta, recarga sem modelo. Próximo: revisão visual e refinamento dos gráficos (eixos, séries, rótulos e barras positivas). Sem expansão ou merge.
