@@ -24,7 +24,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
     def test_pilot_layout_and_delta_binding(self):
         page = load(PILOT / "page.json")
         visuals = [load(f) for f in PILOT.glob("visuals/*/visual.json")]
-        self.assertEqual(len(visuals), 52)
+        self.assertEqual(len(visuals), 55)
         delta = next(v for v in visuals if v["name"] == "a103a100000000000001")
         fields = [x["queryRef"] for role in delta["visual"]["query"]["queryState"].values() for x in role["projections"]]
         self.assertIn("Medidas.UX Desvio Exibicao", fields)
@@ -32,7 +32,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
         self.assertEqual(len(sources), 4)
         targets = {i["source"] for i in page["visualInteractions"] if i["target"] == delta["name"] and i["type"] == "DataFilter"}
         self.assertTrue(sources <= targets)
-        boxes = [v["position"] for v in visuals if v["name"] != "a103a100000000000002" and not v.get("parentGroupName")]
+        boxes = [v["position"] for v in visuals if v["name"] not in ("a103a100000000000002","a103f000000000000000") and not v.get("parentGroupName")]
         for i, a in enumerate(boxes):
             self.assertGreaterEqual(a["x"], 0)
             self.assertGreaterEqual(a["y"], 0)
@@ -65,7 +65,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
 
     def test_kpi_family_groups(self):
         visuals = [load(f) for f in PILOT.glob("visuals/*/visual.json")]
-        groups = [v for v in visuals if "visualGroup" in v]
+        groups = [v for v in visuals if "visualGroup" in v and v["name"] != "a103f000000000000000"]
         self.assertEqual(len(groups), 5)
         self.assertEqual(sorted(g["position"]["width"] for g in groups), [180,180,240,252,300])
         for group in groups:
@@ -102,3 +102,25 @@ class FleetExecutiveUXContract(unittest.TestCase):
         self.assertEqual(val(bars["properties"]["dataBars"]["minValue"]), "0D")
         self.assertEqual(val(bars["properties"]["dataBars"]["maxValue"]), "1.1D")
         self.assertEqual(val(o["total"][0]["properties"]["totals"]), "true")
+
+    def test_sidebar_component(self):
+        visuals = [load(f) for f in PILOT.glob("visuals/*/visual.json")]
+        group = next(v for v in visuals if v["name"] == "a103f000000000000000")
+        self.assertEqual(group["visualGroup"]["groupMode"], "ScaleMode")
+        children = [v for v in visuals if v.get("parentGroupName") == group["name"]]
+        self.assertEqual(len(children), 7)
+        buttons = sorted([v for v in visuals if v.get("visual",{}).get("visualType") == "actionButton" and v["position"]["x"] < 192], key=lambda v:v["position"]["y"])
+        self.assertTrue(all(not v.get("parentGroupName") for v in buttons))
+        self.assertEqual(len(buttons), 4)
+        self.assertEqual([val(v["visual"]["visualContainerObjects"]["visualLink"][0]["properties"]["navigationSection"]).strip("'") for v in buttons], ["825c31049f384847c6ac","2faaefc8084617f504c2","4e55ab6fbe326c42fe0e","a036aa7e10b56ccb252d"])
+        self.assertEqual([val(v["visual"]["objects"]["fill"][1]["properties"]["fillColor"]["solid"]["color"]) for v in buttons], ["'#21586A'"]+["'#102B3D'"]*3)
+        items = [v for v in children if v["name"] != "a103a100000000000002"] + buttons
+        for i,v in enumerate(items):
+            a=v["position"]
+            self.assertGreaterEqual(a["x"],0)
+            self.assertGreaterEqual(a["y"],0)
+            self.assertLessEqual(a["x"]+a["width"],192)
+            self.assertLessEqual(a["y"]+a["height"],1032)
+            for w in items[i+1:]:
+                b=w["position"]
+                self.assertFalse(a["x"]<b["x"]+b["width"] and b["x"]<a["x"]+a["width"] and a["y"]<b["y"]+b["height"] and b["y"]<a["y"]+a["height"])

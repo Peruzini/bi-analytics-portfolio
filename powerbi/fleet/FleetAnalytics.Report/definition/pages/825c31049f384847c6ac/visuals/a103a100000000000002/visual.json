@@ -19,11 +19,11 @@
               {
                 "textRuns": [
                   {
-                    "value": "FLEET",
+                    "value": "",
                     "textStyle": {
                       "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "24px",
-                      "color": "#FFFFFF"
+                      "fontSize": "12px",
+                      "color": "#102B3D"
                     }
                   }
                 ],
@@ -90,7 +90,7 @@
             "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "8D"
+                  "Value": "10D"
                 }
               }
             },
@@ -123,7 +123,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'FLEET'"
+                  "Value": "'Fundo decorativo do menu'"
                 }
               }
             }
@@ -131,5 +131,6 @@
         }
       ]
     }
-  }
+  },
+  "parentGroupName": "a103f000000000000000"
 }
