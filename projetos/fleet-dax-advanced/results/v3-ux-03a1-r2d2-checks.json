@@ -1,0 +1,71 @@
+{
+  "status": "Native KPI master V2 rendered; user visual approval pending",
+  "base": "afceb25",
+  "region": [
+    216,
+    196,
+    300,
+    140
+  ],
+  "children": 7,
+  "existingMeasuresPreserved": 66,
+  "presentationMeasuresAdded": 2,
+  "historicalDaxComparisons": 225,
+  "tests": 14,
+  "contexts": {
+    "all": [
+      {
+        "[value]": "98,00%",
+        "[progress]": 0.9800324032752532,
+        "[svg]": "data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22268%22 height=%2212%22 viewBox=%220 0 268 12%22%3E%3Crect width=%22268%22 height=%2212%22 rx=%226%22 fill=%22%23365363%22/%3E%3Crect width=%22262.649%22 height=%2212%22 rx=%226%22 fill=%22%235EEAD4%22/%3E%3C/svg%3E",
+        "[delta]": "-2,00 p.p. · Abaixo",
+        "[color]": "#FCA5A5"
+      }
+    ],
+    "deficit": [
+      {
+        "[value]": "94,88%",
+        "[progress]": 0.9488266041816871,
+        "[svg]": "data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22268%22 height=%2212%22 viewBox=%220 0 268 12%22%3E%3Crect width=%22268%22 height=%2212%22 rx=%226%22 fill=%22%23365363%22/%3E%3Crect width=%22254.286%22 height=%2212%22 rx=%226%22 fill=%22%235EEAD4%22/%3E%3C/svg%3E",
+        "[delta]": "-5,12 p.p. · Abaixo",
+        "[color]": "#FCA5A5"
+      }
+    ],
+    "surplus": [
+      {
+        "[value]": "100,34%",
+        "[progress]": 1,
+        "[svg]": "data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22268%22 height=%2212%22 viewBox=%220 0 268 12%22%3E%3Crect width=%22268%22 height=%2212%22 rx=%226%22 fill=%22%23365363%22/%3E%3Crect width=%22268.000%22 height=%2212%22 rx=%226%22 fill=%22%235EEAD4%22/%3E%3C/svg%3E",
+        "[delta]": "+0,34 p.p. · Acima",
+        "[color]": "#86EFAC"
+      }
+    ],
+    "empty": [
+      {
+        "[value]": null,
+        "[progress]": null,
+        "[svg]": null,
+        "[delta]": "Sem dados",
+        "[color]": "#C7D7E2"
+      }
+    ]
+  },
+  "svgWidthsVerified": 3,
+  "emptySvgVerified": true,
+  "nativeObserved": {
+    "roundedContainer": true,
+    "continuousBar": true,
+    "targetIcon": true,
+    "separatedFooter": true,
+    "noVisibleInternalScrollbar": true
+  },
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "snapshotSha256": "c482c645b6d15d01c9d654faa351ecc757356020799fb99fb2b4fdccc15881cd",
+  "limitations": [
+    "Maintained 140-point height instead of proposed 168 to avoid shifting other KPIs or grid. Value 31 pt, footer 11 pt.",
+    "SVG rendered through one-cell native table; initial card approach too thin, initial table scrollbar corrected.",
+    "Native snapshot may display decimal separator as period; DAX explicit pt-BR text verified.",
+    "Four DAX contexts, not all UI contexts. Group movement and saved round-trip pending."
+  ]
+}

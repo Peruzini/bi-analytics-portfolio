@@ -24,7 +24,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
     def test_pilot_layout_and_delta_binding(self):
         page = load(PILOT / "page.json")
         visuals = [load(f) for f in PILOT.glob("visuals/*/visual.json")]
-        self.assertEqual(len(visuals), 38)
+        self.assertEqual(len(visuals), 40)
         delta = next(v for v in visuals if v["name"] == "a103a100000000000001")
         fields = [x["queryRef"] for role in delta["visual"]["query"]["queryState"].values() for x in role["projections"]]
         self.assertIn("Medidas.UX Desvio Exibicao", fields)
@@ -46,7 +46,13 @@ class FleetExecutiveUXContract(unittest.TestCase):
         group = next(v for v in visuals if v["name"] == "a103d100000000000000")
         self.assertEqual(group["visualGroup"]["groupMode"], "ScaleMode")
         children = [v for v in visuals if v.get("parentGroupName") == group["name"]]
-        self.assertEqual(len(children), 5)
+        self.assertEqual(len(children), 7)
+        bg = next(v for v in children if v["name"] == "a103d200000000000001")
+        self.assertEqual([bg["position"][k] for k in ("x","y","width","height")], [0,0,300,140])
+        children = [v for v in children if v["name"] != bg["name"]]
+        bar = next(v for v in children if v["name"] == "a103a2a0000000000001")
+        self.assertEqual(bar["visual"]["visualType"], "tableEx")
+        self.assertEqual(bar["visual"]["query"]["queryState"]["Values"]["projections"][0]["queryRef"], "Medidas.UX Hero Barra SVG")
         for i, v in enumerate(children):
             a = v["position"]
             self.assertGreaterEqual(a["x"], 0)

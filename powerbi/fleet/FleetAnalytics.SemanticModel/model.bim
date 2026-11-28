@@ -814,6 +814,19 @@
             "expression": "VAR A = [Aderência Meta %] VAR M = [Ref Meta 100%] VAR D = ROUND((A-M)*100,2) RETURN SWITCH(TRUE(),ISBLANK(A)||ISBLANK(M),\"#C7D7E2\",D<0,\"#FCA5A5\",D>0,\"#86EFAC\",\"#C7D7E2\")",
             "displayFolder": "UX | Apresentacao",
             "lineageTag": "8fc65117-d527-5267-bebc-98d813c86d6d"
+          },
+          {
+            "name": "UX Hero Barra SVG",
+            "expression": "VAR A = [UX Progresso Meta] VAR W = FORMAT(268 * A, \"0.000\", \"en-US\") RETURN IF(ISBLANK(A), BLANK(), \"data:image/svg+xml;utf8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22268%22 height=%2212%22 viewBox=%220 0 268 12%22%3E%3Crect width=%22268%22 height=%2212%22 rx=%226%22 fill=%22%23365363%22/%3E%3Crect width=%22\" & W & \"%22 height=%2212%22 rx=%226%22 fill=%22%235EEAD4%22/%3E%3C/svg%3E\")",
+            "dataCategory": "ImageUrl",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "9738b938-e03b-56bb-a832-8d2da9f08846"
+          },
+          {
+            "name": "UX Hero Valor Texto",
+            "expression": "VAR A = [Aderência Meta %] RETURN IF(ISBLANK(A), BLANK(), FORMAT(A,\"0.00%\",\"pt-BR\"))",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "bf8103eb-ef7c-59c9-bcdd-507f08a4ecf9"
           }
         ]
       }

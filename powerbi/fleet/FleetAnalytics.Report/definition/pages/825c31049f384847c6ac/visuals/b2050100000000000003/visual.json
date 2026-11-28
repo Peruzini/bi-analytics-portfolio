@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "b2050100000000000003",
   "position": {
-    "x": 12,
-    "y": 33,
-    "width": 276,
-    "height": 54,
+    "x": 16,
+    "y": 32,
+    "width": 268,
+    "height": 51,
     "z": 2000,
     "tabOrder": 2000
   },
@@ -23,12 +23,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "UX Aderencia Exibicao"
+                  "Property": "UX Hero Valor Texto"
                 }
               },
-              "queryRef": "Medidas.UX Aderencia Exibicao",
-              "nativeQueryRef": "UX Aderencia Exibicao",
-              "displayName": "UX Aderencia Exibicao"
+              "queryRef": "Medidas.UX Hero Valor Texto",
+              "nativeQueryRef": "UX Hero Valor Texto",
+              "displayName": "UX Hero Valor Texto"
             }
           ]
         }
@@ -41,7 +41,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "28D"
+                  "Value": "31D"
                 }
               }
             },
@@ -74,13 +74,6 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
-                }
-              }
-            },
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
                 }
               }
             },
