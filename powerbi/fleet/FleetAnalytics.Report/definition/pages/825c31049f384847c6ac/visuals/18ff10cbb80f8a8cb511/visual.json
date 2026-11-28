@@ -60,8 +60,13 @@
             },
             "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'Equipamento'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_UX_Design"
+                    }
+                  },
+                  "Property": "LBL Filtro Equipamento"
                 }
               }
             },

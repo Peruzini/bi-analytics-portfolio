@@ -1,0 +1,390 @@
+{
+  "status": "Native executive label migration implemented; user review pending",
+  "base": "a3fa801",
+  "dictionaryRows": 35,
+  "newDictionaryRows": 21,
+  "uxMeasures": 52,
+  "newMeasures": 21,
+  "existingMeasuresPreserved": 99,
+  "totalMeasures": 120,
+  "nativeLabelCardsTotal": 18,
+  "newCards": 13,
+  "dynamicChartTableTitles": 3,
+  "dynamicSlicerHeaders": 4,
+  "dynamicResetButtonLabel": 1,
+  "persistedNewBindings": 21,
+  "informativeTextboxesRemaining": 0,
+  "historicalComparisons": 225,
+  "labelContextComparisons": 42,
+  "tests": 19,
+  "interactionRulesUnchanged": 144,
+  "nativeDax": {
+    "dictionary": [
+      {
+        "_UX_Dicionario[Chave]": "BRAND",
+        "_UX_Dicionario[Label]": "FLEET",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#FFFFFF",
+        "_UX_Dicionario[Ordem]": 1,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "SUBTITLE",
+        "_UX_Dicionario[Label]": "A N A L Y T I C S",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#B8D6DF",
+        "_UX_Dicionario[Ordem]": 2,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "SECTION",
+        "_UX_Dicionario[Label]": "VISÕES ANALÍTICAS",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#B8D6DF",
+        "_UX_Dicionario[Ordem]": 3,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "NAV_01",
+        "_UX_Dicionario[Label]": "Visão Executiva",
+        "_UX_Dicionario[Icone]": "▦",
+        "_UX_Dicionario[Cor]": "#FFFFFF",
+        "_UX_Dicionario[Ordem]": 4,
+        "_UX_Dicionario[Destino]": "825c31049f384847c6ac"
+      },
+      {
+        "_UX_Dicionario[Chave]": "NAV_02",
+        "_UX_Dicionario[Label]": "Performance",
+        "_UX_Dicionario[Icone]": "▥",
+        "_UX_Dicionario[Cor]": "#C7D7E2",
+        "_UX_Dicionario[Ordem]": 5,
+        "_UX_Dicionario[Destino]": "2faaefc8084617f504c2"
+      },
+      {
+        "_UX_Dicionario[Chave]": "NAV_03",
+        "_UX_Dicionario[Label]": "Manutenção",
+        "_UX_Dicionario[Icone]": "⚙",
+        "_UX_Dicionario[Cor]": "#C7D7E2",
+        "_UX_Dicionario[Ordem]": 6,
+        "_UX_Dicionario[Destino]": "4e55ab6fbe326c42fe0e"
+      },
+      {
+        "_UX_Dicionario[Chave]": "NAV_04",
+        "_UX_Dicionario[Label]": "Criticidade",
+        "_UX_Dicionario[Icone]": "△",
+        "_UX_Dicionario[Cor]": "#C7D7E2",
+        "_UX_Dicionario[Ordem]": 7,
+        "_UX_Dicionario[Destino]": "a036aa7e10b56ccb252d"
+      },
+      {
+        "_UX_Dicionario[Chave]": "FOOT",
+        "_UX_Dicionario[Label]": "CASE DE PORTFÓLIO",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#B8D6DF",
+        "_UX_Dicionario[Ordem]": 8,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "DESCRIPTION",
+        "_UX_Dicionario[Label]": "Ativos e produção",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#FFFFFF",
+        "_UX_Dicionario[Ordem]": 9,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_BG",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#102B3D",
+        "_UX_Dicionario[Ordem]": 10,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_ACTIVE",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#21586A",
+        "_UX_Dicionario[Ordem]": 11,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_IDLE",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#173748",
+        "_UX_Dicionario[Ordem]": 12,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_ACCENT",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#5EEAD4",
+        "_UX_Dicionario[Ordem]": 13,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TOKEN_HOVER",
+        "_UX_Dicionario[Label]": "",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#294F60",
+        "_UX_Dicionario[Ordem]": 14,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "PAGE_TITLE",
+        "_UX_Dicionario[Label]": "Visão Executiva",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#172B3A",
+        "_UX_Dicionario[Ordem]": 15,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "PAGE_SUBTITLE",
+        "_UX_Dicionario[Label]": "Atingimos a meta? Identifique o desvio e os ativos que exigem ação.",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 16,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "PAGE_BADGE",
+        "_UX_Dicionario[Label]": "BASE SINTÉTICA  |  2025–2026",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 17,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "SEC_01",
+        "_UX_Dicionario[Label]": "01  /  RESULTADO E META",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 18,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "SEC_02",
+        "_UX_Dicionario[Label]": "02  /  EVOLUÇÃO E DESVIOS",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 19,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "SEC_03",
+        "_UX_Dicionario[Label]": "03  /  DETALHE POR EQUIPAMENTO",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 20,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "PAGE_NOTE",
+        "_UX_Dicionario[Label]": "Dados sintéticos · Custo = combustível + manutenção · Consulte o contexto dos filtros.",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 21,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "KPI_01",
+        "_UX_Dicionario[Label]": "Aderência à meta",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#C7D7E2",
+        "_UX_Dicionario[Ordem]": 22,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "ICO_TARGET",
+        "_UX_Dicionario[Label]": "◎",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#C7D7E2",
+        "_UX_Dicionario[Ordem]": 23,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "KPI_02",
+        "_UX_Dicionario[Label]": "Desvio da meta",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 24,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "KPI_03",
+        "_UX_Dicionario[Label]": "Produção realizada",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 25,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "KPI_04",
+        "_UX_Dicionario[Label]": "Disponibilidade",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 26,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "KPI_05",
+        "_UX_Dicionario[Label]": "Custo unitário",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#475569",
+        "_UX_Dicionario[Ordem]": 27,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "CHART_01",
+        "_UX_Dicionario[Label]": "Produção mensal × meta (t)",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#172B3A",
+        "_UX_Dicionario[Ordem]": 28,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "CHART_02",
+        "_UX_Dicionario[Label]": "Desvio por equipamento (t)",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#172B3A",
+        "_UX_Dicionario[Ordem]": 29,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "TABLE_01",
+        "_UX_Dicionario[Label]": "Desempenho por equipamento",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#172B3A",
+        "_UX_Dicionario[Ordem]": 30,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "FILTER_01",
+        "_UX_Dicionario[Label]": "Período",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#172B3A",
+        "_UX_Dicionario[Ordem]": 31,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "FILTER_02",
+        "_UX_Dicionario[Label]": "Tipo",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#172B3A",
+        "_UX_Dicionario[Ordem]": 32,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "FILTER_03",
+        "_UX_Dicionario[Label]": "Área",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#172B3A",
+        "_UX_Dicionario[Ordem]": 33,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "FILTER_04",
+        "_UX_Dicionario[Label]": "Equipamento",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#172B3A",
+        "_UX_Dicionario[Ordem]": 34,
+        "_UX_Dicionario[Destino]": ""
+      },
+      {
+        "_UX_Dicionario[Chave]": "FILTER_CLEAR",
+        "_UX_Dicionario[Label]": "Limpar filtros",
+        "_UX_Dicionario[Icone]": "",
+        "_UX_Dicionario[Cor]": "#FFFFFF",
+        "_UX_Dicionario[Ordem]": 35,
+        "_UX_Dicionario[Destino]": ""
+      }
+    ],
+    "all": [
+      {
+        "[LBL Titulo Executivo]": "Visão Executiva",
+        "[LBL Subtitulo Executivo]": "Atingimos a meta? Identifique o desvio e os ativos que exigem ação.",
+        "[LBL Base Sintetica]": "BASE SINTÉTICA  |  2025–2026",
+        "[LBL Secao Resultado]": "01  /  RESULTADO E META",
+        "[LBL Secao Evolucao]": "02  /  EVOLUÇÃO E DESVIOS",
+        "[LBL Secao Detalhe]": "03  /  DETALHE POR EQUIPAMENTO",
+        "[LBL Nota Metodologica]": "Dados sintéticos · Custo = combustível + manutenção · Consulte o contexto dos filtros.",
+        "[LBL KPI Aderencia]": "Aderência à meta",
+        "[ICO Meta]": "◎",
+        "[LBL KPI Desvio]": "Desvio da meta",
+        "[LBL KPI Producao]": "Produção realizada",
+        "[LBL KPI Disponibilidade]": "Disponibilidade",
+        "[LBL KPI Custo]": "Custo unitário",
+        "[LBL Grafico Producao]": "Produção mensal × meta (t)",
+        "[LBL Grafico Desvio]": "Desvio por equipamento (t)",
+        "[LBL Tabela Desempenho]": "Desempenho por equipamento",
+        "[LBL Filtro Periodo]": "Período",
+        "[LBL Filtro Tipo]": "Tipo",
+        "[LBL Filtro Area]": "Área",
+        "[LBL Filtro Equipamento]": "Equipamento",
+        "[LBL Limpar Filtros]": "Limpar filtros"
+      }
+    ],
+    "filtered": [
+      {
+        "[LBL Titulo Executivo]": "Visão Executiva",
+        "[LBL Subtitulo Executivo]": "Atingimos a meta? Identifique o desvio e os ativos que exigem ação.",
+        "[LBL Base Sintetica]": "BASE SINTÉTICA  |  2025–2026",
+        "[LBL Secao Resultado]": "01  /  RESULTADO E META",
+        "[LBL Secao Evolucao]": "02  /  EVOLUÇÃO E DESVIOS",
+        "[LBL Secao Detalhe]": "03  /  DETALHE POR EQUIPAMENTO",
+        "[LBL Nota Metodologica]": "Dados sintéticos · Custo = combustível + manutenção · Consulte o contexto dos filtros.",
+        "[LBL KPI Aderencia]": "Aderência à meta",
+        "[ICO Meta]": "◎",
+        "[LBL KPI Desvio]": "Desvio da meta",
+        "[LBL KPI Producao]": "Produção realizada",
+        "[LBL KPI Disponibilidade]": "Disponibilidade",
+        "[LBL KPI Custo]": "Custo unitário",
+        "[LBL Grafico Producao]": "Produção mensal × meta (t)",
+        "[LBL Grafico Desvio]": "Desvio por equipamento (t)",
+        "[LBL Tabela Desempenho]": "Desempenho por equipamento",
+        "[LBL Filtro Periodo]": "Período",
+        "[LBL Filtro Tipo]": "Tipo",
+        "[LBL Filtro Area]": "Área",
+        "[LBL Filtro Equipamento]": "Equipamento",
+        "[LBL Limpar Filtros]": "Limpar filtros"
+      }
+    ],
+    "empty": [
+      {
+        "[LBL Titulo Executivo]": "Visão Executiva",
+        "[LBL Subtitulo Executivo]": "Atingimos a meta? Identifique o desvio e os ativos que exigem ação.",
+        "[LBL Base Sintetica]": "BASE SINTÉTICA  |  2025–2026",
+        "[LBL Secao Resultado]": "01  /  RESULTADO E META",
+        "[LBL Secao Evolucao]": "02  /  EVOLUÇÃO E DESVIOS",
+        "[LBL Secao Detalhe]": "03  /  DETALHE POR EQUIPAMENTO",
+        "[LBL Nota Metodologica]": "Dados sintéticos · Custo = combustível + manutenção · Consulte o contexto dos filtros.",
+        "[LBL KPI Aderencia]": "Aderência à meta",
+        "[ICO Meta]": "◎",
+        "[LBL KPI Desvio]": "Desvio da meta",
+        "[LBL KPI Producao]": "Produção realizada",
+        "[LBL KPI Disponibilidade]": "Disponibilidade",
+        "[LBL KPI Custo]": "Custo unitário",
+        "[LBL Grafico Producao]": "Produção mensal × meta (t)",
+        "[LBL Grafico Desvio]": "Desvio por equipamento (t)",
+        "[LBL Tabela Desempenho]": "Desempenho por equipamento",
+        "[LBL Filtro Periodo]": "Período",
+        "[LBL Filtro Tipo]": "Tipo",
+        "[LBL Filtro Area]": "Área",
+        "[LBL Filtro Equipamento]": "Equipamento",
+        "[LBL Limpar Filtros]": "Limpar filtros"
+      }
+    ]
+  },
+  "reviewPid": 24148,
+  "leftOpen": true,
+  "saved": true,
+  "snapshotSha256": "241251ee67a42ca792b46b5e2840dd93175db386dc8498184be811e49ca9d234",
+  "limitations": [
+    "Empty decorative textboxes retained. Field metadata, legend labels, native slicer values, tooltip/alt text and table column names are not migrated to measures.",
+    "Badge decorative stripe removed by card conversion; typography adjusted to fit existing geometry.",
+    "Other pages untouched. Existing presentation measures in Medidas remain unchanged.",
+    "Native bindings persisted after save; navigation activation and UI filter interaction not revalidated. Calculated table recalculation was necessary."
+  ]
+}

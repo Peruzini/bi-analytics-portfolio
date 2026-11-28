@@ -59,8 +59,13 @@
           "properties": {
             "text": {
               "expr": {
-                "Literal": {
-                  "Value": "'Limpar filtros'"
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_UX_Design"
+                    }
+                  },
+                  "Property": "LBL Limpar Filtros"
                 }
               }
             },

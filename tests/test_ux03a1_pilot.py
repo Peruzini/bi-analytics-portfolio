@@ -129,7 +129,7 @@ class FleetExecutiveUXContract(unittest.TestCase):
         model = load(PAGES.parents[1].parent / "FleetAnalytics.SemanticModel/model.bim")["model"]
         tables = {t["name"]:t for t in model["tables"]}
         self.assertEqual(len(tables["Medidas"]["measures"]), 68)
-        self.assertEqual(len(tables["_UX_Design"]["measures"]), 31)
+        self.assertEqual(len(tables["_UX_Design"]["measures"]), 52)
         self.assertTrue(tables["_UX_Design"]["columns"][0]["isHidden"])
         self.assertEqual(len(tables["_UX_Dicionario"]["columns"]), 6)
         self.assertTrue(all(not r["fromTable"].startswith("_UX_") and not r["toTable"].startswith("_UX_") for r in model["relationships"]))
@@ -142,3 +142,18 @@ class FleetExecutiveUXContract(unittest.TestCase):
         self.assertEqual(len(buttons),4)
         for v in buttons:
             self.assertTrue(v["visual"]["objects"]["text"][1]["properties"]["text"]["expr"]["Measure"]["Property"].startswith("NAV "))
+
+    def test_executive_labels(self):
+        visuals=[load(f) for f in PILOT.glob("visuals/*/visual.json")]
+        cards=[v for v in visuals if v.get("visual",{}).get("visualType")=="cardVisual" and v["visual"]["query"]["queryState"]["Data"]["projections"][0]["queryRef"].startswith("_UX_Design.")]
+        self.assertEqual(len(cards),18)
+        for v in visuals:
+            z=v.get("visual",{})
+            if z.get("visualType")=="textbox":
+                self.assertFalse(any(r.get("value","").strip() for a in z["objects"]["general"][0]["properties"]["paragraphs"] for r in a.get("textRuns",[])))
+            if z.get("visualType")=="slicer":
+                self.assertTrue(z["objects"]["header"][0]["properties"]["text"]["expr"]["Measure"]["Property"].startswith("LBL Filtro "))
+        for id in ("8f9e4799e28920ec4893","b2050100000000000005","3ce9f418142478f499b7"):
+            v=load(PILOT/"visuals"/id/"visual.json")["visual"]
+            self.assertEqual(v["visualContainerObjects"]["title"][0]["properties"]["text"]["expr"]["Measure"]["Expression"]["SourceRef"]["Entity"],"_UX_Design")
+        self.assertEqual(load(PILOT/"visuals/a103a100000000000007/visual.json")["visual"]["objects"]["text"][1]["properties"]["text"]["expr"]["Measure"]["Property"],"LBL Limpar Filtros")
