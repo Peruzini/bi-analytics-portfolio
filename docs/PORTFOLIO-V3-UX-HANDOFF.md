@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 27/11/2026 | Estado: UX-03A1-R2 especificação KPI concluída; aplicação nativa pendente; Power BI aberto por solicitação expressa | Documento de continuidade operacional
+Atualização: 27/11/2026 | Estado: UX-03A1-R2A KPIs implementados; avaliação visual pendente; Power BI aberto | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -116,3 +116,7 @@ Ler [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md) e [PR #13 — pil
 ## Atualização UX-03A1-R2 — especificação KPI
 
 [Especificação dos cinco KPIs](PORTFOLIO-V3-UX-03A1-R2-KPI-SPEC.md), commit f5d9064. Faixa x=216–1416, y=218–358, larguras 300/252/240/180/180, gap 12; aderência hero escuro, desvio com semântica dinâmica, três cards de apoio. Medidas existentes verificadas; não usar barra estática, valores fixos ou status sem limiar. Nenhuma alteração PBIR/DAX ou fechamento do Power BI nesta etapa. Próximo: UX-03A1-R2A — aplicação nativa e revisão visual dos KPIs, preservando sessão aberta e verificando alterações do usuário antes de editar; sem expansão das demais páginas.
+
+## Atualização UX-03A1-R2A — KPIs nativos
+
+[PR #15](https://github.com/Peruzini/bi-analytics-portfolio/pull/15), commit `d9064e8`, branch `portfolio/v3-ux-03a1-r2a-kpi`. Cinco regiões, 12 medidas de apresentação novas, 51 originais intactas. 13 testes e 225 valores históricos coincidentes; quatro contextos DAX (geral, déficit, superação, vazio). Barra nativa de texto dinâmica segmentada, saturada em 100%; alternativa ao gráfico de barra que não coube na altura. Desktop Bridge recarregou a mesma janela PID 24148 (confirmar estado antes de editar; cópia salva e backup local). Não fechar nem abrir segunda instância. Demais páginas intactas. Próximo: revisão visual ao vivo da faixa KPI e reorganização do grid somente após feedback. Sem merge/deploy.
