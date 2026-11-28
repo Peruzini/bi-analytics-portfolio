@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 28/11/2026 | Estado: UX-03A1-R2D0 componente mestre especificado; aplicação nativa pendente | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2D1 grupo nativo implementado; aceite visual e edição/movimento pendentes | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -132,3 +132,7 @@ Ler [Design System UX-02](PORTFOLIO-V3-UX-02-DESIGN-SYSTEM.md) e [PR #13 — pil
 ## Atualização UX-03A1-R2D0 — componente mestre KPI
 
 Por decisão do usuário, priorizar exclusivamente o cartão azul antes de derivar os demais KPIs. [Especificação mestre](PORTFOLIO-V3-UX-03A1-R2D0-KPI-MASTER.md) e [tokens/posição JSON](ux-v3/kpi-hero-master.v1.json). Região 300×140, x216/y196, 4 zonas internas, 12 padding horizontal, 8 vertical, gap 4. 14 checagens geométricas e 5 contrastes aprovados matematicamente. Agrupamento nativo real será testado em R2D1; não se trata de componente automaticamente sincronizado. Preservar demais KPIs, modelo, gráficos e tabela. Nenhuma edição PBIR ou DAX, nenhuma nova captura, nenhuma ação na janela Power BI nesta etapa. Última sessão conhecida PID 24148; conferir estado antes de editar e manter aberta conforme pedido. Próximo: UX-03A1-R2D1 — Construção nativa e homologação visual do cartão mestre azul. Depois do aceite, derivar os quatro restantes; redesign da tabela postergado. Sem merge/deploy.
+
+## Atualização UX-03A1-R2D1 — cartão mestre agrupado
+
+[PR #18](https://github.com/Peruzini/bi-analytics-portfolio/pull/18), commit `afceb25`, branch `portfolio/v3-ux-03a1-r2d1-hero`. Grupo nativo ScaleMode, fundo único, cinco filhos transparentes, quatro zonas. 300×140 mantido; fonte valor 28 pt e rodapé 9 pt para evitar recortes. 14 testes, 225/225 regressão histórica e quatro contextos DAX. 63 medidas anteriores intactas e três novas de apresentação. Grupo reconhecido no painel Seleção, mas movimento, edição individual e round-trip ainda pendentes. Barra segmentada dinâmica mantida, raio não confirmado. Power BI PID 24148 permanece aberto. Não replicar antes do aceite visual. Próximo: revisão do mestre com usuário e validação de manipulação do grupo. Sem merge/deploy.
