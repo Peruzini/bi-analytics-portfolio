@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
   "name": "a103a2a0000000000001",
   "position": {
-    "x": 216,
-    "y": 280,
-    "width": 300,
-    "height": 26,
-    "z": 31000,
-    "tabOrder": 31000
+    "x": 12,
+    "y": 87,
+    "width": 276,
+    "height": 21,
+    "z": 3000,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -41,7 +41,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "11D"
                 }
               }
             },
@@ -185,7 +185,7 @@
             "transparency": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "100D"
                 }
               }
             }
@@ -235,25 +235,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#102B3D'"
-                    }
-                  }
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
+                  "Value": "false"
                 }
               }
             }
@@ -293,14 +275,14 @@
             "left": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             },
             "right": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
+                  "Value": "0D"
                 }
               }
             }
@@ -329,7 +311,7 @@
             "altText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Barra dinâmica de cumprimento da meta, limitada a 100%; o percentual exato está no cartão superior.'"
+                  "Value": "'Progresso dinâmico limitado a 100%'"
                 }
               }
             }
@@ -337,5 +319,6 @@
         }
       ]
     }
-  }
+  },
+  "parentGroupName": "a103d100000000000000"
 }

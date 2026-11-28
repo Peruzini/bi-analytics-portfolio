@@ -796,6 +796,24 @@
             "expression": "VAR A = [UX Progresso Meta] VAR B = MIN(240, MAX(0, ROUND(A * 240, 0))) VAR N = INT(B / 8) VAR R = MOD(B, 8) RETURN IF(ISBLANK(A), BLANK(), REPT(UNICHAR(9608), N) & IF(R > 0, UNICHAR(9616-R), \"\") & REPT(UNICHAR(9617), 30-N-IF(R > 0, 1, 0)))",
             "displayFolder": "UX | Apresentacao",
             "lineageTag": "35b49a55-cf5d-5c7d-98a7-1a76c3523ac8"
+          },
+          {
+            "name": "UX Hero Referencia",
+            "expression": "VAR M = [Ref Meta 100%] RETURN IF(ISBLANK(M), \"Sem dados\", \"Meta: \" & FORMAT(M,\"0%\",\"pt-BR\"))",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "34ecbeab-3030-5840-8dfa-b1323f68667d"
+          },
+          {
+            "name": "UX Hero Delta",
+            "expression": "VAR A = [Aderência Meta %] VAR M = [Ref Meta 100%] VAR D = ROUND((A-M)*100,2) RETURN IF(ISBLANK(A)||ISBLANK(M),\"Sem dados\",FORMAT(D,\"+0.00;-0.00;0.00\",\"pt-BR\") & \" p.p. · \" & SWITCH(TRUE(), D<0,\"Abaixo\",D>0,\"Acima\",\"Na meta\"))",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "56442ad4-f472-59e6-b643-cb2f55b7f6f9"
+          },
+          {
+            "name": "UX Hero Cor",
+            "expression": "VAR A = [Aderência Meta %] VAR M = [Ref Meta 100%] VAR D = ROUND((A-M)*100,2) RETURN SWITCH(TRUE(),ISBLANK(A)||ISBLANK(M),\"#C7D7E2\",D<0,\"#FCA5A5\",D>0,\"#86EFAC\",\"#C7D7E2\")",
+            "displayFolder": "UX | Apresentacao",
+            "lineageTag": "8fc65117-d527-5267-bebc-98d813c86d6d"
           }
         ]
       }
