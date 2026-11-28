@@ -1,6 +1,6 @@
 # PORTFOLIO V3 — Handoff e roadmap UX/UI
 
-Atualização: 28/11/2026 | Estado: UX-03A1-R2F menu lateral refinado; homologação funcional da navegação pendente | Documento de continuidade operacional
+Atualização: 28/11/2026 | Estado: UX-03A1-R2F2 camada semântica UX implementada; aceite e navegação pendentes | Documento de continuidade operacional
 
 ## 1. Objetivo e decisão de escopo
 
@@ -152,3 +152,7 @@ Mestre azul V2 aprovado expressamente pelo usuário. [PR #20](https://github.com
 ## Atualização UX-03A1-R2F — menu lateral
 
 [PR #22](https://github.com/Peruzini/bi-analytics-portfolio/pull/22), commit `6f40493`, branch `portfolio/v3-ux-03a1-r2f-sidebar`. Grupo decorativo nativo com sete filhos e quatro botões PageNavigation independentes, iconografia textual, alinhamento esquerdo e faixa turquesa para a Visão Executiva. A primeira tentativa agrupava os botões; a seleção do grupo interferiu no acionamento automatizado. Separados os botões; vínculos originais preservados, mas Performance ainda não teve acionamento confirmado por automação. 17/17 testes, 68 medidas e 144 regras intactas. Captura final sem recorte da marca. Não afirmar homologação funcional da navegação. Power BI PID 24148 aberto na Visão Executiva. Próximo: UX-03A1-R2F1 — homologar navegação nativa; depois R2G — filtros e acabamento. Sem merge/deploy.
+
+## Atualização UX-03A1-R2F2 — camada semântica UX
+
+[PR #23](https://github.com/Peruzini/bi-analytics-portfolio/pull/23), commit `a3fa801`, branch `portfolio/v3-ux-03a1-r2f2-semantic-ux`. Tabelas desconectadas `_UX_Dicionario` (14 registros, 6 campos) e `_UX_Design` (31 medidas em cinco pastas, coluna âncora oculta). Cinco caixas de texto informativas substituídas por cartões; quatro botões nativos com labels e cores vinculados a medidas. Destinos originais preservados; medidas DEST e token hover preparados, não vinculados. 68 medidas anteriores intactas, 99 totais, relações e 144 regras preservadas. 18/18 testes e 225/225 regressão. Recalculo nativo e salvamento realizados; Power BI PID 24148 aberto. Rodapé simplificado para Ativos e produção. Aceite visual pendente; navegação real ainda não confirmada. Próximo: homologar navegação e padronizar os demais labels/filtros da Visão Executiva, após revisão do usuário. Sem merge/deploy.
